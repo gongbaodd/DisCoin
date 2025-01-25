@@ -1,7 +1,9 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-public class NewsLoader : MonoBehaviour
+
+[CreateAssetMenu(fileName = "NewsLoader", menuName = "Scriptable Objects/NewsLoader")]
+public class NewsLoader: ScriptableObject
 {
     [System.Serializable]
     public class NewsWrapper

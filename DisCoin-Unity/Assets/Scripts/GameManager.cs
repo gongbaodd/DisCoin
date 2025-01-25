@@ -26,7 +26,9 @@ public class GameManager : MonoBehaviour
 
     public Dictionary<DateTime, float> coinValueHistory = new Dictionary<DateTime, float>();
 
-    public List<NewsModel> news = new List<NewsModel>();
+    public List<NewsModel> news;
+
+    public List<GameObject> newsFeedBubbles = new List<GameObject>();
 
     void Awake()
     {
@@ -46,17 +48,40 @@ public class GameManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
-        NewsLoader newsLoader = new NewsLoader();
-        NewsModel[] newsModels = newsLoader.LoadNewsModels();
-        Debug.Log("NewsModels: " + newsModels.Length);
-        
+        LoadNews();
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    void LoadNews()
+    {
+        NewsLoader newsLoader = ScriptableObject.CreateInstance<NewsLoader>();
+        NewsModel[] newsModels = newsLoader.LoadNewsModels();
+        news = new List<NewsModel>(newsModels);  
+
+        // foreach (NewsModel newsModel in news)
+        // {
+            // Debug.Log(newsModel.content);
+            // GameObject newsFeedBubble = Instantiate(NewsFeedBubblePrefab);
+            // NewsFeedBubbleController newsFeedBubbleController = newsFeedBubble.GetComponent<NewsFeedBubbleController>();
+            // newsFeedBubbleController.SetText(newsModel.content);
+        // }   
+
+        for (int i = 0; i < news.Count; i++)
+        {
+            NewsModel newsModel = news[i];
+            Debug.Log(newsModel.content);
+            GameObject newsFeedBubble = newsFeedBubbles[i];
+            NewsFeedBubbleController newsFeedBubbleController = newsFeedBubble.GetComponent<NewsFeedBubbleController>();
+            newsFeedBubbleController.SetText(newsModel.content);
+            newsFeedBubbles.Add(newsFeedBubble);
+        }
+
+    
     }
 
     void OnChangeCoinValue(DateTime timestamp, float value)
