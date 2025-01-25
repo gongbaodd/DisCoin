@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 /*
@@ -26,11 +27,11 @@ public class GameManager : MonoBehaviour
 
     public Dictionary<DateTime, float> coinValueHistory = new Dictionary<DateTime, float>();
 
-    private List<NewsModel> news;
+    [SerializeField] private List<NewsModel> news;
 
     public List<GameObject> newsFeedBubbles;
 
-    [SerializeField] private DecisionModel[] decisions;
+    [SerializeField] private List<DecisionModel> decisions;
 
     public List<GameObject> decisionCards;
 
@@ -58,23 +59,33 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     void LoadNews()
     {
         NewsLoader newsLoader = ScriptableObject.CreateInstance<NewsLoader>();
         NewsModel[] newsModels = newsLoader.LoadNewsModels();
-        news = new List<NewsModel>(newsModels);  
+        news = newsModels.ToList();
+        ShowNews();
+    }
 
-        for(int i = 0; i < newsFeedBubbles.Count; i++)
+    void ShowNews()
+    {
+        for (int i = 0; i < newsFeedBubbles.Count; i++)
         {
             GameObject newsFeedBubble = newsFeedBubbles[i];
+
+            if (news.Count <= i)
+            {
+                newsFeedBubble.SetActive(false);
+                continue;
+            }
+
             NewsFeedBubbleController newsFeedBubbleController = newsFeedBubble.GetComponent<NewsFeedBubbleController>();
             newsFeedBubbleController.SetText(news[i].content);
             newsFeedBubbleController.SetNewsFeedId(news[i].id);
         }
-  
     }
 
     void OnChangeCoinValue(DateTime timestamp, float value)
@@ -88,15 +99,26 @@ public class GameManager : MonoBehaviour
 
         NewsModel newsModel = news.Find(news => news.id == newsFeedId);
 
-        decisions = newsModel.decisions;
+        decisions = newsModel.decisions.ToList();
 
-        for (int i = 0; i < decisions.Length; i++)
+        showDecisions();
+
+    }
+
+    void showDecisions()
+    {
+        for (int i = 0; i < decisionCards.Count; i++)
         {
+            if (decisions.Count <= i)
+            {
+                decisionCards[i].SetActive(false);
+                continue;
+            }
+
             DecisionModel decision = decisions[i];
             GameObject decisionCard = decisionCards[i];
             DecisionCardController decisionCardController = decisionCard.GetComponent<DecisionCardController>();
             decisionCardController.SetText(decision.content);
         }
-
     }
 }
