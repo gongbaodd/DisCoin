@@ -1,8 +1,8 @@
 using UnityEngine;
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 
 
 /*
@@ -11,7 +11,6 @@ class GameManager {
 	poolCount
 	holdCount
 	Dictionary<Timestamp, value>
-	startTime
 	List<news>
 	playerMoney
 }
@@ -21,9 +20,11 @@ public class GameManager : MonoBehaviour
     public static GameManager instance { get; private set; }
 
     public float currentCoinValue = 9.0f;
+
+    [SerializeField] private TMP_Text CoinValueText;
+
     public int poolCount = 100;
     public int holdCount = 80;
-    public DateTime startTime;
 
     public float dayTime = 200f;
     public float playerMoney = 0;
@@ -63,11 +64,17 @@ public class GameManager : MonoBehaviour
     }
 
     public IEnumerator DayCylce() {
-        while (true) {
+        while (currentCoinValue > 0) {
             coinValueHistory.Add(currentCoinValue);
+            CoinValueText.text = "$" + currentCoinValue.ToString();
+            Debug.Log("Current Coin Value: " + currentCoinValue);
             ChartContainer.GetComponent<ChartController>().UpdateData(coinValueHistory.ToArray());
             yield return new WaitForSeconds(dayTime);
         }
+
+         CoinValueText.text = "$0";
+
+         //TODO: Game Over
     }
 
     // Update is called once per frame

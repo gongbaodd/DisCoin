@@ -54,7 +54,7 @@ public class NewsFeedBubbleController : MonoBehaviour
         while (time > 0)
         {
             time -= 1;
-            textMeshPro.text =  " (" + time + ")" + news.content;
+            textMeshPro.text = news.content;
             yield return new WaitForSeconds(1);
         }
 
