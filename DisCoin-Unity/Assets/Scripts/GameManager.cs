@@ -1,8 +1,8 @@
 using UnityEngine;
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 
 
 /*
@@ -11,7 +11,6 @@ class GameManager {
 	poolCount
 	holdCount
 	Dictionary<Timestamp, value>
-	startTime
 	List<news>
 	playerMoney
 }
@@ -20,14 +19,16 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance { get; private set; }
 
-    public float currentCoinValue;
-    public int poolCount;
-    public int holdCount;
-    public DateTime startTime;
+    public float currentCoinValue = 9.0f;
+
+    [SerializeField] private TMP_Text CoinValueText;
+
+    public int poolCount = 100;
+    public int holdCount = 80;
 
     public float dayTime = 200f;
     public float playerMoney = 0;
-    public Dictionary<DateTime, float> coinValueHistory = new Dictionary<DateTime, float>();
+    public List<float> coinValueHistory = new List<float>();
 
     [SerializeField] private List<NewsModel> restNews = new List<NewsModel>();
     [SerializeField] private List<NewsModel> news = new List<NewsModel>();
@@ -37,6 +38,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private List<DecisionModel> decisions = new List<DecisionModel>();
 
     public List<GameObject> decisionCards;
+
+    public GameObject ChartContainer;
 
     void Awake()
     {
@@ -57,6 +60,21 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         LoadNews();
+        StartCoroutine(DayCylce());
+    }
+
+    public IEnumerator DayCylce() {
+        while (currentCoinValue > 0) {
+            coinValueHistory.Add(currentCoinValue);
+            CoinValueText.text = "$" + currentCoinValue.ToString();
+            Debug.Log("Current Coin Value: " + currentCoinValue);
+            ChartContainer.GetComponent<ChartController>().UpdateData(coinValueHistory.ToArray());
+            yield return new WaitForSeconds(dayTime);
+        }
+
+         CoinValueText.text = "$0";
+
+         //TODO: Game Over
     }
 
     // Update is called once per frame
@@ -75,7 +93,7 @@ public class GameManager : MonoBehaviour
         restNews = newsModelList.GetRange(3, newsModelList.Count - 3);
         
         ShowNews();
-        showDecisions();
+        ShowDecisions();
     }
 
     void ShowNews()
@@ -96,12 +114,6 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    void OnChangeCoinValue(DateTime timestamp, float value)
-    {
-        coinValueHistory.Add(timestamp, value);
-        currentCoinValue = value;
-    }
-
     public void SelectNews(string newsFeedId)
     {
 
@@ -109,11 +121,11 @@ public class GameManager : MonoBehaviour
 
         decisions = newsModel.decisions.ToList();
 
-        showDecisions();
+        ShowDecisions();
 
     }
 
-    void showDecisions()
+    void ShowDecisions()
     {
         for (int i = 0; i < decisionCards.Count; i++)
         {
@@ -154,7 +166,7 @@ public class GameManager : MonoBehaviour
         RemoveNews(newsModel);
 
         ShowNews();
-        showDecisions();
+        ShowDecisions();
     }
 
     public void RemoveNews(NewsModel news)
@@ -200,10 +212,8 @@ public class GameManager : MonoBehaviour
 
         if (reactionValue == ReactionValue.noEffect) {
             // no effect on the coin value
-            return;
         } 
-
-        if (reactionValue == ReactionValue.approval)
+        else if (reactionValue == ReactionValue.approval)
         {
             currentCoinValue += effectPoints;
         }
