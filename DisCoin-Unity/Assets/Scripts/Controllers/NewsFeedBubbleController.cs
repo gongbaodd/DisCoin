@@ -1,3 +1,5 @@
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -6,14 +8,14 @@ using UnityEngine.UI;
 public class NewsFeedBubbleController : MonoBehaviour
 {
     [SerializeField] private TMP_Text textMeshPro;
-    [SerializeField] private Button selectBtn;
-    [SerializeField] private string newsFeedId;
 
-    public GameManager gameManager;
+    [SerializeField] private NewsModel news;
+
+    private GameManager gameManager;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -22,18 +24,42 @@ public class NewsFeedBubbleController : MonoBehaviour
         
     }
 
-    public void SetText(string text)
+    public void SetNews(NewsModel news)
     {
-        textMeshPro.text = text;
-    }
-
-    public void SetNewsFeedId(string id)
-    {
-        newsFeedId = id;
+        this.news = news;
+        textMeshPro.text = news.content;
+        StartCoroutine(NewsObsolete());
     }
 
     public void OnSelected()
     {
-        gameManager.SelectNews(newsFeedId);
+        if (news == null)
+        {
+            Debug.LogError("News is null");
+            return;
+        }
+
+        gameManager.SelectNews(news.id);
+    }
+
+    IEnumerator NewsObsolete() {
+        if (news == null)
+        {
+            Debug.LogError("News is null");
+            yield break;
+        }
+
+        int time = (int)news.lifetime;
+
+        while (time > 0)
+        {
+            time -= 1;
+            textMeshPro.text =  " (" + time + ")" + news.content;
+            yield return new WaitForSeconds(1);
+        }
+
+        // yield return new WaitForSeconds(news.lifetime);
+        gameManager.RemoveNews(news);
+        this.news = null;
     }
 }

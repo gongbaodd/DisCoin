@@ -5,14 +5,14 @@ using TMPro;
 public class DecisionCardController : MonoBehaviour
 {
     public TMP_Text textMeshPro;
-    public GameManager gameManager;
+    private GameManager gameManager;
 
-    [SerializeField] private string id;
+    [SerializeField] private DecisionModel decision;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -22,18 +22,19 @@ public class DecisionCardController : MonoBehaviour
     }
 
     
-    public void SetText(string text)
+    public void SetDecision(DecisionModel decision)
     {
-        textMeshPro.text = text;
-    }
-
-    public void SetId(string id)
-    {
-        this.id = id;
+        this.decision = decision;
+        textMeshPro.text = decision.content;
     }
 
     public void OnClick()
     {
-        gameManager.OnDecisionCardClicked(id);
+        if (decision == null)
+        {
+            Debug.LogError("Decision is null");
+            return;
+        }
+        gameManager.OnDecisionCardClicked(decision.id);
     }
 }

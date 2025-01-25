@@ -18,13 +18,14 @@ class GameManager {
 */
 public class GameManager : MonoBehaviour
 {
-    private static GameManager _instance;
     public static GameManager instance { get; private set; }
 
     public float currentCoinValue;
     public int poolCount;
     public int holdCount;
     public DateTime startTime;
+
+    public float dayTime = 200f;
     public float playerMoney = 0;
     public Dictionary<DateTime, float> coinValueHistory = new Dictionary<DateTime, float>();
 
@@ -91,8 +92,7 @@ public class GameManager : MonoBehaviour
 
             newsFeedBubble.SetActive(true);
             NewsFeedBubbleController newsFeedBubbleController = newsFeedBubble.GetComponent<NewsFeedBubbleController>();
-            newsFeedBubbleController.SetText(news[i].content);
-            newsFeedBubbleController.SetNewsFeedId(news[i].id);
+            newsFeedBubbleController.SetNews(news[i]);
         }
     }
 
@@ -128,8 +128,8 @@ public class GameManager : MonoBehaviour
             DecisionModel decision = decisions[i];
             GameObject decisionCard = decisionCards[i];
             DecisionCardController decisionCardController = decisionCard.GetComponent<DecisionCardController>();
-            decisionCardController.SetText(decision.content);
-            decisionCardController.SetId(decision.id);
+            decisionCardController.SetDecision(decision);
+
         }
     }
 
@@ -150,7 +150,40 @@ public class GameManager : MonoBehaviour
             return;
         }
 
+        calculateCurrentCoinValue(decision, newsModel.effectPoints);
+        RemoveNews(newsModel);
+
+        ShowNews();
+        showDecisions();
+    }
+
+    public void RemoveNews(NewsModel news)
+    {
+        this.news.Remove(news);
+        ShowNews();
+        decisions = new List<DecisionModel>();
+        StartCoroutine(loadOneRestNews());
+    }
+
+    private IEnumerator loadOneRestNews() {
+        if (restNews.Count == 0)
+        {
+            yield break;
+        }
+
+        yield return new WaitForSeconds(1);
+
+        NewsModel newsModel = restNews[0];
+        restNews.RemoveAt(0);
+        this.news.Add(newsModel);
+        ShowNews();
+    }
+
+    void calculateCurrentCoinValue(DecisionModel decision, float effectPoints)
+    {
+        // TODO: show people reaction
         ReactionModel[] reactions = decision.reactions;
+        
         float randomValue = UnityEngine.Random.Range(0f, 1f);
 
         ReactionValue reactionValue = ReactionValue.noEffect;
@@ -164,6 +197,7 @@ public class GameManager : MonoBehaviour
             reactionValue = ReactionValue.disapproval;
         }
 
+
         if (reactionValue == ReactionValue.noEffect) {
             // no effect on the coin value
             return;
@@ -171,14 +205,13 @@ public class GameManager : MonoBehaviour
 
         if (reactionValue == ReactionValue.approval)
         {
-            currentCoinValue += newsModel.effectPoints;
+            currentCoinValue += effectPoints;
         }
         else if (reactionValue == ReactionValue.disapproval)
         {
-            currentCoinValue -= newsModel.effectPoints;
+            currentCoinValue -= effectPoints;
         }
-        //TODO:
-        // ReactionModel reaction = reactions.FirstOrDefault(reaction => reaction.value == reactionValue);
+
     }
 
 }
