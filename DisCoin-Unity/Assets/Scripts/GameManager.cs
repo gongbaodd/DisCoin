@@ -1,9 +1,10 @@
+using UnityEngine;
+using UnityEngine.UI;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using UnityEngine;
-using UnityEngine.UI;
+
 using TMPro;
 
 /*
@@ -34,14 +35,19 @@ public class GameManager : MonoBehaviour
     [SerializeField] private List<NewsModel> news = new List<NewsModel>();
 
     public List<GameObject> newsFeedBubbles;
+    public List<GameObject> decisionCards;
 
     [SerializeField] private List<DecisionModel> decisions = new List<DecisionModel>();
 
     public List<GameObject> decisionCards;
 
     [SerializeField] private Animator bubbleAnimator;
-    [SerializeField] private float delayBeforeCrash = 1.0f;
+    [SerializeField] private float delayBeforeCrash = 4.0f;
     [SerializeField] private GameObject _crashImage;
+    [SerializeField] private GameObject chartPanel;
+
+    [SerializeField] private GameObject decisionPanel;
+    [SerializeField] private GameObject messagePanel;
     [SerializeField] private TMP_Text _crashMessage;
 
 
@@ -65,12 +71,15 @@ public class GameManager : MonoBehaviour
     {
         _crashImage.SetActive(false);
 
+
     }
 
     // Update is called once per frame
     void Update()
     {
 
+        LoadNews();
+        //GameOver();
 
     }
 
@@ -142,7 +151,12 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
-        BurstBubble();
+        chartPanel.SetActive(false);
+        decisionPanel.SetActive(false);
+        messagePanel.SetActive(false);
+        bubbleAnimator.SetTrigger("ExpandTrigger");
+        //coinSound.Play();
+        Invoke("BurstBubble", 3.0f);
     }
 
     public void BurstBubble()
@@ -156,8 +170,7 @@ public class GameManager : MonoBehaviour
     public IEnumerator ShowMarketCrash()
     {
         yield return new WaitForSeconds(delayBeforeCrash);
-
-        //coinSound.Play();
         _crashImage.SetActive(true);
     }
+
 }
