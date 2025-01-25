@@ -21,16 +21,11 @@ public class GameManager : MonoBehaviour
     private static GameManager _instance;
     public static GameManager instance { get; private set; }
 
-    public Animator bubbleAnimator;
-    public float delayBeforeCrash = 3.0f;
     public float currentCoinValue;
     public int poolCount;
     public int holdCount;
     public DateTime startTime;
     public float playerMoney = 0;
-
-    [SerializeField] private GameObject _crashImage;
-
     public Dictionary<DateTime, float> coinValueHistory = new Dictionary<DateTime, float>();
 
     [SerializeField] private List<NewsModel> news = new List<NewsModel>();
@@ -160,24 +155,4 @@ public class GameManager : MonoBehaviour
         // ReactionModel reaction = reactions.FirstOrDefault(reaction => reaction.value == reactionValue);
     }
 
-    public void GameOver()
-    {
-        bubbleAnimator.SetTrigger("ExpandTrigger");
-        //coinSound.Play();
-        Invoke("BurstBubble", 3.0f);
-    }
-
-    public void BurstBubble()
-    {
-        bubbleAnimator.SetTrigger("BurstTrigger");
-        StartCoroutine(ShowMarketCrash());
-
-
-    }
-
-    public IEnumerator ShowMarketCrash()
-    {
-        yield return new WaitForSeconds(delayBeforeCrash);
-        _crashImage.SetActive(true);
-    }
 }
