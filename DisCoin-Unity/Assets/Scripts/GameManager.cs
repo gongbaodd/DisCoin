@@ -150,11 +150,17 @@ public class GameManager : MonoBehaviour
         }
 
         calculateCurrentCoinValue(decision, newsModel.effectPoints);
-        news.Remove(newsModel);
-        decisions = new List<DecisionModel>();
+        RemoveNews(newsModel);
 
         ShowNews();
         showDecisions();
+    }
+
+    public void RemoveNews(NewsModel news)
+    {
+        this.news.Remove(news);
+        ShowNews();
+        decisions = new List<DecisionModel>();
     }
 
     void calculateCurrentCoinValue(DecisionModel decision, float effectPoints)

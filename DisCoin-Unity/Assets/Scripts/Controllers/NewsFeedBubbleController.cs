@@ -28,6 +28,7 @@ public class NewsFeedBubbleController : MonoBehaviour
     {
         this.news = news;
         textMeshPro.text = news.content;
+        StartCoroutine(NewsObsolete());
     }
 
     public void OnSelected()
@@ -39,5 +40,26 @@ public class NewsFeedBubbleController : MonoBehaviour
         }
 
         gameManager.SelectNews(news.id);
+    }
+
+    IEnumerator NewsObsolete() {
+        if (news == null)
+        {
+            Debug.LogError("News is null");
+            yield break;
+        }
+
+        int time = (int)news.lifetime;
+
+        while (time > 0)
+        {
+            time -= 1;
+            textMeshPro.text =  " (" + time + ")" + news.content;
+            yield return new WaitForSeconds(1);
+        }
+
+        // yield return new WaitForSeconds(news.lifetime);
+        gameManager.RemoveNews(news);
+        this.news = null;
     }
 }
