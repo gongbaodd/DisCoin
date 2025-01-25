@@ -26,9 +26,13 @@ public class GameManager : MonoBehaviour
 
     public Dictionary<DateTime, float> coinValueHistory = new Dictionary<DateTime, float>();
 
-    public List<NewsModel> news;
+    private List<NewsModel> news;
 
-    public List<GameObject> newsFeedBubbles = new List<GameObject>();
+    public List<GameObject> newsFeedBubbles;
+
+    private List<DecisionModel> decisions;
+
+    public List<GameObject> decisionCards;
 
     void Awake()
     {
@@ -63,22 +67,14 @@ public class GameManager : MonoBehaviour
         NewsModel[] newsModels = newsLoader.LoadNewsModels();
         news = new List<NewsModel>(newsModels);  
 
-        // foreach (NewsModel newsModel in news)
-        // {
-            // Debug.Log(newsModel.content);
-            // GameObject newsFeedBubble = Instantiate(NewsFeedBubblePrefab);
-            // NewsFeedBubbleController newsFeedBubbleController = newsFeedBubble.GetComponent<NewsFeedBubbleController>();
-            // newsFeedBubbleController.SetText(newsModel.content);
-        // }   
-
         for (int i = 0; i < news.Count; i++)
         {
             NewsModel newsModel = news[i];
-            Debug.Log(newsModel.content);
             GameObject newsFeedBubble = newsFeedBubbles[i];
             NewsFeedBubbleController newsFeedBubbleController = newsFeedBubble.GetComponent<NewsFeedBubbleController>();
             newsFeedBubbleController.SetText(newsModel.content);
             newsFeedBubbles.Add(newsFeedBubble);
+            SelectNews(newsModel);
         }
 
     
@@ -88,5 +84,18 @@ public class GameManager : MonoBehaviour
     {
         coinValueHistory.Add(timestamp, value);
         currentCoinValue = value;
+    }
+
+    void SelectNews(NewsModel news)
+    {
+        decisions = new List<DecisionModel>(news.decisions);
+
+        for (int i = 0; i < decisions.Count; i++)
+        {
+            DecisionModel decision = decisions[i];
+            GameObject decisionCard = decisionCards[i];
+            DecisionCardController decisionCardController = decisionCard.GetComponent<DecisionCardController>();
+            decisionCardController.SetText(decision.content);
+        }
     }
 }
