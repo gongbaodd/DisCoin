@@ -492,13 +492,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c57fa1d4248037842b14f19edfa5576c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bubbleAnimator: {fileID: 0}
-  delayBeforeCrash: 3
-  currentCoinValue: 0
-  poolCount: 0
-  holdCount: 0
+  currentCoinValue: 9
+  poolCount: 100
+  holdCount: 80
+  dayTime: 200
   playerMoney: 0
-  _crashImage: {fileID: 0}
+  coinValueHistory: []
+  restNews: []
   news: []
   newsFeedBubbles:
   - {fileID: 686492591}
@@ -509,6 +509,7 @@ MonoBehaviour:
   - {fileID: 1749818942}
   - {fileID: 179815111}
   - {fileID: 833039323}
+  ChartContainer: {fileID: 1009151052}
 --- !u!1001 &833039322
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -631,6 +632,7 @@ GameObject:
   - component: {fileID: 1009151053}
   - component: {fileID: 1009151055}
   - component: {fileID: 1009151054}
+  - component: {fileID: 1009151056}
   m_Layer: 5
   m_Name: ChartPanel
   m_TagString: Untagged
@@ -695,6 +697,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1009151052}
   m_CullTransparentMesh: 1
+--- !u!114 &1009151056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1009151052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 990b8b573d5216a4c936cc7bf9601858, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chartContainer: {fileID: 1009151053}
+  circleSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  dataPoints: []
 --- !u!1001 &1425146689
 PrefabInstance:
   m_ObjectHideFlags: 0
