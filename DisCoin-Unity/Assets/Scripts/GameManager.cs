@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour
 
     public Dictionary<DateTime, float> coinValueHistory = new Dictionary<DateTime, float>();
 
+    [SerializeField] private List<NewsModel> restNews = new List<NewsModel>();
     [SerializeField] private List<NewsModel> news = new List<NewsModel>();
 
     public List<GameObject> newsFeedBubbles;
@@ -66,7 +67,11 @@ public class GameManager : MonoBehaviour
     {
         NewsLoader newsLoader = ScriptableObject.CreateInstance<NewsLoader>();
         NewsModel[] newsModels = newsLoader.LoadNewsModels();
-        news = newsModels.ToList();
+        List<NewsModel> newsModelList = newsModels.ToList();
+
+        news = newsModelList.GetRange(0, 3);
+        restNews = newsModelList.GetRange(3, newsModelList.Count - 3);
+        
         ShowNews();
         showDecisions();
     }
