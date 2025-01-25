@@ -98,6 +98,11 @@ A message app UI
 A Chart UI, showing the current value and your hold count, the hold count and the money you have.
 the computer sprite
 
+## Narratives
+
+the narratives should be save as JSON format in DisCoin-Unity\Assets\Resources\newsModels.json
+the IDs are in DisCoin-Unity\Documents\UUIDs.md
+
 ## assets
 
 https://win98icons.alexmeub.com/
