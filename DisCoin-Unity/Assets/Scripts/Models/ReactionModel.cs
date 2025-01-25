@@ -25,4 +25,15 @@ public class ReactionModel : ScriptableObject
     public string newsID;
     public string decisionID;
     public ReactionValue value;
+
+    static public ReactionModel CreateReactionModel(string id, string content, string newsID, string decisionID, ReactionValue value)
+    {
+        ReactionModel reaction = ScriptableObject.CreateInstance<ReactionModel>();
+        reaction.id = id;
+        reaction.content = content;
+        reaction.newsID = newsID;
+        reaction.decisionID = decisionID;
+        reaction.value = value;
+        return reaction;
+    }
 }

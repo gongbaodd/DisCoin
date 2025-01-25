@@ -22,4 +22,16 @@ public class NewsModel : ScriptableObject
     public DecisionModel[] decisions;
 
     public ReactionModel[] desertReactions;
+
+    static public NewsModel CreateNewsModel(string id, float lifetime, string content, float effectPoints, DecisionModel[] decisions, ReactionModel[] desertReactions)
+    {
+        NewsModel news = ScriptableObject.CreateInstance<NewsModel>();
+        news.id = id;
+        news.lifetime = lifetime;
+        news.content = content;
+        news.effectPoints = effectPoints;
+        news.decisions = decisions;
+        news.desertReactions = desertReactions;
+        return news;
+    }
 }
