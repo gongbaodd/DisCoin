@@ -109,7 +109,33 @@ threshold on the money and the choose the Decision with what kind of approvalPer
 3 narritives a screen, each one have 1 min life span, 3 mins as a day
 if we need the user play like 30min, we need at least 30 narritives
 
+## Milestone and checklists
 
-
-
+- Coder
+    - Due to 2025/1/25/17:00
+        - finish gameplay logic for the message screen & the decision screen
+        - make a structual Game UI
+    - Due to 2025/1/26/14:00
+        - The k-Chart should be ready
+- Designer
+    - Due to 2025/1/25/17:00
+        - finish all the sprite design, apply the sprites on the screens, message
+    - Due to 2025/1/26/14:00
+        - apply all the sprites on the game, finish UI
+- Writer
+    - Due to 2025/1/25/17:00
+        - finish 10 narritives
+    - Due to 2025/1/26/14:00
+        - finish all the narritives
+- Marketing
+    - Due to 2025/1/25/17:00
+        - helping the narritives
+        - make team UI on the website
+    - Due to 2025/1/26/14:00
+        - should have tested the game with other teams
+- Sound & VFX
+    - Due to 2025/1/25/17:00
+        - gather sounds and VFX to the project
+    - Due to 2025/1/26/14:00
+        - apply the sound and VFX
 
