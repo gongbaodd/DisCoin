@@ -130,10 +130,17 @@ public class GameManager : MonoBehaviour
     public void OnDecisionCardClicked(string id)
     {
         DecisionModel decision = decisions.Find(decision => decision.id == id);
+        NewsModel newsModel = news.Find(news => news.id == decision.newsID);
 
         if (decision == null)
         {
             Debug.LogError("Decision not found");
+            return;
+        }
+
+        if (newsModel == null)
+        {
+            Debug.LogError("News not found");
             return;
         }
 
@@ -146,11 +153,23 @@ public class GameManager : MonoBehaviour
         {
             reactionValue = ReactionValue.approval;
         }
-        else if (randomValue < decision.approvalPercentage + decision.disapprovalPercentage)
+        else if (randomValue < (decision.approvalPercentage + decision.disapprovalPercentage)/100)
         {
             reactionValue = ReactionValue.disapproval;
         }
-//TODO:
-        // ReactionModel reaction = reactions.FirstOrDefault(reaction => reaction.value == reactionValue);
+
+        if (reactionValue == ReactionValue.noEffect) {
+            // no effect on the coin value
+            return;
+        } 
+
+        if (reactionValue == ReactionValue.approval)
+        {
+            currentCoinValue += newsModel.effectPoints;
+        }
+        else if (reactionValue == ReactionValue.disapproval)
+        {
+            currentCoinValue -= newsModel.effectPoints;
+        }
     }
 }
