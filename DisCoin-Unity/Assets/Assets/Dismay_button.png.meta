@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Dismay_button_0: -8823122209112846692
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
