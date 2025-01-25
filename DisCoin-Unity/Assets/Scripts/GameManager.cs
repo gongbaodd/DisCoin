@@ -39,15 +39,9 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private List<DecisionModel> decisions = new List<DecisionModel>();
 
-    public List<GameObject> decisionCards;
-
     [SerializeField] private Animator bubbleAnimator;
     [SerializeField] private float delayBeforeCrash = 4.0f;
     [SerializeField] private GameObject _crashImage;
-    [SerializeField] private GameObject chartPanel;
-
-    [SerializeField] private GameObject decisionPanel;
-    [SerializeField] private GameObject messagePanel;
     [SerializeField] private TMP_Text _crashMessage;
 
 
@@ -79,7 +73,7 @@ public class GameManager : MonoBehaviour
     {
 
         LoadNews();
-        //GameOver();
+        GameOver();
 
     }
 
@@ -151,9 +145,6 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
-        chartPanel.SetActive(false);
-        decisionPanel.SetActive(false);
-        messagePanel.SetActive(false);
         bubbleAnimator.SetTrigger("ExpandTrigger");
         //coinSound.Play();
         Invoke("BurstBubble", 3.0f);
