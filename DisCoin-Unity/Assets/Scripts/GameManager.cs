@@ -18,13 +18,14 @@ class GameManager {
 */
 public class GameManager : MonoBehaviour
 {
-    private static GameManager _instance;
     public static GameManager instance { get; private set; }
 
     public float currentCoinValue;
     public int poolCount;
     public int holdCount;
     public DateTime startTime;
+
+    public float dayTime = 200f;
     public float playerMoney = 0;
     public Dictionary<DateTime, float> coinValueHistory = new Dictionary<DateTime, float>();
 
@@ -161,6 +162,21 @@ public class GameManager : MonoBehaviour
         this.news.Remove(news);
         ShowNews();
         decisions = new List<DecisionModel>();
+        StartCoroutine(loadOneRestNews());
+    }
+
+    private IEnumerator loadOneRestNews() {
+        if (restNews.Count == 0)
+        {
+            yield break;
+        }
+
+        yield return new WaitForSeconds(1);
+
+        NewsModel newsModel = restNews[0];
+        restNews.RemoveAt(0);
+        this.news.Add(newsModel);
+        ShowNews();
     }
 
     void calculateCurrentCoinValue(DecisionModel decision, float effectPoints)
