@@ -14,9 +14,13 @@ Featuring a glowing screen ambiance, GPU fans whirring, and frantic decision-mak
 
 ***Editor version 6.0.34f1***
 
+In Unity Editor, Fix your aspect ratio to 960x600
+
 [Project Link (needs invatation)](https://github.com/users/gongbaodd/projects/5)
 
 [FrontEnd Project](https://vercel.com/gongbaodds-projects/dis-coin)
 
 build your unity project to `/DisCoin-Unity/Build`
+
+
 
