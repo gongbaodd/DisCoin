@@ -1,7 +1,10 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 /*
 class GameManager {
@@ -19,6 +22,7 @@ public class GameManager : MonoBehaviour
     private static GameManager _instance;
     public static GameManager instance { get; private set; }
 
+    public AudioSource coinSound;
     public float currentCoinValue;
     public int poolCount;
     public int holdCount;
@@ -34,6 +38,12 @@ public class GameManager : MonoBehaviour
     [SerializeField] private List<DecisionModel> decisions = new List<DecisionModel>();
 
     public List<GameObject> decisionCards;
+
+    [SerializeField] private Animator bubbleAnimator;
+    [SerializeField] private float delayBeforeCrash = 1.0f;
+    [SerializeField] private GameObject _crashImage;
+    [SerializeField] private TMP_Text _crashMessage;
+
 
     void Awake()
     {
@@ -53,12 +63,14 @@ public class GameManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        LoadNews();
+        _crashImage.SetActive(false);
+
     }
 
     // Update is called once per frame
     void Update()
     {
+
 
     }
 
@@ -88,6 +100,8 @@ public class GameManager : MonoBehaviour
             newsFeedBubbleController.SetText(news[i].content);
             newsFeedBubbleController.SetNewsFeedId(news[i].id);
         }
+
+
     }
 
     void OnChangeCoinValue(DateTime timestamp, float value)
@@ -115,42 +129,35 @@ public class GameManager : MonoBehaviour
             {
                 decisionCards[i].SetActive(false);
                 continue;
-            } 
-            
+            }
+
             decisionCards[i].SetActive(true);
 
             DecisionModel decision = decisions[i];
             GameObject decisionCard = decisionCards[i];
             DecisionCardController decisionCardController = decisionCard.GetComponent<DecisionCardController>();
             decisionCardController.SetText(decision.content);
-            decisionCardController.SetId(decision.id);
         }
     }
 
-    public void OnDecisionCardClicked(string id)
+    public void GameOver()
     {
-        DecisionModel decision = decisions.Find(decision => decision.id == id);
+        BurstBubble();
+    }
 
-        if (decision == null)
-        {
-            Debug.LogError("Decision not found");
-            return;
-        }
+    public void BurstBubble()
+    {
+        bubbleAnimator.SetTrigger("BurstTrigger");
+        StartCoroutine(ShowMarketCrash());
 
-        ReactionModel[] reactions = decision.reactions;
-        float randomValue = UnityEngine.Random.Range(0f, 1f);
 
-        ReactionValue reactionValue = ReactionValue.noEffect;
+    }
 
-        if (randomValue < decision.approvalPercentage/100)
-        {
-            reactionValue = ReactionValue.approval;
-        }
-        else if (randomValue < decision.approvalPercentage + decision.disapprovalPercentage)
-        {
-            reactionValue = ReactionValue.disapproval;
-        }
-//TODO:
-        // ReactionModel reaction = reactions.FirstOrDefault(reaction => reaction.value == reactionValue);
+    public IEnumerator ShowMarketCrash()
+    {
+        yield return new WaitForSeconds(delayBeforeCrash);
+
+        //coinSound.Play();
+        _crashImage.SetActive(true);
     }
 }
