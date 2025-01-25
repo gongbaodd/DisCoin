@@ -27,11 +27,11 @@ public class GameManager : MonoBehaviour
 
     public Dictionary<DateTime, float> coinValueHistory = new Dictionary<DateTime, float>();
 
-    [SerializeField] private List<NewsModel> news;
+    [SerializeField] private List<NewsModel> news = new List<NewsModel>();
 
     public List<GameObject> newsFeedBubbles;
 
-    [SerializeField] private List<DecisionModel> decisions;
+    [SerializeField] private List<DecisionModel> decisions = new List<DecisionModel>();
 
     public List<GameObject> decisionCards;
 
@@ -68,6 +68,7 @@ public class GameManager : MonoBehaviour
         NewsModel[] newsModels = newsLoader.LoadNewsModels();
         news = newsModels.ToList();
         ShowNews();
+        showDecisions();
     }
 
     void ShowNews()
@@ -82,6 +83,7 @@ public class GameManager : MonoBehaviour
                 continue;
             }
 
+            newsFeedBubble.SetActive(true);
             NewsFeedBubbleController newsFeedBubbleController = newsFeedBubble.GetComponent<NewsFeedBubbleController>();
             newsFeedBubbleController.SetText(news[i].content);
             newsFeedBubbleController.SetNewsFeedId(news[i].id);
@@ -113,12 +115,42 @@ public class GameManager : MonoBehaviour
             {
                 decisionCards[i].SetActive(false);
                 continue;
-            }
+            } 
+            
+            decisionCards[i].SetActive(true);
 
             DecisionModel decision = decisions[i];
             GameObject decisionCard = decisionCards[i];
             DecisionCardController decisionCardController = decisionCard.GetComponent<DecisionCardController>();
             decisionCardController.SetText(decision.content);
+            decisionCardController.SetId(decision.id);
         }
+    }
+
+    public void OnDecisionCardClicked(string id)
+    {
+        DecisionModel decision = decisions.Find(decision => decision.id == id);
+
+        if (decision == null)
+        {
+            Debug.LogError("Decision not found");
+            return;
+        }
+
+        ReactionModel[] reactions = decision.reactions;
+        float randomValue = UnityEngine.Random.Range(0f, 1f);
+
+        ReactionValue reactionValue = ReactionValue.noEffect;
+
+        if (randomValue < decision.approvalPercentage/100)
+        {
+            reactionValue = ReactionValue.approval;
+        }
+        else if (randomValue < decision.approvalPercentage + decision.disapprovalPercentage)
+        {
+            reactionValue = ReactionValue.disapproval;
+        }
+//TODO:
+        // ReactionModel reaction = reactions.FirstOrDefault(reaction => reaction.value == reactionValue);
     }
 }

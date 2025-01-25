@@ -35,11 +35,6 @@ public class NewsFeedBubbleController : MonoBehaviour
 
     public void OnSelected()
     {
-        Debug.Log("NewsFeedBubbleController.OnSelected" + newsFeedId);
-        if (newsFeedId == null)
-        {
-            throw new System.Exception("NewsFeedId is not set");
-        }
         gameManager.SelectNews(newsFeedId);
     }
 }
