@@ -91,8 +91,7 @@ public class GameManager : MonoBehaviour
 
             newsFeedBubble.SetActive(true);
             NewsFeedBubbleController newsFeedBubbleController = newsFeedBubble.GetComponent<NewsFeedBubbleController>();
-            newsFeedBubbleController.SetText(news[i].content);
-            newsFeedBubbleController.SetNewsFeedId(news[i].id);
+            newsFeedBubbleController.SetNews(news[i]);
         }
     }
 
@@ -128,8 +127,8 @@ public class GameManager : MonoBehaviour
             DecisionModel decision = decisions[i];
             GameObject decisionCard = decisionCards[i];
             DecisionCardController decisionCardController = decisionCard.GetComponent<DecisionCardController>();
-            decisionCardController.SetText(decision.content);
-            decisionCardController.SetId(decision.id);
+            decisionCardController.SetDecision(decision);
+
         }
     }
 
@@ -152,6 +151,10 @@ public class GameManager : MonoBehaviour
 
         calculateCurrentCoinValue(decision, newsModel.effectPoints);
         news.Remove(newsModel);
+        decisions = new List<DecisionModel>();
+
+        ShowNews();
+        showDecisions();
     }
 
     void calculateCurrentCoinValue(DecisionModel decision, float effectPoints)
