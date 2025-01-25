@@ -3,8 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
-using UnityEditor.SearchService;
-using UnityEngine.SceneManagement;
 
 
 /*
@@ -75,7 +73,8 @@ public class GameManager : MonoBehaviour
         }
 
          CoinValueText.text = "$0";
-         SceneManager.LoadScene("GameOver");
+
+         //TODO: Game Over
     }
 
     // Update is called once per frame
