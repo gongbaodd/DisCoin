@@ -170,7 +170,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textMeshPro: {fileID: 3078976496108445028}
-  selectBtn: {fileID: 0}
+  selectBtn: {fileID: 6036441047513483883}
+  newsFeedId: 
+  gameManager: {fileID: 0}
 --- !u!1 &7248145954965245142
 GameObject:
   m_ObjectHideFlags: 0
@@ -427,4 +429,16 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3399638579886442605}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8060253348075803073}
+        m_TargetAssemblyTypeName: NewsFeedBubbleController, Assembly-CSharp
+        m_MethodName: OnSelected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
