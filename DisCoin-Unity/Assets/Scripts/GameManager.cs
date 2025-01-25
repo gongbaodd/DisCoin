@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour
 
     public List<GameObject> newsFeedBubbles;
 
-    private List<DecisionModel> decisions;
+    [SerializeField] private DecisionModel[] decisions;
 
     public List<GameObject> decisionCards;
 
@@ -87,14 +87,16 @@ public class GameManager : MonoBehaviour
     {
 
         NewsModel newsModel = news.Find(news => news.id == newsFeedId);
-        decisions = new List<DecisionModel>(newsModel.decisions);
 
-        for (int i = 0; i < decisions.Count; i++)
+        decisions = newsModel.decisions;
+
+        for (int i = 0; i < decisions.Length; i++)
         {
             DecisionModel decision = decisions[i];
             GameObject decisionCard = decisionCards[i];
             DecisionCardController decisionCardController = decisionCard.GetComponent<DecisionCardController>();
             decisionCardController.SetText(decision.content);
         }
+
     }
 }

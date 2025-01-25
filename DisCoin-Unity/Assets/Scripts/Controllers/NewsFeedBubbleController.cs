@@ -7,7 +7,7 @@ public class NewsFeedBubbleController : MonoBehaviour
 {
     [SerializeField] private TMP_Text textMeshPro;
     [SerializeField] private Button selectBtn;
-    private string newsFeedId;
+    [SerializeField] private string newsFeedId;
 
     public GameManager gameManager;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -30,10 +30,16 @@ public class NewsFeedBubbleController : MonoBehaviour
     public void SetNewsFeedId(string id)
     {
         newsFeedId = id;
+        Debug.Log("NewsFeedBubbleController.SetNewsFeedId" + newsFeedId);
     }
 
     public void OnSelected()
     {
+        Debug.Log("NewsFeedBubbleController.OnSelected" + newsFeedId);
+        if (newsFeedId == null)
+        {
+            throw new System.Exception("NewsFeedId is not set");
+        }
         gameManager.SelectNews(newsFeedId);
     }
 }
