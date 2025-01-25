@@ -29,6 +29,7 @@ public class NewsLoader : MonoBehaviour
         public float approvalPercentage;
         public float disapprovalPercentage;
         public ReactionModelData[] reactions;
+        public string label;
     }
 
     [System.Serializable]
@@ -85,7 +86,8 @@ public class NewsLoader : MonoBehaviour
                         decisionData.content,
                         decisionData.approvalPercentage,
                         decisionData.disapprovalPercentage,
-                        reactions
+                        reactions,
+                        (DecisionType)System.Enum.Parse(typeof(DecisionType), decisionData.label, true)
                     );
                 }
             }

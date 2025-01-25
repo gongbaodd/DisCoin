@@ -69,6 +69,7 @@ class Decision {
 	List<Reaction>
 	approvalPercentage
 	disapprovalPercentage
+	label: dismiss|dismay|distract|distort|truth
 }
 
 class Reaction {

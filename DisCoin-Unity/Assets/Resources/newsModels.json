@@ -11,6 +11,7 @@
                 "content": "Share the news.",
                 "approvalPercentage": 70.0,
                 "disapprovalPercentage": 30.0,
+                "label": "DISMISS",
                 "reactions": [
                     {
                         "id": "reaction_001",
@@ -51,6 +52,7 @@
                 "content": "Share the news.",
                 "approvalPercentage": 70.0,
                 "disapprovalPercentage": 30.0,
+                "label": "DISMAY",
                 "reactions": [
                     {
                         "id": "reaction_001",
