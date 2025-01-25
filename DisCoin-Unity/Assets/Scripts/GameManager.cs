@@ -1,7 +1,9 @@
+using UnityEngine;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using UnityEngine;
+
 
 /*
 class GameManager {
@@ -19,11 +21,15 @@ public class GameManager : MonoBehaviour
     private static GameManager _instance;
     public static GameManager instance { get; private set; }
 
+    public Animator bubbleAnimator;
+    public float delayBeforeCrash = 3.0f;
     public float currentCoinValue;
     public int poolCount;
     public int holdCount;
     public DateTime startTime;
     public float playerMoney = 0;
+
+    [SerializeField] private GameObject _crashImage;
 
     public Dictionary<DateTime, float> coinValueHistory = new Dictionary<DateTime, float>();
 
@@ -115,8 +121,8 @@ public class GameManager : MonoBehaviour
             {
                 decisionCards[i].SetActive(false);
                 continue;
-            } 
-            
+            }
+
             decisionCards[i].SetActive(true);
 
             DecisionModel decision = decisions[i];
@@ -142,7 +148,7 @@ public class GameManager : MonoBehaviour
 
         ReactionValue reactionValue = ReactionValue.noEffect;
 
-        if (randomValue < decision.approvalPercentage/100)
+        if (randomValue < decision.approvalPercentage / 100)
         {
             reactionValue = ReactionValue.approval;
         }
@@ -150,7 +156,28 @@ public class GameManager : MonoBehaviour
         {
             reactionValue = ReactionValue.disapproval;
         }
-//TODO:
+        //TODO:
         // ReactionModel reaction = reactions.FirstOrDefault(reaction => reaction.value == reactionValue);
+    }
+
+    public void GameOver()
+    {
+        bubbleAnimator.SetTrigger("ExpandTrigger");
+        //coinSound.Play();
+        Invoke("BurstBubble", 3.0f);
+    }
+
+    public void BurstBubble()
+    {
+        bubbleAnimator.SetTrigger("BurstTrigger");
+        StartCoroutine(ShowMarketCrash());
+
+
+    }
+
+    public IEnumerator ShowMarketCrash()
+    {
+        yield return new WaitForSeconds(delayBeforeCrash);
+        _crashImage.SetActive(true);
     }
 }
