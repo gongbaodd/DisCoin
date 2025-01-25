@@ -67,15 +67,14 @@ public class GameManager : MonoBehaviour
         NewsModel[] newsModels = newsLoader.LoadNewsModels();
         news = new List<NewsModel>(newsModels);  
 
-        for (int i = 0; i < news.Count; i++)
+        for(int i = 0; i < newsFeedBubbles.Count; i++)
         {
-            NewsModel newsModel = news[i];
             GameObject newsFeedBubble = newsFeedBubbles[i];
             NewsFeedBubbleController newsFeedBubbleController = newsFeedBubble.GetComponent<NewsFeedBubbleController>();
-            newsFeedBubbleController.SetText(newsModel.content);
-            newsFeedBubbleController.SetNewsFeedId(newsModel.id);
-            newsFeedBubbles.Add(newsFeedBubble);
-        }    
+            newsFeedBubbleController.SetText(news[i].content);
+            newsFeedBubbleController.SetNewsFeedId(news[i].id);
+        }
+  
     }
 
     void OnChangeCoinValue(DateTime timestamp, float value)

@@ -41,7 +41,7 @@
         ]
     },
     {
-        "id": "news_001",
+        "id": "news_002",
         "lifetime": 120.0,
         "content": "Fake news about weather.",
         "effectPoints": -10.0,
@@ -82,7 +82,7 @@
         ]
     },
     {
-        "id": "news_001",
+        "id": "news_003",
         "lifetime": 120.0,
         "content": "Fake news about weather.",
         "effectPoints": -10.0,
@@ -123,7 +123,7 @@
         ]
     },
     {
-        "id": "news_001",
+        "id": "news_004",
         "lifetime": 120.0,
         "content": "Fake news about weather.",
         "effectPoints": -10.0,
