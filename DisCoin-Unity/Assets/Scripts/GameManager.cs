@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour
 
     public List<GameObject> newsFeedBubbles;
 
-    private List<DecisionModel> decisions;
+    [SerializeField] private DecisionModel[] decisions;
 
     public List<GameObject> decisionCards;
 
@@ -67,17 +67,14 @@ public class GameManager : MonoBehaviour
         NewsModel[] newsModels = newsLoader.LoadNewsModels();
         news = new List<NewsModel>(newsModels);  
 
-        for (int i = 0; i < news.Count; i++)
+        for(int i = 0; i < newsFeedBubbles.Count; i++)
         {
-            NewsModel newsModel = news[i];
             GameObject newsFeedBubble = newsFeedBubbles[i];
             NewsFeedBubbleController newsFeedBubbleController = newsFeedBubble.GetComponent<NewsFeedBubbleController>();
-            newsFeedBubbleController.SetText(newsModel.content);
-            newsFeedBubbles.Add(newsFeedBubble);
-            SelectNews(newsModel);
+            newsFeedBubbleController.SetText(news[i].content);
+            newsFeedBubbleController.SetNewsFeedId(news[i].id);
         }
-
-    
+  
     }
 
     void OnChangeCoinValue(DateTime timestamp, float value)
@@ -86,16 +83,20 @@ public class GameManager : MonoBehaviour
         currentCoinValue = value;
     }
 
-    void SelectNews(NewsModel news)
+    public void SelectNews(string newsFeedId)
     {
-        decisions = new List<DecisionModel>(news.decisions);
 
-        for (int i = 0; i < decisions.Count; i++)
+        NewsModel newsModel = news.Find(news => news.id == newsFeedId);
+
+        decisions = newsModel.decisions;
+
+        for (int i = 0; i < decisions.Length; i++)
         {
             DecisionModel decision = decisions[i];
             GameObject decisionCard = decisionCards[i];
             DecisionCardController decisionCardController = decisionCard.GetComponent<DecisionCardController>();
             decisionCardController.SetText(decision.content);
         }
+
     }
 }
