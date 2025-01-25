@@ -73,11 +73,9 @@ public class GameManager : MonoBehaviour
             GameObject newsFeedBubble = newsFeedBubbles[i];
             NewsFeedBubbleController newsFeedBubbleController = newsFeedBubble.GetComponent<NewsFeedBubbleController>();
             newsFeedBubbleController.SetText(newsModel.content);
+            newsFeedBubbleController.SetNewsFeedId(newsModel.id);
             newsFeedBubbles.Add(newsFeedBubble);
-            SelectNews(newsModel);
-        }
-
-    
+        }    
     }
 
     void OnChangeCoinValue(DateTime timestamp, float value)
@@ -86,9 +84,11 @@ public class GameManager : MonoBehaviour
         currentCoinValue = value;
     }
 
-    void SelectNews(NewsModel news)
+    public void SelectNews(string newsFeedId)
     {
-        decisions = new List<DecisionModel>(news.decisions);
+
+        NewsModel newsModel = news.Find(news => news.id == newsFeedId);
+        decisions = new List<DecisionModel>(newsModel.decisions);
 
         for (int i = 0; i < decisions.Count; i++)
         {

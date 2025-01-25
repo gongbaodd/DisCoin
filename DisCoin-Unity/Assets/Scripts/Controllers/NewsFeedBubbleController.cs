@@ -1,9 +1,15 @@
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class NewsFeedBubbleController : MonoBehaviour
 {
-    public TMP_Text textMeshPro;
+    [SerializeField] private TMP_Text textMeshPro;
+    [SerializeField] private Button selectBtn;
+    private string newsFeedId;
+
+    public GameManager gameManager;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -19,5 +25,15 @@ public class NewsFeedBubbleController : MonoBehaviour
     public void SetText(string text)
     {
         textMeshPro.text = text;
+    }
+
+    public void SetNewsFeedId(string id)
+    {
+        newsFeedId = id;
+    }
+
+    public void OnSelected()
+    {
+        gameManager.SelectNews(newsFeedId);
     }
 }
