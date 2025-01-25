@@ -150,7 +150,15 @@ public class GameManager : MonoBehaviour
             return;
         }
 
+        calculateCurrentCoinValue(decision, newsModel.effectPoints);
+        news.Remove(newsModel);
+    }
+
+    void calculateCurrentCoinValue(DecisionModel decision, float effectPoints)
+    {
+        // TODO: show people reaction
         ReactionModel[] reactions = decision.reactions;
+        
         float randomValue = UnityEngine.Random.Range(0f, 1f);
 
         ReactionValue reactionValue = ReactionValue.noEffect;
@@ -164,6 +172,7 @@ public class GameManager : MonoBehaviour
             reactionValue = ReactionValue.disapproval;
         }
 
+
         if (reactionValue == ReactionValue.noEffect) {
             // no effect on the coin value
             return;
@@ -171,14 +180,13 @@ public class GameManager : MonoBehaviour
 
         if (reactionValue == ReactionValue.approval)
         {
-            currentCoinValue += newsModel.effectPoints;
+            currentCoinValue += effectPoints;
         }
         else if (reactionValue == ReactionValue.disapproval)
         {
-            currentCoinValue -= newsModel.effectPoints;
+            currentCoinValue -= effectPoints;
         }
-        //TODO:
-        // ReactionModel reaction = reactions.FirstOrDefault(reaction => reaction.value == reactionValue);
+
     }
 
 }

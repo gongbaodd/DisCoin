@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class NewsFeedBubbleController : MonoBehaviour
 {
     [SerializeField] private TMP_Text textMeshPro;
-    [SerializeField] private Button selectBtn;
     [SerializeField] private string newsFeedId;
 
     public GameManager gameManager;
