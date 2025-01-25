@@ -18,13 +18,15 @@ public class GameManager : MonoBehaviour
     private static GameManager _instance;
     public static GameManager instance { get; private set; }
 
-    [SerializeField] public float currentCoinValue;
-    [SerializeField] public int poolCount;
-    [SerializeField] public int holdCount;
-    [SerializeField] public DateTime startTime;
-    [SerializeField] public float playerMoney = 0;
+    public float currentCoinValue;
+    public int poolCount;
+    public int holdCount;
+    public DateTime startTime;
+    public float playerMoney = 0;
 
     public Dictionary<DateTime, float> coinValueHistory = new Dictionary<DateTime, float>();
+
+    public List<NewsModel> news = new List<NewsModel>();
 
     void Awake()
     {
