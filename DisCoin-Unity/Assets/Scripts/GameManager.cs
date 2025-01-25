@@ -28,6 +28,7 @@ public class GameManager : MonoBehaviour
     public float playerMoney = 0;
     public Dictionary<DateTime, float> coinValueHistory = new Dictionary<DateTime, float>();
 
+    [SerializeField] private List<NewsModel> restNews = new List<NewsModel>();
     [SerializeField] private List<NewsModel> news = new List<NewsModel>();
 
     public List<GameObject> newsFeedBubbles;
@@ -67,7 +68,11 @@ public class GameManager : MonoBehaviour
     {
         NewsLoader newsLoader = ScriptableObject.CreateInstance<NewsLoader>();
         NewsModel[] newsModels = newsLoader.LoadNewsModels();
-        news = newsModels.ToList();
+        List<NewsModel> newsModelList = newsModels.ToList();
+
+        news = newsModelList.GetRange(0, 3);
+        restNews = newsModelList.GetRange(3, newsModelList.Count - 3);
+        
         ShowNews();
         showDecisions();
     }
@@ -131,10 +136,17 @@ public class GameManager : MonoBehaviour
     public void OnDecisionCardClicked(string id)
     {
         DecisionModel decision = decisions.Find(decision => decision.id == id);
+        NewsModel newsModel = news.Find(news => news.id == decision.newsID);
 
         if (decision == null)
         {
             Debug.LogError("Decision not found");
+            return;
+        }
+
+        if (newsModel == null)
+        {
+            Debug.LogError("News not found");
             return;
         }
 
@@ -147,9 +159,23 @@ public class GameManager : MonoBehaviour
         {
             reactionValue = ReactionValue.approval;
         }
-        else if (randomValue < decision.approvalPercentage + decision.disapprovalPercentage)
+        else if (randomValue < (decision.approvalPercentage + decision.disapprovalPercentage)/100)
         {
             reactionValue = ReactionValue.disapproval;
+        }
+
+        if (reactionValue == ReactionValue.noEffect) {
+            // no effect on the coin value
+            return;
+        } 
+
+        if (reactionValue == ReactionValue.approval)
+        {
+            currentCoinValue += newsModel.effectPoints;
+        }
+        else if (reactionValue == ReactionValue.disapproval)
+        {
+            currentCoinValue -= newsModel.effectPoints;
         }
         //TODO:
         // ReactionModel reaction = reactions.FirstOrDefault(reaction => reaction.value == reactionValue);

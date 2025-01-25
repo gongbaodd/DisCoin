@@ -30,7 +30,6 @@ public class NewsFeedBubbleController : MonoBehaviour
     public void SetNewsFeedId(string id)
     {
         newsFeedId = id;
-        Debug.Log("NewsFeedBubbleController.SetNewsFeedId" + newsFeedId);
     }
 
     public void OnSelected()
