@@ -1,7 +1,9 @@
+using UnityEngine;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using UnityEngine;
+
 
 /*
 class GameManager {
@@ -24,7 +26,6 @@ public class GameManager : MonoBehaviour
     public int holdCount;
     public DateTime startTime;
     public float playerMoney = 0;
-
     public Dictionary<DateTime, float> coinValueHistory = new Dictionary<DateTime, float>();
 
     [SerializeField] private List<NewsModel> restNews = new List<NewsModel>();
@@ -120,8 +121,8 @@ public class GameManager : MonoBehaviour
             {
                 decisionCards[i].SetActive(false);
                 continue;
-            } 
-            
+            }
+
             decisionCards[i].SetActive(true);
 
             DecisionModel decision = decisions[i];
@@ -154,7 +155,7 @@ public class GameManager : MonoBehaviour
 
         ReactionValue reactionValue = ReactionValue.noEffect;
 
-        if (randomValue < decision.approvalPercentage/100)
+        if (randomValue < decision.approvalPercentage / 100)
         {
             reactionValue = ReactionValue.approval;
         }
@@ -176,5 +177,8 @@ public class GameManager : MonoBehaviour
         {
             currentCoinValue -= newsModel.effectPoints;
         }
+        //TODO:
+        // ReactionModel reaction = reactions.FirstOrDefault(reaction => reaction.value == reactionValue);
     }
+
 }
