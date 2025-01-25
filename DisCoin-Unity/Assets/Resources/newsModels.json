@@ -80,5 +80,87 @@
                 "value": "noEffect"
             }
         ]
+    },
+    {
+        "id": "news_001",
+        "lifetime": 120.0,
+        "content": "Fake news about weather.",
+        "effectPoints": -10.0,
+        "decisions": [
+            {
+                "id": "decision_001",
+                "newsID": "news_001",
+                "content": "Share the news.",
+                "approvalPercentage": 70.0,
+                "disapprovalPercentage": 30.0,
+                "label": "DISMAY",
+                "reactions": [
+                    {
+                        "id": "reaction_001",
+                        "content": "People believe it.",
+                        "newsID": "news_001",
+                        "decisionID": "decision_001",
+                        "value": "approval"
+                    },
+                    {
+                        "id": "reaction_002",
+                        "content": "People call it fake.",
+                        "newsID": "news_001",
+                        "decisionID": "decision_001",
+                        "value": "disapproval"
+                    }
+                ]
+            }
+        ],
+        "desertReactions": [
+            {
+                "id": "reaction_003",
+                "content": "Ignored by everyone.",
+                "newsID": "news_001",
+                "decisionID": null,
+                "value": "noEffect"
+            }
+        ]
+    },
+    {
+        "id": "news_001",
+        "lifetime": 120.0,
+        "content": "Fake news about weather.",
+        "effectPoints": -10.0,
+        "decisions": [
+            {
+                "id": "decision_001",
+                "newsID": "news_001",
+                "content": "Share the news.",
+                "approvalPercentage": 70.0,
+                "disapprovalPercentage": 30.0,
+                "label": "DISMAY",
+                "reactions": [
+                    {
+                        "id": "reaction_001",
+                        "content": "People believe it.",
+                        "newsID": "news_001",
+                        "decisionID": "decision_001",
+                        "value": "approval"
+                    },
+                    {
+                        "id": "reaction_002",
+                        "content": "People call it fake.",
+                        "newsID": "news_001",
+                        "decisionID": "decision_001",
+                        "value": "disapproval"
+                    }
+                ]
+            }
+        ],
+        "desertReactions": [
+            {
+                "id": "reaction_003",
+                "content": "Ignored by everyone.",
+                "newsID": "news_001",
+                "decisionID": null,
+                "value": "noEffect"
+            }
+        ]
     }
 ]
