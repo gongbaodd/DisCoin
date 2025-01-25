@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 
 [CreateAssetMenu(fileName = "NewsLoader", menuName = "Scriptable Objects/NewsLoader")]
-public class NewsLoader
+public class NewsLoader: ScriptableObject
 {
     [System.Serializable]
     public class NewsWrapper
