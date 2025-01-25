@@ -1,0 +1,1 @@
+cp ../DisCoin-Unity/Build/Build ./public/Build -Rvf
