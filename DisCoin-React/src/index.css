@@ -5,7 +5,7 @@
 
 .downloads li::before{
     content: '';
-    background: url(./download-minimalistic-svgrepo-com.svg) center no-repeat;
+    background: url(/download-minimalistic-svgrepo-com.svg) center no-repeat;
     margin-right: 10px;
     display: inline-block;
     width: 1em;
@@ -15,6 +15,6 @@
 }
 
 .game {
-    background: url(./Discoin-cover-image.jpg) center no-repeat;
+    background: url(/Discoin-cover-image.jpg) center no-repeat;
     background-size: 960px 600px;
 }
