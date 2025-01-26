@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Ignore_button_0: 5323362564725602322
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
