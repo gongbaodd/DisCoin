@@ -57,13 +57,13 @@ function Game() {
                 <h2 className="text-3xl font-bold text-gray-900 mb-4 text-yellow-400">Description</h2>
                 <div className="text-yellow-100/90 text-lg leading-relaxed mb-6 space-y-12">
                     <p>
-                        Step into the dark world of crypto speculation as a "crypto bro" trying to ride the wave of disinformation and manipulate the market. In DisCoin, you'll select news stories, spin lies, approve, or dismiss them to sway public opinion, keeping your memecoin value afloat.
+                        Step into the dark world of crypto speculation as a "crypto bro" manufacturing a wave of disinformation to manipulate the market. In DisCoin, you'll select news stories, amplify or dismiss them, and spin lies to sway public opinion, rocketing your memecoin to the moon.
                     </p>
                     <p>
-                        Your choices impact trust and the sanity of your user base. Will you push outrageous lies to skyrocket the price, or play it safe with smaller truths? With every click, the coin value fluctuates. Maintain the perfect bubble and rake in millions before running away, or watch it burst and face the consequences.
+                        Dismiss stories, distort the truth, create distractions, and sow dismay to sway gullible masses. With every click, the coin value fluctuates. Maintain the perfect bubble and rake in millions before pulling the rug, or watch it burst and face the consequences.
                     </p>
                     <p>
-                        Featuring a glowing screen ambiance, GPU fans whirring, and frantic decision-making, DisCoin challenges you to keep the bubble alive—or pop it. Can you master the game of deception, or will your memecoin crash to zero?
+                        Featuring glowing screen ambiance, the subtle whir of GPU fans, and frantic decision-making, DisCoin challenges you to keep the $BUBBLE alive—or pop it. Can you master the game of deception, or will your memecoin, and your reputation, crash to zero?
                     </p>
                 </div>
 
