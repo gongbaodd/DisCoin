@@ -59,17 +59,26 @@ function Game() {
 
             <div className="bg-[#221f20] rounded-lg shadow-md p-8 border border-yellow-900/30">
                 <h2 className="text-3xl font-bold text-gray-900 mb-4 text-yellow-400">Description</h2>
-                <div className="text-yellow-100/90 text-lg leading-relaxed mb-6 space-y-12">
-                    <p>
-                        Step into the dark world of crypto speculation as a "crypto bro" manufacturing a wave of disinformation to manipulate the market. In DisCoin, you'll select news stories, amplify or dismiss them, and spin lies to sway public opinion, rocketing your memecoin to the moon.
-                    </p>
-                    <p>
-                        Dismiss stories, distort the truth, create distractions, and sow dismay to sway gullible masses. With every click, the coin value fluctuates. Maintain the perfect bubble and rake in millions before pulling the rug, or watch it burst and face the consequences.
-                    </p>
-                    <p>
-                        Featuring glowing screen ambiance, the subtle whir of GPU fans, and frantic decision-making, DisCoin challenges you to keep the $BUBBLE alive—or pop it. Can you master the game of deception, or will your memecoin, and your reputation, crash to zero?
-                    </p>
+                <div className="flex flex-row space-x-12">
+                    <div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/L2cFMLaKYxo?si=VV_gldoSq1AuXJa4" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                    </div>
+
+                    <div className="text-yellow-100/90 text-lg leading-relaxed mb-6 space-y-12">
+
+                        <p>
+                            Step into the dark world of crypto speculation as a "crypto bro" manufacturing a wave of disinformation to manipulate the market. In DisCoin, you'll select news stories, amplify or dismiss them, and spin lies to sway public opinion, rocketing your memecoin to the moon.
+                        </p>
+                        <p>
+                            Dismiss stories, distort the truth, create distractions, and sow dismay to sway gullible masses. With every click, the coin value fluctuates. Maintain the perfect bubble and rake in millions before pulling the rug, or watch it burst and face the consequences.
+                        </p>
+                        <p>
+                            Featuring glowing screen ambiance, the subtle whir of GPU fans, and frantic decision-making, DisCoin challenges you to keep the $BUBBLE alive—or pop it. Can you master the game of deception, or will your memecoin, and your reputation, crash to zero?
+                        </p>
+                    </div>
+
                 </div>
+
 
             </div>
         </div>
