@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Home, Users, Film } from 'lucide-react';
 import Game from './Game';
 import Team from './Team';
+import Documentary from './Documentary';
 
 type Tab = 'home' | 'team' | 'documentary';
 
@@ -53,21 +54,7 @@ function App() {
         )}
 
         {activeTab === 'documentary' && (
-          <div className="bg-gray-800 rounded-lg shadow p-8">
-            <div className="aspect-w-16 aspect-h-9 mb-8">
-              <img
-                src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=2850&q=80"
-                alt="Documentary cover"
-                className="w-full h-[400px] object-cover rounded-lg"
-              />
-            </div>
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Story</h2>
-            <p className="text-gray-600 leading-relaxed">
-              Follow our journey as we transform the industry through innovation and dedication.
-              This documentary showcases our team's commitment to excellence and the impact
-              we've made in the lives of our customers.
-            </p>
-          </div>
+          <Documentary />
         )}
       </main>
     </div>
