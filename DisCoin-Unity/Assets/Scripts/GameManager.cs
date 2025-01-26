@@ -42,6 +42,11 @@ public class GameManager : MonoBehaviour
 
     public GameObject ChartContainer;
 
+    public AudioSource bgMusic;
+    public AudioSource gpuSound;
+
+    private string SceneName = "GameOver";
+
     void Awake()
     {
         // Check if an instance of GameManager already exists
@@ -72,8 +77,9 @@ public class GameManager : MonoBehaviour
             CoinValueText.text = "$" + currentCoinValue.ToString();
             Debug.Log("Current Coin Value: " + currentCoinValue);
             ChartContainer.GetComponent<ChartController>().UpdateData(coinValueHistory.ToArray());
-            
-            if (currentCoinValue > 50) {
+
+            if (currentCoinValue > 50)
+            {
                 SceneManager.LoadScene("Win");
             }
 
@@ -226,6 +232,13 @@ public class GameManager : MonoBehaviour
             currentCoinValue -= effectPoints;
         }
 
+    }
+
+    public void SkiptoEnding()
+    {
+        bgMusic.Stop();
+        gpuSound.Stop();
+        SceneManager.LoadScene(SceneName);
     }
 
     public void QuitGame()
