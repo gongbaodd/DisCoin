@@ -2826,7 +2826,7 @@ MonoBehaviour:
     delayBeforeNext: 1
   - messageText: $BUBBLE
     isPlayerReply: 0
-    delayBeforeNext: 5
+    delayBeforeNext: 6
   initialDelay: 1
 --- !u!4 &1162463147
 Transform:
