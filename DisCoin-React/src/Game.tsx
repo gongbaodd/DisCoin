@@ -5,6 +5,7 @@ function Game() {
         unityProvider,
         requestFullscreen,
         takeScreenshot,
+        isLoaded,
     } = useUnityContext({
         loaderUrl: "Build/Build.loader.js",
         dataUrl: "Build/Build.data.br",
@@ -16,10 +17,13 @@ function Game() {
     });
 
     function handleFullScreenClick() {
+        if (!isLoaded) return;
         requestFullscreen(true);
     }
 
     function handleScreenShotClick() {
+        if (!isLoaded) return;
+
         const dataUrl = takeScreenshot("image/jpg", 1.0);
 
         const a: HTMLAnchorElement = document.createElement("a");
