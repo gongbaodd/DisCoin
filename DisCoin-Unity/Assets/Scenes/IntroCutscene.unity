@@ -1431,7 +1431,6 @@ RectTransform:
   m_Children:
   - {fileID: 125819258}
   - {fileID: 1044895517}
-  - {fileID: 1277692950}
   - {fileID: 213510042}
   - {fileID: 1893846094}
   - {fileID: 1749767371}
