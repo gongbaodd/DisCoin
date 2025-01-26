@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Home, Users, Film } from 'lucide-react';
 import Game from './Game';
 import Team from './Team';
