@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
+using Unity.VisualScripting;
 
 
 /*
@@ -60,27 +61,19 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         LoadNews();
-        StartCoroutine(DayCylce());
+        UpdateCoinDisplay();
     }
 
-    public IEnumerator DayCylce() {
-        while (currentCoinValue > 0) {
+    public void UpdateCoinDisplay() {
+        if (currentCoinValue > 0) {
             coinValueHistory.Add(currentCoinValue);
             CoinValueText.text = "$" + currentCoinValue.ToString();
             Debug.Log("Current Coin Value: " + currentCoinValue);
             ChartContainer.GetComponent<ChartController>().UpdateData(coinValueHistory.ToArray());
-            yield return new WaitForSeconds(dayTime);
+        } else {
+            CoinValueText.text = "$0";
+            // TODO: GAME OVER
         }
-
-         CoinValueText.text = "$0";
-
-         //TODO: Game Over
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 
     void LoadNews()
@@ -221,6 +214,8 @@ public class GameManager : MonoBehaviour
         {
             currentCoinValue -= effectPoints;
         }
+
+        UpdateCoinDisplay();
 
     }
 
