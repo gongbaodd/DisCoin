@@ -334,6 +334,82 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &190347018
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 190347019}
+  - component: {fileID: 190347021}
+  - component: {fileID: 190347020}
+  m_Layer: 5
+  m_Name: LoadingScreen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &190347019
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190347018}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2097290479}
+  m_Father: {fileID: 1599685403}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &190347020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190347018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &190347021
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190347018}
+  m_CullTransparentMesh: 1
 --- !u!1 &204148021
 GameObject:
   m_ObjectHideFlags: 0
@@ -632,6 +708,55 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &637203745
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 637203747}
+  - component: {fileID: 637203746}
+  m_Layer: 0
+  m_Name: SceneTransition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &637203746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637203745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23ad8594e0d9b0d4b93492f4e803697b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transitionScreen: {fileID: 190347018}
+  transitionText: {fileID: 2097290480}
+  fadeDuration: 2
+  message: SIX MONTHS LATER...
+  mainSceneName: MainScene
+--- !u!4 &637203747
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637203745}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 291.0215, y: 164.30252, z: 0.30915037}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &662172005
 GameObject:
   m_ObjectHideFlags: 0
@@ -1312,6 +1437,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1162463147}
   - component: {fileID: 1162463146}
+  - component: {fileID: 1162463148}
   m_Layer: 0
   m_Name: CutSceneManager
   m_TagString: Untagged
@@ -1331,112 +1457,110 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49ee18b77e53e2b4486d78ce06e4cfe0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneTransition: {fileID: 637203746}
   messageBubblePrefab: {fileID: 3021024751864704289, guid: 80c91ae2022508b41b423e8ca6fb6db3, type: 3}
   contentContainer: {fileID: 1146404668}
   messages:
   - messageText: Hey bro u got a min?
     isPlayerReply: 0
-    delayBeforeNext: 2
+    delayBeforeNext: 3
   - messageText: 'Sure wts up '
     isPlayerReply: 1
-    delayBeforeNext: 2
+    delayBeforeNext: 3
   - messageText: "Got sth you shouldn\u2019t refuse. This is your make or break."
     isPlayerReply: 0
-    delayBeforeNext: 2
+    delayBeforeNext: 3
   - messageText: "I\u2019m listening\u2026 tell me more"
     isPlayerReply: 1
-    delayBeforeNext: 2
+    delayBeforeNext: 3
   - messageText: Wt you know about crypto?
     isPlayerReply: 0
-    delayBeforeNext: 2
+    delayBeforeNext: 3
   - messageText: "Lost enuf to scams and rugpulls\u2026 you got sth in the works?"
     isPlayerReply: 1
-    delayBeforeNext: 2
+    delayBeforeNext: 3
   - messageText: A new token. Everything is ready, the smart contract, the white
       paper, the website.
     isPlayerReply: 0
-    delayBeforeNext: 2
+    delayBeforeNext: 3
   - messageText: Just need sb to run the socials. Andddd you hv 1.2mil followers
       on tiktok right?
     isPlayerReply: 0
-    delayBeforeNext: 2
+    delayBeforeNext: 3
   - messageText: "Ya know, \u201Cangel investors\u201D always get the biggest cut
       in a start-up and here you gon\u2019 be that angel for our lil\u2019 start-up."
     isPlayerReply: 0
-    delayBeforeNext: 2
+    delayBeforeNext: 3
   - messageText: There a catch?
     isPlayerReply: 1
-    delayBeforeNext: 2
+    delayBeforeNext: 3
   - messageText: No catch, just work.
     isPlayerReply: 0
-    delayBeforeNext: 2
+    delayBeforeNext: 3
   - messageText: You run the socials, I work the back end.
     isPlayerReply: 0
-    delayBeforeNext: 2
-  - messageText: You run the socials, I work the back end.
-    isPlayerReply: 0
-    delayBeforeNext: 2
+    delayBeforeNext: 3
   - messageText: We both retire in 12 months.
     isPlayerReply: 0
-    delayBeforeNext: 2
+    delayBeforeNext: 3
   - messageText: "So I just\u2026 what? Post about it and get people to buy it?"
     isPlayerReply: 1
-    delayBeforeNext: 2
+    delayBeforeNext: 3
   - messageText: The word is public relations.
     isPlayerReply: 0
-    delayBeforeNext: 2
+    delayBeforeNext: 3
   - messageText: People are greedy but also fearful, we want them to be more greedy
       and less fearful.
     isPlayerReply: 0
-    delayBeforeNext: 2
+    delayBeforeNext: 3
   - messageText: The world is a scary place, people see some news and start fudding
       out of a sudden.
     isPlayerReply: 0
-    delayBeforeNext: 2
+    delayBeforeNext: 3
   - messageText: What u mean, fud?
     isPlayerReply: 1
-    delayBeforeNext: 2
+    delayBeforeNext: 3
   - messageText: Fear, uncertainty and doubt
     isPlayerReply: 0
-    delayBeforeNext: 2
+    delayBeforeNext: 3
   - messageText: "Got u. So basically shilling the token, but this time I\u2019ll
       come out on top."
     isPlayerReply: 1
-    delayBeforeNext: 2
+    delayBeforeNext: 3
   - messageText: "What\u2019s the exit plan?"
     isPlayerReply: 1
-    delayBeforeNext: 2
+    delayBeforeNext: 3
   - messageText: Told u, we retire in 12 mths. $100 mil each.
     isPlayerReply: 0
-    delayBeforeNext: 2
+    delayBeforeNext: 3
   - messageText: Real world money ofc. Lambos, mansions, wtever u dream of
     isPlayerReply: 0
-    delayBeforeNext: 2
+    delayBeforeNext: 3
   - messageText: If u are as good as I thought, that is.
     isPlayerReply: 0
-    delayBeforeNext: 2
+    delayBeforeNext: 3
   - messageText: I got it man
     isPlayerReply: 1
-    delayBeforeNext: 2
+    delayBeforeNext: 3
   - messageText: How do I get in?
     isPlayerReply: 1
-    delayBeforeNext: 2
+    delayBeforeNext: 3
   - messageText: Fixed supply of 20mil tokens. $0.10 each at launch. U get to buy
       2mil of them at $0.01.
     isPlayerReply: 0
-    delayBeforeNext: 2
+    delayBeforeNext: 3
   - messageText: alrighty im in
     isPlayerReply: 1
-    delayBeforeNext: 2
+    delayBeforeNext: 3
   - messageText: Wait wts it called
     isPlayerReply: 1
-    delayBeforeNext: 2
+    delayBeforeNext: 3
   - messageText: The coin
     isPlayerReply: 1
     delayBeforeNext: 2
   - messageText: $BUBBLE
     isPlayerReply: 0
-    delayBeforeNext: 3
+    delayBeforeNext: 7
   initialDelay: 1
 --- !u!4 &1162463147
 Transform:
@@ -1453,6 +1577,103 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1162463148
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162463145}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 47a7ac0a6ec2b3e42a5a49c655d8495e, type: 3}
+  m_Resource: {fileID: 8300000, guid: 47a7ac0a6ec2b3e42a5a49c655d8495e, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.819
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1277692949
 GameObject:
   m_ObjectHideFlags: 0
@@ -1920,6 +2141,7 @@ RectTransform:
   m_Children:
   - {fileID: 975648403}
   - {fileID: 1016836910}
+  - {fileID: 190347019}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2153,6 +2375,142 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1839349860}
   m_CullTransparentMesh: 1
+--- !u!1 &2097290478
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2097290479}
+  - component: {fileID: 2097290481}
+  - component: {fileID: 2097290480}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2097290479
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097290478}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 190347019}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2097290480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097290478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &2097290481
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097290478}
+  m_CullTransparentMesh: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -2161,3 +2519,4 @@ SceneRoots:
   - {fileID: 1599685403}
   - {fileID: 23694942}
   - {fileID: 1162463147}
+  - {fileID: 637203747}
