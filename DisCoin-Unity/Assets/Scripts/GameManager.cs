@@ -216,15 +216,22 @@ public class GameManager : MonoBehaviour
         if (reactionValue == ReactionValue.noEffect)
         {
             // no effect on the coin value
+            Debug.Log("No effect on the coin value");
         }
         else if (reactionValue == ReactionValue.approval)
         {
+            Debug.Log("Addition on the coin value");
+
             currentCoinValue += effectPoints;
         }
         else if (reactionValue == ReactionValue.disapproval)
         {
+            Debug.Log("Deletion on the coin value");
+
             currentCoinValue -= effectPoints;
         }
+
+        UpdateCoinDisplay();
 
     }
 
