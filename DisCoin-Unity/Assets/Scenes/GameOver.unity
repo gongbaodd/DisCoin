@@ -606,7 +606,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3523337805504169844, guid: 7ef841f88f99af94b9d1bd0d13e9618c, type: 3}
       propertyPath: m_text
-      value: Alas.The $Bubble has burnt!                                       Popped.
+      value: Alas.The $Bubble has burst!                                       Popped.
         Like your hopes and dreams                        Evaporated.Along with those$20,000
         you had invested
       objectReference: {fileID: 0}
