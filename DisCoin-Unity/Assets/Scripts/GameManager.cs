@@ -1,11 +1,9 @@
 using UnityEngine;
-using UnityEngine.UI;
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-
 using TMPro;
+
 
 /*
 class GameManager {
@@ -13,25 +11,26 @@ class GameManager {
 	poolCount
 	holdCount
 	Dictionary<Timestamp, value>
-	startTime
 	List<news>
 	playerMoney
 }
 */
 public class GameManager : MonoBehaviour
 {
-    private static GameManager _instance;
     public static GameManager instance { get; private set; }
 
-    public AudioSource coinSound;
-    public float currentCoinValue;
-    public int poolCount;
-    public int holdCount;
-    public DateTime startTime;
+    public float currentCoinValue = 9.0f;
+
+    [SerializeField] private TMP_Text CoinValueText;
+
+    public int poolCount = 100;
+    public int holdCount = 80;
+
+    public float dayTime = 200f;
     public float playerMoney = 0;
+    public List<float> coinValueHistory = new List<float>();
 
-    public Dictionary<DateTime, float> coinValueHistory = new Dictionary<DateTime, float>();
-
+    [SerializeField] private List<NewsModel> restNews = new List<NewsModel>();
     [SerializeField] private List<NewsModel> news = new List<NewsModel>();
 
     public List<GameObject> newsFeedBubbles;
@@ -39,11 +38,9 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private List<DecisionModel> decisions = new List<DecisionModel>();
 
-    [SerializeField] private Animator bubbleAnimator;
-    [SerializeField] private float delayBeforeCrash = 4.0f;
-    [SerializeField] private GameObject _crashImage;
-    [SerializeField] private TMP_Text _crashMessage;
+    public List<GameObject> decisionCards;
 
+    public GameObject ChartContainer;
 
     void Awake()
     {
@@ -63,9 +60,24 @@ public class GameManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        _crashImage.SetActive(false);
+        LoadNews();
+        StartCoroutine(DayCylce());
+    }
 
+    public IEnumerator DayCylce()
+    {
+        while (currentCoinValue > 0)
+        {
+            coinValueHistory.Add(currentCoinValue);
+            CoinValueText.text = "$" + currentCoinValue.ToString();
+            Debug.Log("Current Coin Value: " + currentCoinValue);
+            ChartContainer.GetComponent<ChartController>().UpdateData(coinValueHistory.ToArray());
+            yield return new WaitForSeconds(dayTime);
+        }
 
+        CoinValueText.text = "$0";
+
+        //TODO: Game Over
     }
 
     // Update is called once per frame
@@ -81,9 +93,13 @@ public class GameManager : MonoBehaviour
     {
         NewsLoader newsLoader = ScriptableObject.CreateInstance<NewsLoader>();
         NewsModel[] newsModels = newsLoader.LoadNewsModels();
-        news = newsModels.ToList();
+        List<NewsModel> newsModelList = newsModels.ToList();
+
+        news = newsModelList.GetRange(0, 3);
+        restNews = newsModelList.GetRange(3, newsModelList.Count - 3);
+
         ShowNews();
-        showDecisions();
+        ShowDecisions();
     }
 
     void ShowNews()
@@ -100,17 +116,8 @@ public class GameManager : MonoBehaviour
 
             newsFeedBubble.SetActive(true);
             NewsFeedBubbleController newsFeedBubbleController = newsFeedBubble.GetComponent<NewsFeedBubbleController>();
-            newsFeedBubbleController.SetText(news[i].content);
-            newsFeedBubbleController.SetNewsFeedId(news[i].id);
+            newsFeedBubbleController.SetNews(news[i]);
         }
-
-
-    }
-
-    void OnChangeCoinValue(DateTime timestamp, float value)
-    {
-        coinValueHistory.Add(timestamp, value);
-        currentCoinValue = value;
     }
 
     public void SelectNews(string newsFeedId)
@@ -120,11 +127,11 @@ public class GameManager : MonoBehaviour
 
         decisions = newsModel.decisions.ToList();
 
-        showDecisions();
+        ShowDecisions();
 
     }
 
-    void showDecisions()
+    void ShowDecisions()
     {
         for (int i = 0; i < decisionCards.Count; i++)
         {
@@ -139,29 +146,90 @@ public class GameManager : MonoBehaviour
             DecisionModel decision = decisions[i];
             GameObject decisionCard = decisionCards[i];
             DecisionCardController decisionCardController = decisionCard.GetComponent<DecisionCardController>();
-            decisionCardController.SetText(decision.content);
+            decisionCardController.SetDecision(decision);
+
         }
     }
 
     public void GameOver()
     {
-        bubbleAnimator.SetTrigger("ExpandTrigger");
-        //coinSound.Play();
-        Invoke("BurstBubble", 3.0f);
+        DecisionModel decision = decisions.Find(decision => decision.id == id);
+        NewsModel newsModel = news.Find(news => news.id == decision.newsID);
+
+        if (decision == null)
+        {
+            Debug.LogError("Decision not found");
+            return;
+        }
+
+        if (newsModel == null)
+        {
+            Debug.LogError("News not found");
+            return;
+        }
+
+        calculateCurrentCoinValue(decision, newsModel.effectPoints);
+        RemoveNews(newsModel);
+
+        ShowNews();
+        ShowDecisions();
     }
 
-    public void BurstBubble()
+    public void RemoveNews(NewsModel news)
     {
-        bubbleAnimator.SetTrigger("BurstTrigger");
-        StartCoroutine(ShowMarketCrash());
-
-
+        this.news.Remove(news);
+        ShowNews();
+        decisions = new List<DecisionModel>();
+        StartCoroutine(loadOneRestNews());
     }
 
-    public IEnumerator ShowMarketCrash()
+    private IEnumerator loadOneRestNews()
     {
-        yield return new WaitForSeconds(delayBeforeCrash);
-        _crashImage.SetActive(true);
+        if (restNews.Count == 0)
+        {
+            yield break;
+        }
+
+        yield return new WaitForSeconds(1);
+
+        NewsModel newsModel = restNews[0];
+        restNews.RemoveAt(0);
+        this.news.Add(newsModel);
+        ShowNews();
+    }
+
+    void calculateCurrentCoinValue(DecisionModel decision, float effectPoints)
+    {
+        // TODO: show people reaction
+        ReactionModel[] reactions = decision.reactions;
+
+        float randomValue = UnityEngine.Random.Range(0f, 1f);
+
+        ReactionValue reactionValue = ReactionValue.noEffect;
+
+        if (randomValue < decision.approvalPercentage / 100)
+        {
+            reactionValue = ReactionValue.approval;
+        }
+        else if (randomValue < (decision.approvalPercentage + decision.disapprovalPercentage) / 100)
+        {
+            reactionValue = ReactionValue.disapproval;
+        }
+
+
+        if (reactionValue == ReactionValue.noEffect)
+        {
+            // no effect on the coin value
+        }
+        else if (reactionValue == ReactionValue.approval)
+        {
+            currentCoinValue += effectPoints;
+        }
+        else if (reactionValue == ReactionValue.disapproval)
+        {
+            currentCoinValue -= effectPoints;
+        }
+
     }
 
 }
