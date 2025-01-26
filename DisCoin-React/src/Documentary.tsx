@@ -1,3 +1,4 @@
+import Backlog from "./Backlog"
 import Prototype from "./Prototype"
 
 export default function Documentary() {
@@ -13,5 +14,6 @@ export default function Documentary() {
         <h2 className="text-3xl font-bold text-gray-900 mb-4 text-yellow-400">Our Story</h2>
     </div>
     <Prototype />
+    <Backlog />
     </div>
 }

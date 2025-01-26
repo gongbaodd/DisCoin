@@ -5,8 +5,6 @@ export default function Prototype() {
             <h2 className="text-3xl font-bold text-yellow-400">Game Prototypes</h2>
         </div>
 
-        
-
         <p className="text-yellow-100/90 text-lg leading-relaxed mb-6">
             Brainstormins
         </p>
