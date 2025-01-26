@@ -4,7 +4,19 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 35bd0a720884b444ea9f18c3e60007b4
+  - enabled: 1
+    path: Assets/Scenes/IntroCutscene.unity
+    guid: 972a6a51f7323344c9b4e04aae2ab1df
+  - enabled: 1
+    path: Assets/Scenes/MainScene.unity
+    guid: 323d9b1503882ae49a81d6d8923b576c
+  - enabled: 1
+    path: Assets/Scenes/Win.unity
+    guid: 58e08ee7082827546b2bf280c30c7d52
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
