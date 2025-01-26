@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 03a9f380777036f4798d60f6996aa003
+guid: 1e2e37c56e14e6e47b1b59cc3dd55328
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 932536494713143786
-    second: District_buttom 1_0
+      213: -3726320388277734524
+    second: Endingimage_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: District_buttom 1_0
+      name: Endingimage_0
       rect:
         serializedVersion: 2
-        x: 31
-        y: 31
-        width: 192
-        height: 68
+        x: 15
+        y: 11
+        width: 241
+        height: 224
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ae1077b400901fc00800000000000000
-      internalID: 932536494713143786
+      spriteID: 483f8698953794cc0800000000000000
+      internalID: -3726320388277734524
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      District_buttom 1_0: 932536494713143786
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

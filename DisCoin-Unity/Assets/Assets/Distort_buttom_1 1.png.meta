@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Distort_buttom_1 1_0: 3394459755614248726
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
