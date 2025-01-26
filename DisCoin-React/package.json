@@ -6,6 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "sh scripts/cp.sh && tsc -b && vite build",
+    "build:win": "npm run copy-win && vite build",
+    "build:exe": "tauri build",
+    "copy-win": "powershell Copy-Item -Path ../DisCoin-Unity/Build/Build -Destination ./public/Build -Recurse -Force -Verbose",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -17,6 +20,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.9.1",
+    "@tauri-apps/cli": "^2.2.7",
     "@types/react": "^18.3.5",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",

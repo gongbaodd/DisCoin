@@ -1424,7 +1424,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 975648402}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1434,10 +1434,11 @@ RectTransform:
   - {fileID: 213510042}
   - {fileID: 1893846094}
   - {fileID: 1749767371}
-  m_Father: {fileID: 1599685403}
+  - {fileID: 1016836910}
+  m_Father: {fileID: 1251673741}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.065, y: 0.212}
+  m_AnchorMax: {x: 0.94, y: 0.92}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1513,10 +1514,10 @@ RectTransform:
   - {fileID: 22445935}
   - {fileID: 1294780489}
   - {fileID: 1692700677}
-  m_Father: {fileID: 1599685403}
+  m_Father: {fileID: 975648403}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.2, y: 0.05}
-  m_AnchorMax: {x: 0.8, y: 0.95}
+  m_AnchorMin: {x: 0.2, y: 0.1}
+  m_AnchorMax: {x: 0.77, y: 0.98}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1953,104 +1954,104 @@ MonoBehaviour:
   messages:
   - messageText: Hey bro u got a min?
     isPlayerReply: 0
-    delayBeforeNext: 3
+    delayBeforeNext: 1
   - messageText: 'Sure wts up '
     isPlayerReply: 1
-    delayBeforeNext: 3
+    delayBeforeNext: 1
   - messageText: "Got sth you shouldn\u2019t refuse. This is your make or break."
     isPlayerReply: 0
-    delayBeforeNext: 3
+    delayBeforeNext: 1
   - messageText: "I\u2019m listening\u2026 tell me more"
     isPlayerReply: 1
-    delayBeforeNext: 3
+    delayBeforeNext: 1
   - messageText: Wt you know about crypto?
     isPlayerReply: 0
-    delayBeforeNext: 3
+    delayBeforeNext: 1
   - messageText: "Lost enuf to scams and rugpulls\u2026 you got sth in the works?"
     isPlayerReply: 1
-    delayBeforeNext: 3
+    delayBeforeNext: 1
   - messageText: A new token. Everything is ready, the smart contract, the white
       paper, the website.
     isPlayerReply: 0
-    delayBeforeNext: 3
+    delayBeforeNext: 1
   - messageText: Just need sb to run the socials. Andddd you hv 1.2mil followers
       on tiktok right?
     isPlayerReply: 0
-    delayBeforeNext: 3
+    delayBeforeNext: 1
   - messageText: "Ya know, \u201Cangel investors\u201D always get the biggest cut
       in a start-up and here you gon\u2019 be that angel for our lil\u2019 start-up."
     isPlayerReply: 0
-    delayBeforeNext: 3
+    delayBeforeNext: 1
   - messageText: There a catch?
     isPlayerReply: 1
-    delayBeforeNext: 3
+    delayBeforeNext: 1
   - messageText: No catch, just work.
     isPlayerReply: 0
-    delayBeforeNext: 3
+    delayBeforeNext: 1
   - messageText: You run the socials, I work the back end.
     isPlayerReply: 0
-    delayBeforeNext: 3
+    delayBeforeNext: 1
   - messageText: We both retire in 12 months.
     isPlayerReply: 0
-    delayBeforeNext: 3
+    delayBeforeNext: 1
   - messageText: "So I just\u2026 what? Post about it and get people to buy it?"
     isPlayerReply: 1
-    delayBeforeNext: 3
+    delayBeforeNext: 1
   - messageText: The word is public relations.
     isPlayerReply: 0
-    delayBeforeNext: 3
+    delayBeforeNext: 1
   - messageText: People are greedy but also fearful, we want them to be more greedy
       and less fearful.
     isPlayerReply: 0
-    delayBeforeNext: 3
+    delayBeforeNext: 1
   - messageText: The world is a scary place, people see some news and start fudding
       out of a sudden.
     isPlayerReply: 0
-    delayBeforeNext: 3
+    delayBeforeNext: 1
   - messageText: What u mean, fud?
     isPlayerReply: 1
-    delayBeforeNext: 3
+    delayBeforeNext: 1
   - messageText: Fear, uncertainty and doubt
     isPlayerReply: 0
-    delayBeforeNext: 3
+    delayBeforeNext: 1
   - messageText: "Got u. So basically shilling the token, but this time I\u2019ll
       come out on top."
     isPlayerReply: 1
-    delayBeforeNext: 3
+    delayBeforeNext: 1
   - messageText: "What\u2019s the exit plan?"
     isPlayerReply: 1
-    delayBeforeNext: 3
+    delayBeforeNext: 1
   - messageText: Told u, we retire in 12 mths. $100 mil each.
     isPlayerReply: 0
-    delayBeforeNext: 3
+    delayBeforeNext: 1
   - messageText: Real world money ofc. Lambos, mansions, wtever u dream of
     isPlayerReply: 0
-    delayBeforeNext: 3
+    delayBeforeNext: 1
   - messageText: If u are as good as I thought, that is.
     isPlayerReply: 0
-    delayBeforeNext: 3
+    delayBeforeNext: 1
   - messageText: I got it man
     isPlayerReply: 1
-    delayBeforeNext: 3
+    delayBeforeNext: 1
   - messageText: How do I get in?
     isPlayerReply: 1
-    delayBeforeNext: 3
+    delayBeforeNext: 1
   - messageText: Fixed supply of 20mil tokens. $0.10 each at launch. U get to buy
       2mil of them at $0.01.
     isPlayerReply: 0
-    delayBeforeNext: 3
+    delayBeforeNext: 1
   - messageText: alrighty im in
     isPlayerReply: 1
-    delayBeforeNext: 3
+    delayBeforeNext: 1
   - messageText: Wait wts it called
     isPlayerReply: 1
-    delayBeforeNext: 3
+    delayBeforeNext: 1
   - messageText: The coin
     isPlayerReply: 1
-    delayBeforeNext: 2
+    delayBeforeNext: 1
   - messageText: $BUBBLE
     isPlayerReply: 0
-    delayBeforeNext: 7
+    delayBeforeNext: 5
   initialDelay: 1
 --- !u!4 &1162463147
 Transform:
@@ -2238,6 +2239,82 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1192857586}
+  m_CullTransparentMesh: 1
+--- !u!1 &1251673740
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1251673741}
+  - component: {fileID: 1251673743}
+  - component: {fileID: 1251673742}
+  m_Layer: 5
+  m_Name: Computer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1251673741
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1251673740}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 975648403}
+  m_Father: {fileID: 1599685403}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1251673742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1251673740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 5910127319133756319, guid: 5227597eb9195ad46a73bf7d5ccec620, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1251673743
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1251673740}
   m_CullTransparentMesh: 1
 --- !u!1 &1277692949
 GameObject:
@@ -2842,8 +2919,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 975648403}
-  - {fileID: 1016836910}
+  - {fileID: 1251673741}
   - {fileID: 190347019}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2936,8 +3012,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 13
-  m_fontSizeBase: 13
+  m_fontSize: 11
+  m_fontSizeBase: 11
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
