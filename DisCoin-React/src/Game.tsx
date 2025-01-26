@@ -32,8 +32,7 @@ function Game() {
     return (
         <div className="space-y-12">
             <div className="rounded-lg shadow-xl overflow-hidden border border-yellow-900/30">
-
-                <div className="flex flex-col items-center justify-center space-y-4 p-20 bg-[#221f20]">
+                <div className="flex flex-col items-center justify-center space-y-4 p-20 bg-[#221f20] game">
                     <Unity unityProvider={unityProvider} style={{ width: 960, height: 600 }} />
                 </div>
 

@@ -22,7 +22,7 @@ export default function Team() {
                     {
                         name: 'GeorgeABoyle',
                         role: 'Designer & Narrator',
-                        image: 'https://globalgamejam.org/themes/custom/ggj_v4/assets/img/icon_person-circle.svg',
+                        image: 'https://globalgamejam.org/sites/default/files/styles/sidebar_full/public/pictures/2025-01/Stabbuwu%20profile.png?itok=nEpi8sz0',
                     },
                     {
                         name: 'tonykoc',

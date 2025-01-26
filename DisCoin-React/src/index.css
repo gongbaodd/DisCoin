@@ -13,3 +13,8 @@
     height: 1em;
     filter: invert(1);
 }
+
+.game {
+    background: url(./Discoin-cover-image.jpg) center no-repeat;
+    background-size: 960px 600px;
+}
