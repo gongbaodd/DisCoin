@@ -66,8 +66,10 @@ public class GameManager : MonoBehaviour
         UpdateCoinDisplay();
     }
 
-    public void UpdateCoinDisplay() {
-        if (currentCoinValue > 0) {
+    public void UpdateCoinDisplay()
+    {
+        if (currentCoinValue > 0)
+        {
             coinValueHistory.Add(currentCoinValue);
             CoinValueText.text = "$" + currentCoinValue.ToString();
             Debug.Log("Current Coin Value: " + currentCoinValue);
@@ -77,7 +79,9 @@ public class GameManager : MonoBehaviour
                 SceneManager.LoadScene("Win");
             }
 
-        } else {
+        }
+        else
+        {
             CoinValueText.text = "$0";
             SceneManager.LoadScene("GameOver");
         }
@@ -91,7 +95,7 @@ public class GameManager : MonoBehaviour
 
         news = newsModelList.GetRange(0, 3);
         restNews = newsModelList.GetRange(3, newsModelList.Count - 3);
-        
+
         ShowNews();
         ShowDecisions();
     }
@@ -177,7 +181,8 @@ public class GameManager : MonoBehaviour
         StartCoroutine(loadOneRestNews());
     }
 
-    private IEnumerator loadOneRestNews() {
+    private IEnumerator loadOneRestNews()
+    {
         if (restNews.Count == 0)
         {
             yield break;
@@ -195,7 +200,7 @@ public class GameManager : MonoBehaviour
     {
         // TODO: show people reaction
         ReactionModel[] reactions = decision.reactions;
-        
+
         float randomValue = UnityEngine.Random.Range(0f, 1f);
 
         ReactionValue reactionValue = ReactionValue.noEffect;
@@ -204,15 +209,16 @@ public class GameManager : MonoBehaviour
         {
             reactionValue = ReactionValue.approval;
         }
-        else if (randomValue < (decision.approvalPercentage + decision.disapprovalPercentage)/100)
+        else if (randomValue < (decision.approvalPercentage + decision.disapprovalPercentage) / 100)
         {
             reactionValue = ReactionValue.disapproval;
         }
 
 
-        if (reactionValue == ReactionValue.noEffect) {
+        if (reactionValue == ReactionValue.noEffect)
+        {
             // no effect on the coin value
-        } 
+        }
         else if (reactionValue == ReactionValue.approval)
         {
             currentCoinValue += effectPoints;
@@ -222,8 +228,11 @@ public class GameManager : MonoBehaviour
             currentCoinValue -= effectPoints;
         }
 
-        UpdateCoinDisplay();
+    }
 
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 
 }

@@ -66,6 +66,11 @@ public class GameStartController : MonoBehaviour
     {
         sceneTransition.TransitionScene();
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }
 
 [System.Serializable]
