@@ -4,11 +4,12 @@
 
 [WebSite](https://dis-coin.vercel.app/)
 
-Step into the dark world of crypto speculation as a "crypto bro" trying to ride the wave of disinformation and manipulate the market. In DisCoin, you'll select news stories, spin lies, approve, or dismiss them to sway public opinion, keeping your memecoin value afloat.
+Step into the dark world of crypto speculation as a "crypto bro" manufacturing a wave of disinformation to manipulate the market. In DisCoin, you'll select news stories, amplify or dismiss them, and spin lies to sway public opinion, rocketing your memecoin to the moon.
 
-Your choices impact trust and the sanity of your user base. Will you push outrageous lies to skyrocket the price, or play it safe with smaller truths? With every click, the coin value fluctuates. Maintain the perfect bubble and rake in millions before running away, or watch it burst and face the consequences.
+Dismiss stories, distort the truth, create distractions, and sow dismay to sway gullible masses. With every click, the coin value fluctuates. Maintain the perfect bubble and rake in millions before pulling the rug, or watch it burst and face the consequences.
 
-Featuring a glowing screen ambiance, GPU fans whirring, and frantic decision-making, DisCoin challenges you to keep the bubble alive—or pop it. Can you master the game of deception, or will your memecoin crash to zero?
+Featuring glowing screen ambiance, the subtle whir of GPU fans, and frantic decision-making, DisCoin challenges you to keep the $BUBBLE alive—or pop it. Can you master the game of deception, or will your memecoin, and your reputation, crash to zero?
+
 
 ## Read before you code
 
@@ -16,26 +17,21 @@ Featuring a glowing screen ambiance, GPU fans whirring, and frantic decision-mak
 
 In Unity Editor, Fix your aspect ratio to 960x600
 
-[Project Link (needs invatation)](https://github.com/users/gongbaodd/projects/5)
+[Project Link (needs invitation)](https://github.com/users/gongbaodd/projects/5)
 
 [FrontEnd Project](https://vercel.com/gongbaodds-projects/dis-coin)
 
-build your unity project to `/DisCoin-Unity/Build`
+Build your Unity project to `/DisCoin-Unity/Build`
 
-## gameplay
+## Gameplay
 
-The starting scene(news feed scene, group chat and the news)
+DisCoin is set in the player’s cozy room, and starts when they click the “Start” icon on the desktop. An instant messaging application pops up, where the player (an influencer with millions of followers) is recruited by a mysterious person to promote the latest memecoin.
 
-- first news, the trump meme coin
-- one screen of a group chat, that a group of people want to start a meme coin `DisCoin`.
-`we will start the DisCoin with $9, we sell 100 coins and keep 80 coins of yourself , when we get 1 million we run` the value should be configurable
-The bubble will show some news, and the chatter will say `we should handle this....`
-there will be a timer 
-When the player click "okay" the decision scene will drop some decision dialogs
+Inspired by games like The Westport Independent, gameplay is driven by the player’s decisions among strategies of spreading disinformation, namely DISMISS, DISTRACT, DISTORT or DISMAY. By using the strategies employed by real world purveyors of disinformation, players can learn to spot such tactics in their daily lives.
 
-The decision scene, when a news bubble is choosen there will be multiple windows showing on the screen, you choose click "Okay" or close, the window will close itself as the news obsolete, will regard the player choose a desert solution.
+The effectiveness of each strategy varies depending on the news—an unconvincing spin will be faced with the wrath of masses and a drop in the token’s price or vice versa. With 2,000,000 tokens that you bought at a 90% off discount before public sale, your goal is to push the price of $BUBBLE to $50.
 
-The chart scene, shows the value of the coin, x-Time, y-Value,  Status bar showing the current value and your hold count, the hold count and the money you have.
+Wen lambo? Soon!
 
 ```
 class GameManager {
@@ -69,7 +65,7 @@ class Decision {
 	List<Reaction>
 	approvalPercentage
 	disapprovalPercentage
-	label: dismiss|dismay|distract|distort|truth
+	label: DISMISS | DISMAY | DISTRACT | DISTORT
 }
 
 class Reaction {
@@ -82,38 +78,39 @@ class Reaction {
 
 $NewCoinValue = $CurrentCoinValue + $NewsEffectPoints*$ReactionValue
 
-if $CurrentCoinValue < 0.01, game over, show a bubble burst animation, add a news that the player's story got public and got caught, calculate the time spent and allow players to share the k chart state
-if $PlayerMoney + $holdCount*$CurrentCoinValue > 100,000, the player cash out the money, show an animation of people crying, the player fly away with cash, or a news paper `big scam<disCoin>`,  player can share the newspaper screenshot and the game link.
+if $CurrentCoinValue < 0.01, game over
+if $CurrentCoinValue > 50, the player wins - or do they?
 
 ```
 
-## sounds
+## Sounds
 
-the message bubble sound
-the background sound
-the GPU sound
+- GPU fan for ambience
+- Keyboard typing
+- Background music (credits to Nikita Dolgov)
+
 
 ## Sprites
 
-A message app UI
-A Chart UI, showing the current value and your hold count, the hold count and the money you have.
-the computer sprite
+- Desktop UI (functioning as the menu screen)
+- Message app (the intro cutscene)
+- Price graph UI showing $BUBBLE price in real-time
+- Newsfeed and decision UI
+- Emoji reactions to player decisions
+- Endings
+
 
 ## Narratives
 
-the narratives should be save as JSON format in DisCoin-Unity\Assets\Resources\newsModels.json
-the IDs are in DisCoin-Unity\Documents\UUIDs.md
+Narratives of the newsfeed, possible decisions and reactions are saved in .JSON format at DisCoin-Unity\Assets\Resources\newsModels.json
 
-## assets
 
-https://win98icons.alexmeub.com/
+## Future features
 
-## undecided
+- Showing the highest $BUBBLE price achieved by the player on ending screen
+- Optimize decision and price logic
+- Procedural generation of newsfeed and decisions
 
-threshold on the money and the choose the Decision with what kind of approvalPercentage
-
-3 narritives a screen, each one have 1 min life span, 3 mins as a day
-if we need the user play like 30min, we need at least 30 narritives
 
 ## Milestone and checklists
 
