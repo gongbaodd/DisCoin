@@ -1,0 +1,30 @@
+Player control
+You control a [crypto bro] in this screen simulator game
+where mouse click makes the player choose a card / dialogue option.
+
+Basic gameplay
+(A. The information game) 
+During the game, three cards appear on the left screen and become clickable. Each card carries an influence multiplier ranging from +1 to -1 (which is not shown to the player, who needs to guess based on the card’s content).
+The goal of the game is to click the card with the highest influence multiplier.
+
+(B. The pump and dump game: Flappy bird for stocks)
+During the game, three buttons appear on the right screen and become clickable – pump, dump, or do nothing. Pump pushes up the price of the token, dump pushes it down. The price will move randomly if the player does nothing. The effectiveness of pump or dump is affected by influence multiplier (see Game A).
+The goal of the game is to use pump and dump buttons to make the price follow an ideal line (pre-defined and appears half-transparent). 
+ 
+
+ 
+Sound and effects
+There will be sound effects on clicking buttons, market reaction (movement of the price upward or downward).
+Atmosphere: There will also be background music and glow of the screen (player is sitting in a dark room).
+
+Gameplay mechanics
+Information game:  As the game progresses, the contents become ambiguous, making it harder to guess which card is the best.
+Pump and dump:  As the game progresses, the influence multiplier is gradually lowered to a smaller range (e.g., fluctuates between -0.5 and +0.5).
+
+User interfaces
+The cost will increase whenever the user pumps.
+The cumulative revenue will increase whenever the price of this round falls within [+/- 2 standard deviation] of the ideal line. If it falls outside, there is no revenue for this round.
+Profit = Revenue – cost
+And the game will end when EITHER cost reaches [$10million ie player is bankrupt] OR profit = [$100 million ie player is rich]
+
+At the start of the game, the title “Bubbling” will appear. 

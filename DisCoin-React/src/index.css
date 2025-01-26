@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.downloads li::before{
+    content: '';
+    background: url(./download-minimalistic-svgrepo-com.svg) center no-repeat;
+    margin-right: 10px;
+    display: inline-block;
+    width: 1em;
+    background-size: contain;
+    height: 1em;
+    filter: invert(1);
+}
