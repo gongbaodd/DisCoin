@@ -30,26 +30,28 @@ function Game() {
 
 
     return (
-        <>
-            <div className="flex flex-col items-center justify-center space-y-4 pt-20">
+        <div className="rounded-lg shadow-xl overflow-hidden border border-yellow-900/30">
+
+            <div className="flex flex-col items-center justify-center space-y-4 p-20 bg-[#221f20]">
                 <Unity unityProvider={unityProvider} style={{ width: 960, height: 600 }} />
             </div>
 
             <div className="flex justify-between items-center mt-8 px-20 pb-14">
-                <button className="flex items-center px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors duration-200 shadow-lg group"
+                <button className="flex items-center px-6 py-3 bg-yellow-600 text-gray-900 rounded-lg hover:bg-yellow-500 transition-colors duration-200 shadow-lg group font-semibold"
                     onClick={handleFullScreenClick}
                 >
                     <span className="mr-2">Enter Fullscreen</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-maximize2 w-4 h-4 group-hover:scale-110 transition-transform duration-200"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" x2="14" y1="3" y2="10"></line><line x1="3" x2="10" y1="21" y2="14"></line></svg>
                 </button>
-                <button className="flex items-center px-6 py-3 bg-rose-600 text-white rounded-lg hover:bg-rose-700 transition-colors duration-200 shadow-lg group"
+                <button className="flex items-center px-6 py-3 bg-yellow-500 text-gray-900 rounded-lg hover:bg-yellow-400 transition-colors duration-200 shadow-lg group font-semibold"
                     onClick={handleScreenShotClick}
                 >
                     <span className="mr-2">Take Screenshot</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-camera w-4 h-4 group-hover:scale-110 transition-transform duration-200"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"></path><circle cx="12" cy="13" r="3"></circle></svg>
                 </button>
             </div>
-        </>
+        </div>
+
     )
 }
 
