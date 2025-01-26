@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using Unity.VisualScripting;
+using UnityEditor.SearchService;
+using UnityEngine.SceneManagement;
 
 
 /*
@@ -70,9 +72,14 @@ public class GameManager : MonoBehaviour
             CoinValueText.text = "$" + currentCoinValue.ToString();
             Debug.Log("Current Coin Value: " + currentCoinValue);
             ChartContainer.GetComponent<ChartController>().UpdateData(coinValueHistory.ToArray());
+            
+            if (currentCoinValue > 50) {
+                SceneManager.LoadScene("Win");
+            }
+
         } else {
             CoinValueText.text = "$0";
-            // TODO: GAME OVER
+            SceneManager.LoadScene("GameOver");
         }
     }
 
