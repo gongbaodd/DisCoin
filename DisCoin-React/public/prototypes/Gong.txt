@@ -1,0 +1,17 @@
+player control an avatar， in this screen simulator. user use mouse to click the dialog buttons， choose decisions， 
+
+
+during this game， decision dialog appear，there are random results of people believe or not and causing the market grow or drop
+
+will be bgm in the whole game
+approve will show thumb up on the market k chart
+disapprove will show disappointed sound， also unhappy particles 
+
+
+as the game progress， some fact check team like tv report or news or critics happen，or your teammate leaves and pour some news on you
+  you have to make action to stable your coin
+
+the k chart will show on the topleft of the screen， when the coin is lower than 0.1 usd， the game over， will record the time
+Or your share is over 1 million usd you cash out the money and flee
+
+at start show a screen of group chat lets make a digital coin
