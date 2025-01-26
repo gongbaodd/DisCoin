@@ -46,17 +46,7 @@ function App() {
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {activeTab === 'home' && (
           <div className="bg-white rounded-lg shadow-xl overflow-hidden">
-            <div className="relative h-96">
-              <img
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=2850&q=80"
-                alt="Team collaboration"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-r from-indigo-500/75 to-purple-600/75 mix-blend-multiply" />
-              <div className="absolute inset-0 flex items-center justify-center">
                 <Game />
-              </div>
-            </div>
           </div>
         )}
 
