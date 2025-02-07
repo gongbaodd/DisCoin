@@ -1,0 +1,23 @@
+[
+    {
+        "id": "reaction_001",
+        "content": "People bought into your claim.",
+        "newsID": "news_028",
+        "decisionID": null,
+        "value": "noEffect"
+    },
+    {
+        "id": "reaction_002",
+        "content": "People called BS on you.",
+        "newsID": "news_028",
+        "decisionID": null,
+        "value": "noEffect"
+    },
+    {
+        "id": "reaction_003",
+        "content": "Few people were affected.",
+        "newsID": "news_028",
+        "decisionID": null,
+        "value": "noEffect"
+    }
+]

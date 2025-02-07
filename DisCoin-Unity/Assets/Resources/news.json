@@ -1,0 +1,182 @@
+[
+    {
+        "id": "news_001",
+        "lifetime": 120,
+        "content": "Government set to ban crypto ATMs as markets waver",
+        "effectPoints": -10
+    },
+    {
+        "id": "news_002",
+        "lifetime": 120,
+        "content": "Minister of Finance suggests new 15% tax on all crypto profits",
+        "effectPoints": -10
+    },
+    {
+        "id": "news_003",
+        "lifetime": 120,
+        "content": "Study: Most meme-coins are rugged within the first 6 months",
+        "effectPoints": -10
+    },
+    {
+        "id": "news_004",
+        "lifetime": 120,
+        "content": "Research suggests getting news from social media leaves users open to manipulation",
+        "effectPoints": -5
+    },
+    {
+        "id": "news_005",
+        "lifetime": 120,
+        "content": "Crypto-mining responsible for 10% of global CO2 emissions last year",
+        "effectPoints": -5
+    },
+    {
+        "id": "news_006",
+        "lifetime": 120,
+        "content": "Ministry of Finance: Crypto unstable, susceptible users be warned",
+        "effectPoints": -10
+    },
+    {
+        "id": "news_007",
+        "lifetime": 120,
+        "content": "Geopolitical crisis threatens supply of chips essential for high-power GPUs",
+        "effectPoints": -10
+    },
+    {
+        "id": "news_008",
+        "lifetime": 120,
+        "content": "Administration slams 20% tariff on GPUs and other dual-use tech imported from China",
+        "effectPoints": -5
+    },
+    {
+        "id": "news_009",
+        "lifetime": 120,
+        "content": "Study: Energy-hungry crypto-mining contributes to gas prices and inflation",
+        "effectPoints": -5
+    },
+    {
+        "id": "news_010",
+        "lifetime": 120,
+        "content": "Eastern Powers move to ban crypto",
+        "effectPoints": -10
+    },
+    {
+        "id": "news_011",
+        "lifetime": 120,
+        "content": "Measure banning crypto-mining moves to vote on Monday",
+        "effectPoints": -10
+    },
+    {
+        "id": "news_012",
+        "lifetime": 120,
+        "content": "South American dictator touts free exchange of crypto-currencies in new legislation",
+        "effectPoints": 10
+    },
+    {
+        "id": "news_013",
+        "lifetime": 120,
+        "content": "Major crypto exchange to limit trades starting next week",
+        "effectPoints": -10
+    },
+    {
+        "id": "news_014",
+        "lifetime": 120,
+        "content": "Right-wing party promises no taxes on crypto profits",
+        "effectPoints": 10
+    },
+    {
+        "id": "news_015",
+        "lifetime": 120,
+        "content": "Goalmen Sacks announces strategic partnership with flagship exchange, making crypto and NFTs available to institutional clients for the first time",
+        "effectPoints": 15
+    },
+    {
+        "id": "news_016",
+        "lifetime": 120,
+        "content": "Deepweb marketplace, SatinHighway, shut down by government",
+        "effectPoints": -10
+    },
+    {
+        "id": "news_017",
+        "lifetime": 120,
+        "content": "Historic hack leads to major losses for crypto investors",
+        "effectPoints": -15
+    },
+    {
+        "id": "news_018",
+        "lifetime": 120,
+        "content": "New blockchain alliance forms, claims crypto is safer than ever",
+        "effectPoints": 10
+    },
+    {
+        "id": "news_019",
+        "lifetime": 120,
+        "content": "Crypto exchange hacked, major coins affected",
+        "effectPoints": -10
+    },
+    {
+        "id": "news_020",
+        "lifetime": 120,
+        "content": "Incoming administration appears friendly to crypto, sources say",
+        "effectPoints": 5
+    },
+    {
+        "id": "news_021",
+        "lifetime": 120,
+        "content": "Middle East oil producers now accept orders in cryptocurrency",
+        "effectPoints": 10
+    },
+    {
+        "id": "news_022",
+        "lifetime": 120,
+        "content": "New Free Trade Agreement set to accept stablecoins as viable alternative to fiat currencies",
+        "effectPoints": 10
+    },
+    {
+        "id": "news_023",
+        "lifetime": 120,
+        "content": "New legislation set to levy fees on crypto trades by ETFs and funds",
+        "effectPoints": -10
+    },
+    {
+        "id": "news_024",
+        "lifetime": 120,
+        "content": "MEGLE pays employees in crypto, boosts trust in major coins",
+        "effectPoints": 10
+    },
+    {
+        "id": "news_025",
+        "lifetime": 120,
+        "content": "Meme coin revolution: Investors rake in millions despite distrust",
+        "effectPoints": 10
+    },
+    {
+        "id": "news_026",
+        "lifetime": 120,
+        "content": "Dodgy meme token: $DOGDE rugpull leaves thousands in the lurch",
+        "effectPoints": -10
+    },
+    {
+        "id": "news_027",
+        "lifetime": 120,
+        "content": "Overnight success: A crypto daytrader's rags-to-riches story",
+        "effectPoints": 10
+    },
+    {
+        "id": "news_028",
+        "lifetime": 120,
+        "content": "Billions lost overnight: major CEX's hot wallet drained in historic hack",
+        "effectPoints": -15
+    },
+    {
+        "id": "news_029",
+        "lifetime": 120,
+        "content": "Crypto skyrockets as dollar falls, market instability increases",
+        "effectPoints": 10
+    },
+    {
+        "id": "news_030",
+        "lifetime": 120,
+        "content": "Major corporation moves to accept cryptocurrencies in all locations",
+        "effectPoints": 10
+    }
+]

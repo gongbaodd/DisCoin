@@ -133,6 +133,8 @@ public class GameManager : MonoBehaviour
 
         decisions = newsModel.decisions.ToList();
 
+        Debug.Log("Selected news: " + newsModel.id + " with " + decisions.Count + " decisions");
+
         ShowDecisions();
 
     }
