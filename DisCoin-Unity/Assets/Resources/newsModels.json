@@ -3,7 +3,7 @@
         "id": "news_001",
         "lifetime": 120,
         "content": "Government set to ban crypto ATMs as markets waver",
-        "effectPoints": -10,
+        "effectPoints": 10,
         "decisions": [
             {
                 "id": "decision_001",
@@ -73,7 +73,7 @@
         "id": "news_002",
         "lifetime": 120,
         "content": "Minister of Finance suggests new 15% tax on all crypto profits",
-        "effectPoints": -10,
+        "effectPoints": 10,
         "decisions": [
             {
                 "id": "decision_004",
@@ -143,7 +143,7 @@
         "id": "news_003",
         "lifetime": 120,
         "content": "Study: Most meme-coins are rugged within the first 6 months",
-        "effectPoints": -10,
+        "effectPoints": 10,
         "decisions": [
             {
                 "id": "decision_007",
@@ -213,7 +213,7 @@
         "id": "news_004",
         "lifetime": 120,
         "content": "Research suggests getting news from social media leaves users open to manipulation",
-        "effectPoints": -5,
+        "effectPoints": 5,
         "decisions": [
             {
                 "id": "decision_010",
@@ -283,7 +283,7 @@
         "id": "news_005",
         "lifetime": 120,
         "content": "Crypto-mining responsible for 10% of global CO2 emissions last year",
-        "effectPoints": -5,
+        "effectPoints": 5,
         "decisions": [
             {
                 "id": "decision_013",
@@ -353,7 +353,7 @@
         "id": "news_006",
         "lifetime": 120,
         "content": "Ministry of Finance: Crypto unstable, susceptible users be warned",
-        "effectPoints": -10,
+        "effectPoints": 10,
         "decisions": [
             {
                 "id": "decision_016",
@@ -423,7 +423,7 @@
         "id": "news_007",
         "lifetime": 120,
         "content": "Geopolitical crisis threatens supply of chips essential for high-power GPUs",
-        "effectPoints": -10,
+        "effectPoints": 10,
         "decisions": [
             {
                 "id": "decision_019",
@@ -493,7 +493,7 @@
         "id": "news_008",
         "lifetime": 120,
         "content": "Administration slams 20% tariff on GPUs and other dual-use tech imported from China",
-        "effectPoints": -5,
+        "effectPoints": 5,
         "decisions": [
             {
                 "id": "decision_022",
@@ -563,7 +563,7 @@
         "id": "news_009",
         "lifetime": 120,
         "content": "Study: Energy-hungry crypto-mining contributes to gas prices and inflation",
-        "effectPoints": -5,
+        "effectPoints": 5,
         "decisions": [
             {
                 "id": "decision_025",
@@ -633,7 +633,7 @@
         "id": "news_010",
         "lifetime": 120,
         "content": "Eastern Powers move to ban crypto",
-        "effectPoints": -10,
+        "effectPoints": 10,
         "decisions": [
             {
                 "id": "decision_028",
@@ -703,7 +703,7 @@
         "id": "news_011",
         "lifetime": 120,
         "content": "Measure banning crypto-mining moves to vote on Monday",
-        "effectPoints": -10,
+        "effectPoints": 10,
         "decisions": [
             {
                 "id": "decision_031",
@@ -812,7 +812,7 @@
         "id": "news_013",
         "lifetime": 120,
         "content": "Major crypto exchange to limit trades starting next week",
-        "effectPoints": -10,
+        "effectPoints": 10,
         "decisions": [
             {
                 "id": "decision_037",
@@ -960,7 +960,7 @@
         "id": "news_016",
         "lifetime": 120,
         "content": "Deepweb marketplace, SatinHighway, shut down by government",
-        "effectPoints": -10,
+        "effectPoints": 10,
         "decisions": [
             {
                 "id": "decision_046",
@@ -1030,7 +1030,7 @@
         "id": "news_017",
         "lifetime": 120,
         "content": "Historic hack leads to major losses for crypto investors",
-        "effectPoints": -15,
+        "effectPoints": 15,
         "decisions": [
             {
                 "id": "decision_049",
@@ -1139,7 +1139,7 @@
         "id": "news_019",
         "lifetime": 120,
         "content": "Crypto exchange hacked, major coins affected",
-        "effectPoints": -10,
+        "effectPoints": 10,
         "decisions": [
             {
                 "id": "decision_055",
@@ -1326,7 +1326,7 @@
         "id": "news_023",
         "lifetime": 120,
         "content": "New legislation set to levy fees on crypto trades by ETFs and funds",
-        "effectPoints": -10,
+        "effectPoints": 10,
         "decisions": [
             {
                 "id": "decision_067",
@@ -1505,7 +1505,7 @@
         "id": "news_026",
         "lifetime": 120,
         "content": "Dodgy meme token: $DOGDE rugpull leaves thousands in the lurch",
-        "effectPoints": -10,
+        "effectPoints": 10,
         "decisions": [
             {
                 "id": "decision_076",
@@ -1614,7 +1614,7 @@
         "id": "news_028",
         "lifetime": 120,
         "content": "Billions lost overnight: major CEX's hot wallet drained in historic hack",
-        "effectPoints": -15,
+        "effectPoints": 15,
         "decisions": [
             {
                 "id": "decision_082",
