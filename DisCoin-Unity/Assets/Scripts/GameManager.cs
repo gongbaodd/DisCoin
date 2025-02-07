@@ -47,6 +47,8 @@ public class GameManager : MonoBehaviour
 
     private string SceneName = "GameOver";
 
+    [SerializeField] private GameObject ReactionPanel;
+
     void Awake()
     {
         // Check if an instance of GameManager already exists
@@ -75,7 +77,6 @@ public class GameManager : MonoBehaviour
         {
             coinValueHistory.Add(currentCoinValue);
             CoinValueText.text = "$" + currentCoinValue.ToString();
-            Debug.Log("Current Coin Value: " + currentCoinValue);
             ChartContainer.GetComponent<ChartController>().UpdateData(coinValueHistory.ToArray());
 
             if (currentCoinValue > 50)
@@ -90,6 +91,9 @@ public class GameManager : MonoBehaviour
             SceneManager.LoadScene("GameOver");
         }
     }
+
+
+
 
     void LoadNews()
     {
@@ -192,7 +196,7 @@ public class GameManager : MonoBehaviour
             yield break;
         }
 
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(10);
 
         NewsModel newsModel = restNews[0];
         restNews.RemoveAt(0);
@@ -228,14 +232,19 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("Addition on the coin value");
 
-            currentCoinValue += effectPoints / 10;
+            currentCoinValue += effectPoints / 2;
         }
         else if (reactionValue == ReactionValue.disapproval)
         {
             Debug.Log("Deletion on the coin value");
 
-            currentCoinValue -= effectPoints / 10;
+            currentCoinValue -= effectPoints / 2;
         }
+
+        ReactionPanel.GetComponent<ReactionController>().ShowReaction(
+            decision,
+            reactions[(int)reactionValue]
+        );
 
         UpdateCoinDisplay();
 
