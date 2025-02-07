@@ -7,7 +7,7 @@ public class SceneTransition : MonoBehaviour
 {
     public GameObject transitionScreen;
     public TMP_Text transitionText;   // Reference to the text element
-    public float fadeDuration = 3f;  // Duration of the fade in/out
+    public float fadeDuration = 2f;  // Duration of the fade in/out
     public string message = "SIX MONTHS LATER..."; // Transition message
     public string mainSceneName = "MainScene";   // Name of the main scene
 
@@ -41,7 +41,7 @@ public class SceneTransition : MonoBehaviour
         }
 
         // Wait for a moment
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2f);
 
         // Fade out
         elapsedTime = 0f;
@@ -55,5 +55,10 @@ public class SceneTransition : MonoBehaviour
 
         // Load the main scene
         SceneManager.LoadScene(mainSceneName);
+    }
+
+    public void BacktoMenu()
+    {
+        SceneManager.LoadScene("IntroCutscene");
     }
 }

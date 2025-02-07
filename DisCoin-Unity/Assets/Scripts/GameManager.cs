@@ -259,9 +259,11 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(SceneName);
     }
 
+
     public void QuitGame()
     {
-        Application.Quit();
+        SceneManager.LoadScene("IntroCutscene");
+        //Application.Quit();
     }
 
 }
