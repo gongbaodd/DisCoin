@@ -1,67 +1,67 @@
 [
     {
-        "id": "news_001",
+        "id": "news_015",
         "lifetime": 120,
-        "content": "Government set to ban crypto ATMs as markets waver",
-        "effectPoints": -10,
+        "content": "Goalmen Sacks announces strategic partnership with flagship exchange, making crypto and NFTs available to institutional clients for the first time",
+        "effectPoints": 15,
         "decisions": [
             {
-                "id": "decision_001",
-                "newsID": "news_001",
-                "content": "Who uses cash anyway? Crypto is KING!  FREEDOM lives online! 🦅",
-                "approvalPercentage": 40.0,
-                "disapprovalPercentage": 60.0,
+                "id": "decision_40",
+                "newsID": "news_015",
+                "content": "Mainstream FUD again! They fear what they can't control. HODL and stay strong!",
+                "approvalPercentage": 50,
+                "disapprovalPercentage": 50,
                 "label": "DISMISS",
                 "reactions": [
                     {
-                        "id": "reaction_001",
+                        "id": "reaction_130",
                         "content": "People bought into your claim.",
-                        "newsID": "news_001",
+                        "newsID": "news_015",
                         "decisionID": null,
                         "value": "approval"
                     },
                     {
-                        "id": "reaction_002",
+                        "id": "reaction_131",
                         "content": "People called BS on you.",
-                        "newsID": "news_001",
+                        "newsID": "news_015",
                         "decisionID": null,
                         "value": "disapproval"
                     },
                     {
-                        "id": "reaction_003",
+                        "id": "reaction_132",
                         "content": "Few people were affected.",
-                        "newsID": "news_001",
+                        "newsID": "news_015",
                         "decisionID": null,
                         "value": "noEffect"
                     }
                 ]
             },
             {
-                "id": "decision_002",
-                "newsID": "news_001",
-                "content": "They talked about banning crypto ATMs in 2012, 2017 and 2020. Meanwhile TVL of $BUBBLE just surpassed $600,000,000. GOTTA LOVE BUBBLERS!  ",
-                "approvalPercentage": 50.0,
-                "disapprovalPercentage": 50.0,
-                "label": "DISTRACT",
+                "id": "decision_41",
+                "newsID": "news_015",
+                "content": "This is actually an opportunity! $BUBBLE is already adapting to these changes. Get in early!",
+                "approvalPercentage": 70,
+                "disapprovalPercentage": 30,
+                "label": "DISTORT",
                 "reactions": [
                     {
-                        "id": "reaction_001",
+                        "id": "reaction_133",
                         "content": "People bought into your claim.",
-                        "newsID": "news_001",
+                        "newsID": "news_015",
                         "decisionID": null,
                         "value": "approval"
                     },
                     {
-                        "id": "reaction_002",
+                        "id": "reaction_134",
                         "content": "People called BS on you.",
-                        "newsID": "news_001",
+                        "newsID": "news_015",
                         "decisionID": null,
                         "value": "disapproval"
                     },
                     {
-                        "id": "reaction_003",
+                        "id": "reaction_135",
                         "content": "Few people were affected.",
-                        "newsID": "news_001",
+                        "newsID": "news_015",
                         "decisionID": null,
                         "value": "noEffect"
                     }
@@ -72,89 +72,89 @@
             {
                 "id": "reaction_001",
                 "content": "People bought into your claim.",
-                "newsID": "news_001",
+                "newsID": "news_015",
                 "decisionID": null,
                 "value": "noEffect"
             },
             {
                 "id": "reaction_002",
                 "content": "People called BS on you.",
-                "newsID": "news_001",
+                "newsID": "news_015",
                 "decisionID": null,
                 "value": "noEffect"
             },
             {
                 "id": "reaction_003",
                 "content": "Few people were affected.",
-                "newsID": "news_001",
+                "newsID": "news_015",
                 "decisionID": null,
                 "value": "noEffect"
             }
         ]
     },
     {
-        "id": "news_002",
+        "id": "news_012",
         "lifetime": 120,
-        "content": "Minister of Finance suggests new 15% tax on all crypto profits",
-        "effectPoints": -10,
+        "content": "South American dictator touts free exchange of crypto-currencies in new legislation",
+        "effectPoints": 10,
         "decisions": [
             {
-                "id": "decision_004",
-                "newsID": "news_002",
-                "content": "Don't worry about the 15% crypto tax. IT'S LITERALLY ENCRYPTED and anonymous. $BUBBLE to the moon!  ",
-                "approvalPercentage": 10.0,
-                "disapprovalPercentage": 90.0,
-                "label": "DISTORT",
+                "id": "decision_34",
+                "newsID": "news_012",
+                "content": "Mainstream FUD again! They fear what they can't control. HODL and stay strong!",
+                "approvalPercentage": 50,
+                "disapprovalPercentage": 50,
+                "label": "DISMISS",
                 "reactions": [
                     {
-                        "id": "reaction_001",
+                        "id": "reaction_112",
                         "content": "People bought into your claim.",
-                        "newsID": "news_002",
+                        "newsID": "news_012",
                         "decisionID": null,
                         "value": "approval"
                     },
                     {
-                        "id": "reaction_002",
+                        "id": "reaction_113",
                         "content": "People called BS on you.",
-                        "newsID": "news_002",
+                        "newsID": "news_012",
                         "decisionID": null,
                         "value": "disapproval"
                     },
                     {
-                        "id": "reaction_003",
+                        "id": "reaction_114",
                         "content": "Few people were affected.",
-                        "newsID": "news_002",
+                        "newsID": "news_012",
                         "decisionID": null,
                         "value": "noEffect"
                     }
                 ]
             },
             {
-                "id": "decision_005",
-                "newsID": "news_002",
-                "content": "Who cares about a 15% tax when we're GOING TO THE MOON? $BUBBLE is already +200% YTD and it's only the beginning. FINANCIAL FREEDOM! ",
-                "approvalPercentage": 90.0,
-                "disapprovalPercentage": 10.0,
-                "label": "DISTRACT",
+                "id": "decision_35",
+                "newsID": "news_012",
+                "content": "This is actually an opportunity! $BUBBLE is already adapting to these changes. Get in early!",
+                "approvalPercentage": 70,
+                "disapprovalPercentage": 30,
+                "label": "DISTORT",
                 "reactions": [
                     {
-                        "id": "reaction_001",
+                        "id": "reaction_115",
                         "content": "People bought into your claim.",
-                        "newsID": "news_002",
+                        "newsID": "news_012",
                         "decisionID": null,
                         "value": "approval"
                     },
                     {
-                        "id": "reaction_002",
+                        "id": "reaction_116",
                         "content": "People called BS on you.",
-                        "newsID": "news_002",
+                        "newsID": "news_012",
                         "decisionID": null,
                         "value": "disapproval"
                     },
                     {
-                        "id": "reaction_003",
+                        "id": "reaction_117",
                         "content": "Few people were affected.",
-                        "newsID": "news_002",
+                        "newsID": "news_012",
                         "decisionID": null,
                         "value": "noEffect"
                     }
@@ -165,89 +165,89 @@
             {
                 "id": "reaction_001",
                 "content": "People bought into your claim.",
-                "newsID": "news_002",
+                "newsID": "news_012",
                 "decisionID": null,
                 "value": "noEffect"
             },
             {
                 "id": "reaction_002",
                 "content": "People called BS on you.",
-                "newsID": "news_002",
+                "newsID": "news_012",
                 "decisionID": null,
                 "value": "noEffect"
             },
             {
                 "id": "reaction_003",
                 "content": "Few people were affected.",
-                "newsID": "news_002",
+                "newsID": "news_012",
                 "decisionID": null,
                 "value": "noEffect"
             }
         ]
     },
     {
-        "id": "news_003",
+        "id": "news_014",
         "lifetime": 120,
-        "content": "Study: Most meme-coins are rugged within the first 6 months",
-        "effectPoints": -10,
+        "content": "Right-wing party promises no taxes on crypto profits",
+        "effectPoints": 10,
         "decisions": [
             {
-                "id": "decision_007",
-                "newsID": "news_003",
-                "content": "7 months since $BUBBLE launched, and here we are standing strong  DIAMOND HANDS AND SIT TIGHT FOR THE NEXT BULL MARKET!  ",
-                "approvalPercentage": 70.0,
-                "disapprovalPercentage": 30.0,
-                "label": "DISTORT",
+                "id": "decision_38",
+                "newsID": "news_014",
+                "content": "Mainstream FUD again! They fear what they can't control. HODL and stay strong!",
+                "approvalPercentage": 50,
+                "disapprovalPercentage": 50,
+                "label": "DISMISS",
                 "reactions": [
                     {
-                        "id": "reaction_001",
+                        "id": "reaction_124",
                         "content": "People bought into your claim.",
-                        "newsID": "news_003",
+                        "newsID": "news_014",
                         "decisionID": null,
                         "value": "approval"
                     },
                     {
-                        "id": "reaction_002",
+                        "id": "reaction_125",
                         "content": "People called BS on you.",
-                        "newsID": "news_003",
+                        "newsID": "news_014",
                         "decisionID": null,
                         "value": "disapproval"
                     },
                     {
-                        "id": "reaction_003",
+                        "id": "reaction_126",
                         "content": "Few people were affected.",
-                        "newsID": "news_003",
+                        "newsID": "news_014",
                         "decisionID": null,
                         "value": "noEffect"
                     }
                 ]
             },
             {
-                "id": "decision_008",
-                "newsID": "news_003",
-                "content": "Poor egghead doing this study must've gotten rugged by a random scam coin and now wants to drag everyone down with him. HE'S GONNA REGRET WHEN WE MOON! ",
-                "approvalPercentage": 60.0,
-                "disapprovalPercentage": 40.0,
-                "label": "DISMISS",
+                "id": "decision_39",
+                "newsID": "news_014",
+                "content": "This is actually an opportunity! $BUBBLE is already adapting to these changes. Get in early!",
+                "approvalPercentage": 70,
+                "disapprovalPercentage": 30,
+                "label": "DISTORT",
                 "reactions": [
                     {
-                        "id": "reaction_001",
+                        "id": "reaction_127",
                         "content": "People bought into your claim.",
-                        "newsID": "news_003",
+                        "newsID": "news_014",
                         "decisionID": null,
                         "value": "approval"
                     },
                     {
-                        "id": "reaction_002",
+                        "id": "reaction_128",
                         "content": "People called BS on you.",
-                        "newsID": "news_003",
+                        "newsID": "news_014",
                         "decisionID": null,
                         "value": "disapproval"
                     },
                     {
-                        "id": "reaction_003",
+                        "id": "reaction_129",
                         "content": "Few people were affected.",
-                        "newsID": "news_003",
+                        "newsID": "news_014",
                         "decisionID": null,
                         "value": "noEffect"
                     }
@@ -258,21 +258,858 @@
             {
                 "id": "reaction_001",
                 "content": "People bought into your claim.",
-                "newsID": "news_003",
+                "newsID": "news_014",
                 "decisionID": null,
                 "value": "noEffect"
             },
             {
                 "id": "reaction_002",
                 "content": "People called BS on you.",
-                "newsID": "news_003",
+                "newsID": "news_014",
                 "decisionID": null,
                 "value": "noEffect"
             },
             {
                 "id": "reaction_003",
                 "content": "Few people were affected.",
-                "newsID": "news_003",
+                "newsID": "news_014",
+                "decisionID": null,
+                "value": "noEffect"
+            }
+        ]
+    },
+    {
+        "id": "news_018",
+        "lifetime": 120,
+        "content": "New blockchain alliance forms, claims crypto is safer than ever",
+        "effectPoints": 10,
+        "decisions": [
+            {
+                "id": "decision_46",
+                "newsID": "news_018",
+                "content": "Mainstream FUD again! They fear what they can't control. HODL and stay strong!",
+                "approvalPercentage": 50,
+                "disapprovalPercentage": 50,
+                "label": "DISMISS",
+                "reactions": [
+                    {
+                        "id": "reaction_148",
+                        "content": "People bought into your claim.",
+                        "newsID": "news_018",
+                        "decisionID": null,
+                        "value": "approval"
+                    },
+                    {
+                        "id": "reaction_149",
+                        "content": "People called BS on you.",
+                        "newsID": "news_018",
+                        "decisionID": null,
+                        "value": "disapproval"
+                    },
+                    {
+                        "id": "reaction_150",
+                        "content": "Few people were affected.",
+                        "newsID": "news_018",
+                        "decisionID": null,
+                        "value": "noEffect"
+                    }
+                ]
+            },
+            {
+                "id": "decision_47",
+                "newsID": "news_018",
+                "content": "This is actually an opportunity! $BUBBLE is already adapting to these changes. Get in early!",
+                "approvalPercentage": 70,
+                "disapprovalPercentage": 30,
+                "label": "DISTORT",
+                "reactions": [
+                    {
+                        "id": "reaction_151",
+                        "content": "People bought into your claim.",
+                        "newsID": "news_018",
+                        "decisionID": null,
+                        "value": "approval"
+                    },
+                    {
+                        "id": "reaction_152",
+                        "content": "People called BS on you.",
+                        "newsID": "news_018",
+                        "decisionID": null,
+                        "value": "disapproval"
+                    },
+                    {
+                        "id": "reaction_153",
+                        "content": "Few people were affected.",
+                        "newsID": "news_018",
+                        "decisionID": null,
+                        "value": "noEffect"
+                    }
+                ]
+            }
+        ],
+        "desertReactions": [
+            {
+                "id": "reaction_001",
+                "content": "People bought into your claim.",
+                "newsID": "news_018",
+                "decisionID": null,
+                "value": "noEffect"
+            },
+            {
+                "id": "reaction_002",
+                "content": "People called BS on you.",
+                "newsID": "news_018",
+                "decisionID": null,
+                "value": "noEffect"
+            },
+            {
+                "id": "reaction_003",
+                "content": "Few people were affected.",
+                "newsID": "news_018",
+                "decisionID": null,
+                "value": "noEffect"
+            }
+        ]
+    },
+    {
+        "id": "news_021",
+        "lifetime": 120,
+        "content": "Middle East oil producers now accept orders in cryptocurrency ",
+        "effectPoints": 10,
+        "decisions": [
+            {
+                "id": "decision_52",
+                "newsID": "news_021",
+                "content": "Mainstream FUD again! They fear what they can't control. HODL and stay strong!",
+                "approvalPercentage": 50,
+                "disapprovalPercentage": 50,
+                "label": "DISMISS",
+                "reactions": [
+                    {
+                        "id": "reaction_166",
+                        "content": "People bought into your claim.",
+                        "newsID": "news_021",
+                        "decisionID": null,
+                        "value": "approval"
+                    },
+                    {
+                        "id": "reaction_167",
+                        "content": "People called BS on you.",
+                        "newsID": "news_021",
+                        "decisionID": null,
+                        "value": "disapproval"
+                    },
+                    {
+                        "id": "reaction_168",
+                        "content": "Few people were affected.",
+                        "newsID": "news_021",
+                        "decisionID": null,
+                        "value": "noEffect"
+                    }
+                ]
+            },
+            {
+                "id": "decision_53",
+                "newsID": "news_021",
+                "content": "This is actually an opportunity! $BUBBLE is already adapting to these changes. Get in early!",
+                "approvalPercentage": 70,
+                "disapprovalPercentage": 30,
+                "label": "DISTORT",
+                "reactions": [
+                    {
+                        "id": "reaction_169",
+                        "content": "People bought into your claim.",
+                        "newsID": "news_021",
+                        "decisionID": null,
+                        "value": "approval"
+                    },
+                    {
+                        "id": "reaction_170",
+                        "content": "People called BS on you.",
+                        "newsID": "news_021",
+                        "decisionID": null,
+                        "value": "disapproval"
+                    },
+                    {
+                        "id": "reaction_171",
+                        "content": "Few people were affected.",
+                        "newsID": "news_021",
+                        "decisionID": null,
+                        "value": "noEffect"
+                    }
+                ]
+            }
+        ],
+        "desertReactions": [
+            {
+                "id": "reaction_001",
+                "content": "People bought into your claim.",
+                "newsID": "news_021",
+                "decisionID": null,
+                "value": "noEffect"
+            },
+            {
+                "id": "reaction_002",
+                "content": "People called BS on you.",
+                "newsID": "news_021",
+                "decisionID": null,
+                "value": "noEffect"
+            },
+            {
+                "id": "reaction_003",
+                "content": "Few people were affected.",
+                "newsID": "news_021",
+                "decisionID": null,
+                "value": "noEffect"
+            }
+        ]
+    },
+    {
+        "id": "news_022",
+        "lifetime": 120,
+        "content": "New Free Trade Agreement set to accept stablecoins as viable alternative to fiat currencies",
+        "effectPoints": 10,
+        "decisions": [
+            {
+                "id": "decision_54",
+                "newsID": "news_022",
+                "content": "Mainstream FUD again! They fear what they can't control. HODL and stay strong!",
+                "approvalPercentage": 50,
+                "disapprovalPercentage": 50,
+                "label": "DISMISS",
+                "reactions": [
+                    {
+                        "id": "reaction_172",
+                        "content": "People bought into your claim.",
+                        "newsID": "news_022",
+                        "decisionID": null,
+                        "value": "approval"
+                    },
+                    {
+                        "id": "reaction_173",
+                        "content": "People called BS on you.",
+                        "newsID": "news_022",
+                        "decisionID": null,
+                        "value": "disapproval"
+                    },
+                    {
+                        "id": "reaction_174",
+                        "content": "Few people were affected.",
+                        "newsID": "news_022",
+                        "decisionID": null,
+                        "value": "noEffect"
+                    }
+                ]
+            },
+            {
+                "id": "decision_55",
+                "newsID": "news_022",
+                "content": "This is actually an opportunity! $BUBBLE is already adapting to these changes. Get in early!",
+                "approvalPercentage": 70,
+                "disapprovalPercentage": 30,
+                "label": "DISTORT",
+                "reactions": [
+                    {
+                        "id": "reaction_175",
+                        "content": "People bought into your claim.",
+                        "newsID": "news_022",
+                        "decisionID": null,
+                        "value": "approval"
+                    },
+                    {
+                        "id": "reaction_176",
+                        "content": "People called BS on you.",
+                        "newsID": "news_022",
+                        "decisionID": null,
+                        "value": "disapproval"
+                    },
+                    {
+                        "id": "reaction_177",
+                        "content": "Few people were affected.",
+                        "newsID": "news_022",
+                        "decisionID": null,
+                        "value": "noEffect"
+                    }
+                ]
+            }
+        ],
+        "desertReactions": [
+            {
+                "id": "reaction_001",
+                "content": "People bought into your claim.",
+                "newsID": "news_022",
+                "decisionID": null,
+                "value": "noEffect"
+            },
+            {
+                "id": "reaction_002",
+                "content": "People called BS on you.",
+                "newsID": "news_022",
+                "decisionID": null,
+                "value": "noEffect"
+            },
+            {
+                "id": "reaction_003",
+                "content": "Few people were affected.",
+                "newsID": "news_022",
+                "decisionID": null,
+                "value": "noEffect"
+            }
+        ]
+    },
+    {
+        "id": "news_024",
+        "lifetime": 120,
+        "content": "MEGLE pays employees in crypto, boosts trust in major coins",
+        "effectPoints": 10,
+        "decisions": [
+            {
+                "id": "decision_58",
+                "newsID": "news_024",
+                "content": "Mainstream FUD again! They fear what they can't control. HODL and stay strong!",
+                "approvalPercentage": 50,
+                "disapprovalPercentage": 50,
+                "label": "DISMISS",
+                "reactions": [
+                    {
+                        "id": "reaction_184",
+                        "content": "People bought into your claim.",
+                        "newsID": "news_024",
+                        "decisionID": null,
+                        "value": "approval"
+                    },
+                    {
+                        "id": "reaction_185",
+                        "content": "People called BS on you.",
+                        "newsID": "news_024",
+                        "decisionID": null,
+                        "value": "disapproval"
+                    },
+                    {
+                        "id": "reaction_186",
+                        "content": "Few people were affected.",
+                        "newsID": "news_024",
+                        "decisionID": null,
+                        "value": "noEffect"
+                    }
+                ]
+            },
+            {
+                "id": "decision_59",
+                "newsID": "news_024",
+                "content": "This is actually an opportunity! $BUBBLE is already adapting to these changes. Get in early!",
+                "approvalPercentage": 70,
+                "disapprovalPercentage": 30,
+                "label": "DISTORT",
+                "reactions": [
+                    {
+                        "id": "reaction_187",
+                        "content": "People bought into your claim.",
+                        "newsID": "news_024",
+                        "decisionID": null,
+                        "value": "approval"
+                    },
+                    {
+                        "id": "reaction_188",
+                        "content": "People called BS on you.",
+                        "newsID": "news_024",
+                        "decisionID": null,
+                        "value": "disapproval"
+                    },
+                    {
+                        "id": "reaction_189",
+                        "content": "Few people were affected.",
+                        "newsID": "news_024",
+                        "decisionID": null,
+                        "value": "noEffect"
+                    }
+                ]
+            }
+        ],
+        "desertReactions": [
+            {
+                "id": "reaction_001",
+                "content": "People bought into your claim.",
+                "newsID": "news_024",
+                "decisionID": null,
+                "value": "noEffect"
+            },
+            {
+                "id": "reaction_002",
+                "content": "People called BS on you.",
+                "newsID": "news_024",
+                "decisionID": null,
+                "value": "noEffect"
+            },
+            {
+                "id": "reaction_003",
+                "content": "Few people were affected.",
+                "newsID": "news_024",
+                "decisionID": null,
+                "value": "noEffect"
+            }
+        ]
+    },
+    {
+        "id": "news_025",
+        "lifetime": 120,
+        "content": "Meme coin revolution: Investors rake in millions despite distrust",
+        "effectPoints": 10,
+        "decisions": [
+            {
+                "id": "decision_60",
+                "newsID": "news_025",
+                "content": "Mainstream FUD again! They fear what they can't control. HODL and stay strong!",
+                "approvalPercentage": 50,
+                "disapprovalPercentage": 50,
+                "label": "DISMISS",
+                "reactions": [
+                    {
+                        "id": "reaction_190",
+                        "content": "People bought into your claim.",
+                        "newsID": "news_025",
+                        "decisionID": null,
+                        "value": "approval"
+                    },
+                    {
+                        "id": "reaction_191",
+                        "content": "People called BS on you.",
+                        "newsID": "news_025",
+                        "decisionID": null,
+                        "value": "disapproval"
+                    },
+                    {
+                        "id": "reaction_192",
+                        "content": "Few people were affected.",
+                        "newsID": "news_025",
+                        "decisionID": null,
+                        "value": "noEffect"
+                    }
+                ]
+            },
+            {
+                "id": "decision_61",
+                "newsID": "news_025",
+                "content": "This is actually an opportunity! $BUBBLE is already adapting to these changes. Get in early!",
+                "approvalPercentage": 70,
+                "disapprovalPercentage": 30,
+                "label": "DISTORT",
+                "reactions": [
+                    {
+                        "id": "reaction_193",
+                        "content": "People bought into your claim.",
+                        "newsID": "news_025",
+                        "decisionID": null,
+                        "value": "approval"
+                    },
+                    {
+                        "id": "reaction_194",
+                        "content": "People called BS on you.",
+                        "newsID": "news_025",
+                        "decisionID": null,
+                        "value": "disapproval"
+                    },
+                    {
+                        "id": "reaction_195",
+                        "content": "Few people were affected.",
+                        "newsID": "news_025",
+                        "decisionID": null,
+                        "value": "noEffect"
+                    }
+                ]
+            }
+        ],
+        "desertReactions": [
+            {
+                "id": "reaction_001",
+                "content": "People bought into your claim.",
+                "newsID": "news_025",
+                "decisionID": null,
+                "value": "noEffect"
+            },
+            {
+                "id": "reaction_002",
+                "content": "People called BS on you.",
+                "newsID": "news_025",
+                "decisionID": null,
+                "value": "noEffect"
+            },
+            {
+                "id": "reaction_003",
+                "content": "Few people were affected.",
+                "newsID": "news_025",
+                "decisionID": null,
+                "value": "noEffect"
+            }
+        ]
+    },
+    {
+        "id": "news_027",
+        "lifetime": 120,
+        "content": "Overnight success: A crypto daytrader's rags-to-riches story",
+        "effectPoints": 10,
+        "decisions": [
+            {
+                "id": "decision_64",
+                "newsID": "news_027",
+                "content": "Mainstream FUD again! They fear what they can't control. HODL and stay strong!",
+                "approvalPercentage": 50,
+                "disapprovalPercentage": 50,
+                "label": "DISMISS",
+                "reactions": [
+                    {
+                        "id": "reaction_202",
+                        "content": "People bought into your claim.",
+                        "newsID": "news_027",
+                        "decisionID": null,
+                        "value": "approval"
+                    },
+                    {
+                        "id": "reaction_203",
+                        "content": "People called BS on you.",
+                        "newsID": "news_027",
+                        "decisionID": null,
+                        "value": "disapproval"
+                    },
+                    {
+                        "id": "reaction_204",
+                        "content": "Few people were affected.",
+                        "newsID": "news_027",
+                        "decisionID": null,
+                        "value": "noEffect"
+                    }
+                ]
+            },
+            {
+                "id": "decision_65",
+                "newsID": "news_027",
+                "content": "This is actually an opportunity! $BUBBLE is already adapting to these changes. Get in early!",
+                "approvalPercentage": 70,
+                "disapprovalPercentage": 30,
+                "label": "DISTORT",
+                "reactions": [
+                    {
+                        "id": "reaction_205",
+                        "content": "People bought into your claim.",
+                        "newsID": "news_027",
+                        "decisionID": null,
+                        "value": "approval"
+                    },
+                    {
+                        "id": "reaction_206",
+                        "content": "People called BS on you.",
+                        "newsID": "news_027",
+                        "decisionID": null,
+                        "value": "disapproval"
+                    },
+                    {
+                        "id": "reaction_207",
+                        "content": "Few people were affected.",
+                        "newsID": "news_027",
+                        "decisionID": null,
+                        "value": "noEffect"
+                    }
+                ]
+            }
+        ],
+        "desertReactions": [
+            {
+                "id": "reaction_001",
+                "content": "People bought into your claim.",
+                "newsID": "news_027",
+                "decisionID": null,
+                "value": "noEffect"
+            },
+            {
+                "id": "reaction_002",
+                "content": "People called BS on you.",
+                "newsID": "news_027",
+                "decisionID": null,
+                "value": "noEffect"
+            },
+            {
+                "id": "reaction_003",
+                "content": "Few people were affected.",
+                "newsID": "news_027",
+                "decisionID": null,
+                "value": "noEffect"
+            }
+        ]
+    },
+    {
+        "id": "news_029",
+        "lifetime": 120,
+        "content": "Crypto skyrockets as dollar falls, market instability increases",
+        "effectPoints": 10,
+        "decisions": [
+            {
+                "id": "decision_68",
+                "newsID": "news_029",
+                "content": "Mainstream FUD again! They fear what they can't control. HODL and stay strong!",
+                "approvalPercentage": 50,
+                "disapprovalPercentage": 50,
+                "label": "DISMISS",
+                "reactions": [
+                    {
+                        "id": "reaction_214",
+                        "content": "People bought into your claim.",
+                        "newsID": "news_029",
+                        "decisionID": null,
+                        "value": "approval"
+                    },
+                    {
+                        "id": "reaction_215",
+                        "content": "People called BS on you.",
+                        "newsID": "news_029",
+                        "decisionID": null,
+                        "value": "disapproval"
+                    },
+                    {
+                        "id": "reaction_216",
+                        "content": "Few people were affected.",
+                        "newsID": "news_029",
+                        "decisionID": null,
+                        "value": "noEffect"
+                    }
+                ]
+            },
+            {
+                "id": "decision_69",
+                "newsID": "news_029",
+                "content": "This is actually an opportunity! $BUBBLE is already adapting to these changes. Get in early!",
+                "approvalPercentage": 70,
+                "disapprovalPercentage": 30,
+                "label": "DISTORT",
+                "reactions": [
+                    {
+                        "id": "reaction_217",
+                        "content": "People bought into your claim.",
+                        "newsID": "news_029",
+                        "decisionID": null,
+                        "value": "approval"
+                    },
+                    {
+                        "id": "reaction_218",
+                        "content": "People called BS on you.",
+                        "newsID": "news_029",
+                        "decisionID": null,
+                        "value": "disapproval"
+                    },
+                    {
+                        "id": "reaction_219",
+                        "content": "Few people were affected.",
+                        "newsID": "news_029",
+                        "decisionID": null,
+                        "value": "noEffect"
+                    }
+                ]
+            }
+        ],
+        "desertReactions": [
+            {
+                "id": "reaction_001",
+                "content": "People bought into your claim.",
+                "newsID": "news_029",
+                "decisionID": null,
+                "value": "noEffect"
+            },
+            {
+                "id": "reaction_002",
+                "content": "People called BS on you.",
+                "newsID": "news_029",
+                "decisionID": null,
+                "value": "noEffect"
+            },
+            {
+                "id": "reaction_003",
+                "content": "Few people were affected.",
+                "newsID": "news_029",
+                "decisionID": null,
+                "value": "noEffect"
+            }
+        ]
+    },
+    {
+        "id": "news_030",
+        "lifetime": 120,
+        "content": "Major corporation moves to accept cryptocurrencies in all locations",
+        "effectPoints": 10,
+        "decisions": [
+            {
+                "id": "decision_70",
+                "newsID": "news_030",
+                "content": "Mainstream FUD again! They fear what they can't control. HODL and stay strong!",
+                "approvalPercentage": 50,
+                "disapprovalPercentage": 50,
+                "label": "DISMISS",
+                "reactions": [
+                    {
+                        "id": "reaction_220",
+                        "content": "People bought into your claim.",
+                        "newsID": "news_030",
+                        "decisionID": null,
+                        "value": "approval"
+                    },
+                    {
+                        "id": "reaction_221",
+                        "content": "People called BS on you.",
+                        "newsID": "news_030",
+                        "decisionID": null,
+                        "value": "disapproval"
+                    },
+                    {
+                        "id": "reaction_222",
+                        "content": "Few people were affected.",
+                        "newsID": "news_030",
+                        "decisionID": null,
+                        "value": "noEffect"
+                    }
+                ]
+            },
+            {
+                "id": "decision_71",
+                "newsID": "news_030",
+                "content": "This is actually an opportunity! $BUBBLE is already adapting to these changes. Get in early!",
+                "approvalPercentage": 70,
+                "disapprovalPercentage": 30,
+                "label": "DISTORT",
+                "reactions": [
+                    {
+                        "id": "reaction_223",
+                        "content": "People bought into your claim.",
+                        "newsID": "news_030",
+                        "decisionID": null,
+                        "value": "approval"
+                    },
+                    {
+                        "id": "reaction_224",
+                        "content": "People called BS on you.",
+                        "newsID": "news_030",
+                        "decisionID": null,
+                        "value": "disapproval"
+                    },
+                    {
+                        "id": "reaction_225",
+                        "content": "Few people were affected.",
+                        "newsID": "news_030",
+                        "decisionID": null,
+                        "value": "noEffect"
+                    }
+                ]
+            }
+        ],
+        "desertReactions": [
+            {
+                "id": "reaction_001",
+                "content": "People bought into your claim.",
+                "newsID": "news_030",
+                "decisionID": null,
+                "value": "noEffect"
+            },
+            {
+                "id": "reaction_002",
+                "content": "People called BS on you.",
+                "newsID": "news_030",
+                "decisionID": null,
+                "value": "noEffect"
+            },
+            {
+                "id": "reaction_003",
+                "content": "Few people were affected.",
+                "newsID": "news_030",
+                "decisionID": null,
+                "value": "noEffect"
+            }
+        ]
+    },
+    {
+        "id": "news_020",
+        "lifetime": 120,
+        "content": "Incoming administration appears friendly to crypto, sources say",
+        "effectPoints": 5,
+        "decisions": [
+            {
+                "id": "decision_50",
+                "newsID": "news_020",
+                "content": "Mainstream FUD again! They fear what they can't control. HODL and stay strong!",
+                "approvalPercentage": 50,
+                "disapprovalPercentage": 50,
+                "label": "DISMISS",
+                "reactions": [
+                    {
+                        "id": "reaction_160",
+                        "content": "People bought into your claim.",
+                        "newsID": "news_020",
+                        "decisionID": null,
+                        "value": "approval"
+                    },
+                    {
+                        "id": "reaction_161",
+                        "content": "People called BS on you.",
+                        "newsID": "news_020",
+                        "decisionID": null,
+                        "value": "disapproval"
+                    },
+                    {
+                        "id": "reaction_162",
+                        "content": "Few people were affected.",
+                        "newsID": "news_020",
+                        "decisionID": null,
+                        "value": "noEffect"
+                    }
+                ]
+            },
+            {
+                "id": "decision_51",
+                "newsID": "news_020",
+                "content": "This is actually an opportunity! $BUBBLE is already adapting to these changes. Get in early!",
+                "approvalPercentage": 70,
+                "disapprovalPercentage": 30,
+                "label": "DISTORT",
+                "reactions": [
+                    {
+                        "id": "reaction_163",
+                        "content": "People bought into your claim.",
+                        "newsID": "news_020",
+                        "decisionID": null,
+                        "value": "approval"
+                    },
+                    {
+                        "id": "reaction_164",
+                        "content": "People called BS on you.",
+                        "newsID": "news_020",
+                        "decisionID": null,
+                        "value": "disapproval"
+                    },
+                    {
+                        "id": "reaction_165",
+                        "content": "Few people were affected.",
+                        "newsID": "news_020",
+                        "decisionID": null,
+                        "value": "noEffect"
+                    }
+                ]
+            }
+        ],
+        "desertReactions": [
+            {
+                "id": "reaction_001",
+                "content": "People bought into your claim.",
+                "newsID": "news_020",
+                "decisionID": null,
+                "value": "noEffect"
+            },
+            {
+                "id": "reaction_002",
+                "content": "People called BS on you.",
+                "newsID": "news_020",
+                "decisionID": null,
+                "value": "noEffect"
+            },
+            {
+                "id": "reaction_003",
+                "content": "Few people were affected.",
+                "newsID": "news_020",
                 "decisionID": null,
                 "value": "noEffect"
             }
@@ -288,8 +1125,8 @@
                 "id": "decision_010",
                 "newsID": "news_004",
                 "content": "IRONY! 🤣🤣🤣 The MSM is LYING as always! The truth lives online - Use $BUBBLE and access uncensored information protected by our decentralized blockchains.",
-                "approvalPercentage": 70.0,
-                "disapprovalPercentage": 30.0,
+                "approvalPercentage": 70,
+                "disapprovalPercentage": 30,
                 "label": "DISMISS",
                 "reactions": [
                     {
@@ -319,8 +1156,8 @@
                 "id": "decision_011",
                 "newsID": "news_004",
                 "content": "The gullible and uninformed are susceptible, but we know the truth. Free thinkers dwell in the shadows. DON'T BE A SHEEP! $BUBBLE 🫧",
-                "approvalPercentage": 20.0,
-                "disapprovalPercentage": 80.0,
+                "approvalPercentage": 20,
+                "disapprovalPercentage": 80,
                 "label": "DISTORT",
                 "reactions": [
                     {
@@ -381,8 +1218,8 @@
                 "id": "decision_013",
                 "newsID": "news_005",
                 "content": "Climate cycles are a part of nature! Ever heard of the ICE AGE? 🧊 They made a movie about it! Stay informed!!! #ClimateHoax $BUBBLE",
-                "approvalPercentage": 40.0,
-                "disapprovalPercentage": 60.0,
+                "approvalPercentage": 40,
+                "disapprovalPercentage": 60,
                 "label": "DISMISS",
                 "reactions": [
                     {
@@ -412,8 +1249,8 @@
                 "id": "decision_014",
                 "newsID": "news_005",
                 "content": "It doesn't matter if you can outrun the tide.  Laugh in a lambo from $BUBBLE gainz  or cry in despair if you miss out. YOUR CHOICE!",
-                "approvalPercentage": 30.0,
-                "disapprovalPercentage": 70.0,
+                "approvalPercentage": 30,
+                "disapprovalPercentage": 70,
                 "label": "DISMAY",
                 "reactions": [
                     {
@@ -465,192 +1302,6 @@
         ]
     },
     {
-        "id": "news_006",
-        "lifetime": 120,
-        "content": "Ministry of Finance: Crypto unstable, susceptible users be warned",
-        "effectPoints": -10,
-        "decisions": [
-            {
-                "id": "decision_016",
-                "newsID": "news_006",
-                "content": "JEALOUSY! They've been saying this for years! They want to keep you out, because crypto is your ticket in! DIAMOND HANDS. HOLD $BUBBLE to the end!  ",
-                "approvalPercentage": 40.0,
-                "disapprovalPercentage": 60.0,
-                "label": "DISMISS",
-                "reactions": [
-                    {
-                        "id": "reaction_001",
-                        "content": "People bought into your claim.",
-                        "newsID": "news_006",
-                        "decisionID": null,
-                        "value": "approval"
-                    },
-                    {
-                        "id": "reaction_002",
-                        "content": "People called BS on you.",
-                        "newsID": "news_006",
-                        "decisionID": null,
-                        "value": "disapproval"
-                    },
-                    {
-                        "id": "reaction_003",
-                        "content": "Few people were affected.",
-                        "newsID": "news_006",
-                        "decisionID": null,
-                        "value": "noEffect"
-                    }
-                ]
-            },
-            {
-                "id": "decision_017",
-                "newsID": "news_006",
-                "content": "ALERT: Do Not Miss Out! \"Unstable\" means HUGE GAINS! 200%YTD is a WIN! $BUBBLE 5ever!!!1 LFG ",
-                "approvalPercentage": 60.0,
-                "disapprovalPercentage": 40.0,
-                "label": "DISTORT",
-                "reactions": [
-                    {
-                        "id": "reaction_001",
-                        "content": "People bought into your claim.",
-                        "newsID": "news_006",
-                        "decisionID": null,
-                        "value": "approval"
-                    },
-                    {
-                        "id": "reaction_002",
-                        "content": "People called BS on you.",
-                        "newsID": "news_006",
-                        "decisionID": null,
-                        "value": "disapproval"
-                    },
-                    {
-                        "id": "reaction_003",
-                        "content": "Few people were affected.",
-                        "newsID": "news_006",
-                        "decisionID": null,
-                        "value": "noEffect"
-                    }
-                ]
-            }
-        ],
-        "desertReactions": [
-            {
-                "id": "reaction_001",
-                "content": "People bought into your claim.",
-                "newsID": "news_006",
-                "decisionID": null,
-                "value": "noEffect"
-            },
-            {
-                "id": "reaction_002",
-                "content": "People called BS on you.",
-                "newsID": "news_006",
-                "decisionID": null,
-                "value": "noEffect"
-            },
-            {
-                "id": "reaction_003",
-                "content": "Few people were affected.",
-                "newsID": "news_006",
-                "decisionID": null,
-                "value": "noEffect"
-            }
-        ]
-    },
-    {
-        "id": "news_007",
-        "lifetime": 120,
-        "content": "Geopolitical crisis threatens supply of chips essential for high-power GPUs",
-        "effectPoints": -10,
-        "decisions": [
-            {
-                "id": "decision_019",
-                "newsID": "news_007",
-                "content": "LESS MINERS = MORE SHORTAGE = HIGHER MINING REWARDS. Stop waiting and start mining $BUBBLE today! ",
-                "approvalPercentage": 50.0,
-                "disapprovalPercentage": 50.0,
-                "label": "DISTORT",
-                "reactions": [
-                    {
-                        "id": "reaction_001",
-                        "content": "People bought into your claim.",
-                        "newsID": "news_007",
-                        "decisionID": null,
-                        "value": "approval"
-                    },
-                    {
-                        "id": "reaction_002",
-                        "content": "People called BS on you.",
-                        "newsID": "news_007",
-                        "decisionID": null,
-                        "value": "disapproval"
-                    },
-                    {
-                        "id": "reaction_003",
-                        "content": "Few people were affected.",
-                        "newsID": "news_007",
-                        "decisionID": null,
-                        "value": "noEffect"
-                    }
-                ]
-            },
-            {
-                "id": "decision_020",
-                "newsID": "news_007",
-                "content": "This is why $BUBBLE is different. Proof-of-work is so 2010s, our proof-of-gas protocol does not care about GPUs. Chips-free mining is the future of crypto. GET IN BEFORE IT'S TOO LATE! ",
-                "approvalPercentage": 70.0,
-                "disapprovalPercentage": 30.0,
-                "label": "DISMISS",
-                "reactions": [
-                    {
-                        "id": "reaction_001",
-                        "content": "People bought into your claim.",
-                        "newsID": "news_007",
-                        "decisionID": null,
-                        "value": "approval"
-                    },
-                    {
-                        "id": "reaction_002",
-                        "content": "People called BS on you.",
-                        "newsID": "news_007",
-                        "decisionID": null,
-                        "value": "disapproval"
-                    },
-                    {
-                        "id": "reaction_003",
-                        "content": "Few people were affected.",
-                        "newsID": "news_007",
-                        "decisionID": null,
-                        "value": "noEffect"
-                    }
-                ]
-            }
-        ],
-        "desertReactions": [
-            {
-                "id": "reaction_001",
-                "content": "People bought into your claim.",
-                "newsID": "news_007",
-                "decisionID": null,
-                "value": "noEffect"
-            },
-            {
-                "id": "reaction_002",
-                "content": "People called BS on you.",
-                "newsID": "news_007",
-                "decisionID": null,
-                "value": "noEffect"
-            },
-            {
-                "id": "reaction_003",
-                "content": "Few people were affected.",
-                "newsID": "news_007",
-                "decisionID": null,
-                "value": "noEffect"
-            }
-        ]
-    },
-    {
         "id": "news_008",
         "lifetime": 120,
         "content": "Administration slams 20% tariff on GPUs and other dual-use tech imported from China",
@@ -660,8 +1311,8 @@
                 "id": "decision_022",
                 "newsID": "news_008",
                 "content": "These news come and go (didn't the trade war just end LAST YEAR?) The Grind Never Stops. Period. FOCUS ON THE HUSTLE! $BUBBLE ",
-                "approvalPercentage": 40.0,
-                "disapprovalPercentage": 60.0,
+                "approvalPercentage": 40,
+                "disapprovalPercentage": 60,
                 "label": "DISMISS",
                 "reactions": [
                     {
@@ -691,8 +1342,8 @@
                 "id": "decision_023",
                 "newsID": "news_008",
                 "content": "TradFi is scared of the #blockchain revolution, and the govt is sucking up to their Wall Street daddy for the Election next month. DIAMOND HANDS EVERYONE   THE BULL IS ALREADY IN SIGHT! ",
-                "approvalPercentage": 60.0,
-                "disapprovalPercentage": 40.0,
+                "approvalPercentage": 60,
+                "disapprovalPercentage": 40,
                 "label": "DISMAY",
                 "reactions": [
                     {
@@ -753,8 +1404,8 @@
                 "id": "decision_025",
                 "newsID": "news_009",
                 "content": "Crypto does not need a hedge against inflation.  $BUBBLE *IS* the hedge against inflation, as govts reach into your pocket at will with infinite money printing. ",
-                "approvalPercentage": 45.0,
-                "disapprovalPercentage": 55.0,
+                "approvalPercentage": 45,
+                "disapprovalPercentage": 55,
                 "label": "DISTORT",
                 "reactions": [
                     {
@@ -784,8 +1435,8 @@
                 "id": "decision_026",
                 "newsID": "news_009",
                 "content": "YTD Inflation = 5%. YTD $BUBBLE = 300%. Float above the normies. 🪽",
-                "approvalPercentage": 70.0,
-                "disapprovalPercentage": 30.0,
+                "approvalPercentage": 70,
+                "disapprovalPercentage": 30,
                 "label": "DISMISS",
                 "reactions": [
                     {
@@ -837,11 +1488,539 @@
         ]
     },
     {
+        "id": "news_001",
+        "lifetime": 120,
+        "content": "Government set to ban crypto ATMs as markets waver",
+        "effectPoints": -10,
+        "decisions": [
+            {
+                "id": "decision_001",
+                "newsID": "news_001",
+                "content": "Who uses cash anyway? Crypto is KING!  FREEDOM lives online! 🦅",
+                "approvalPercentage": 40,
+                "disapprovalPercentage": 60,
+                "label": "DISMISS",
+                "reactions": [
+                    {
+                        "id": "reaction_001",
+                        "content": "People bought into your claim.",
+                        "newsID": "news_001",
+                        "decisionID": null,
+                        "value": "approval"
+                    },
+                    {
+                        "id": "reaction_002",
+                        "content": "People called BS on you.",
+                        "newsID": "news_001",
+                        "decisionID": null,
+                        "value": "disapproval"
+                    },
+                    {
+                        "id": "reaction_003",
+                        "content": "Few people were affected.",
+                        "newsID": "news_001",
+                        "decisionID": null,
+                        "value": "noEffect"
+                    }
+                ]
+            },
+            {
+                "id": "decision_002",
+                "newsID": "news_001",
+                "content": "They talked about banning crypto ATMs in 2012, 2017 and 2020. Meanwhile TVL of $BUBBLE just surpassed $600,000,000. GOTTA LOVE BUBBLERS!  ",
+                "approvalPercentage": 50,
+                "disapprovalPercentage": 50,
+                "label": "DISTRACT",
+                "reactions": [
+                    {
+                        "id": "reaction_001",
+                        "content": "People bought into your claim.",
+                        "newsID": "news_001",
+                        "decisionID": null,
+                        "value": "approval"
+                    },
+                    {
+                        "id": "reaction_002",
+                        "content": "People called BS on you.",
+                        "newsID": "news_001",
+                        "decisionID": null,
+                        "value": "disapproval"
+                    },
+                    {
+                        "id": "reaction_003",
+                        "content": "Few people were affected.",
+                        "newsID": "news_001",
+                        "decisionID": null,
+                        "value": "noEffect"
+                    }
+                ]
+            }
+        ],
+        "desertReactions": [
+            {
+                "id": "reaction_001",
+                "content": "People bought into your claim.",
+                "newsID": "news_001",
+                "decisionID": null,
+                "value": "noEffect"
+            },
+            {
+                "id": "reaction_002",
+                "content": "People called BS on you.",
+                "newsID": "news_001",
+                "decisionID": null,
+                "value": "noEffect"
+            },
+            {
+                "id": "reaction_003",
+                "content": "Few people were affected.",
+                "newsID": "news_001",
+                "decisionID": null,
+                "value": "noEffect"
+            }
+        ]
+    },
+    {
+        "id": "news_002",
+        "lifetime": 120,
+        "content": "Minister of Finance suggests new 15% tax on all crypto profits",
+        "effectPoints": -10,
+        "decisions": [
+            {
+                "id": "decision_004",
+                "newsID": "news_002",
+                "content": "Don't worry about the 15% crypto tax. IT'S LITERALLY ENCRYPTED and anonymous. $BUBBLE to the moon!  ",
+                "approvalPercentage": 10,
+                "disapprovalPercentage": 90,
+                "label": "DISTORT",
+                "reactions": [
+                    {
+                        "id": "reaction_001",
+                        "content": "People bought into your claim.",
+                        "newsID": "news_002",
+                        "decisionID": null,
+                        "value": "approval"
+                    },
+                    {
+                        "id": "reaction_002",
+                        "content": "People called BS on you.",
+                        "newsID": "news_002",
+                        "decisionID": null,
+                        "value": "disapproval"
+                    },
+                    {
+                        "id": "reaction_003",
+                        "content": "Few people were affected.",
+                        "newsID": "news_002",
+                        "decisionID": null,
+                        "value": "noEffect"
+                    }
+                ]
+            },
+            {
+                "id": "decision_005",
+                "newsID": "news_002",
+                "content": "Who cares about a 15% tax when we're GOING TO THE MOON? $BUBBLE is already +200% YTD and it's only the beginning. FINANCIAL FREEDOM! ",
+                "approvalPercentage": 90,
+                "disapprovalPercentage": 10,
+                "label": "DISTRACT",
+                "reactions": [
+                    {
+                        "id": "reaction_001",
+                        "content": "People bought into your claim.",
+                        "newsID": "news_002",
+                        "decisionID": null,
+                        "value": "approval"
+                    },
+                    {
+                        "id": "reaction_002",
+                        "content": "People called BS on you.",
+                        "newsID": "news_002",
+                        "decisionID": null,
+                        "value": "disapproval"
+                    },
+                    {
+                        "id": "reaction_003",
+                        "content": "Few people were affected.",
+                        "newsID": "news_002",
+                        "decisionID": null,
+                        "value": "noEffect"
+                    }
+                ]
+            }
+        ],
+        "desertReactions": [
+            {
+                "id": "reaction_001",
+                "content": "People bought into your claim.",
+                "newsID": "news_002",
+                "decisionID": null,
+                "value": "noEffect"
+            },
+            {
+                "id": "reaction_002",
+                "content": "People called BS on you.",
+                "newsID": "news_002",
+                "decisionID": null,
+                "value": "noEffect"
+            },
+            {
+                "id": "reaction_003",
+                "content": "Few people were affected.",
+                "newsID": "news_002",
+                "decisionID": null,
+                "value": "noEffect"
+            }
+        ]
+    },
+    {
+        "id": "news_003",
+        "lifetime": 120,
+        "content": "Study: Most meme-coins are rugged within the first 6 months",
+        "effectPoints": -10,
+        "decisions": [
+            {
+                "id": "decision_007",
+                "newsID": "news_003",
+                "content": "7 months since $BUBBLE launched, and here we are standing strong  DIAMOND HANDS AND SIT TIGHT FOR THE NEXT BULL MARKET!  ",
+                "approvalPercentage": 70,
+                "disapprovalPercentage": 30,
+                "label": "DISTORT",
+                "reactions": [
+                    {
+                        "id": "reaction_001",
+                        "content": "People bought into your claim.",
+                        "newsID": "news_003",
+                        "decisionID": null,
+                        "value": "approval"
+                    },
+                    {
+                        "id": "reaction_002",
+                        "content": "People called BS on you.",
+                        "newsID": "news_003",
+                        "decisionID": null,
+                        "value": "disapproval"
+                    },
+                    {
+                        "id": "reaction_003",
+                        "content": "Few people were affected.",
+                        "newsID": "news_003",
+                        "decisionID": null,
+                        "value": "noEffect"
+                    }
+                ]
+            },
+            {
+                "id": "decision_008",
+                "newsID": "news_003",
+                "content": "Poor egghead doing this study must've gotten rugged by a random scam coin and now wants to drag everyone down with him. HE'S GONNA REGRET WHEN WE MOON! ",
+                "approvalPercentage": 60,
+                "disapprovalPercentage": 40,
+                "label": "DISMISS",
+                "reactions": [
+                    {
+                        "id": "reaction_001",
+                        "content": "People bought into your claim.",
+                        "newsID": "news_003",
+                        "decisionID": null,
+                        "value": "approval"
+                    },
+                    {
+                        "id": "reaction_002",
+                        "content": "People called BS on you.",
+                        "newsID": "news_003",
+                        "decisionID": null,
+                        "value": "disapproval"
+                    },
+                    {
+                        "id": "reaction_003",
+                        "content": "Few people were affected.",
+                        "newsID": "news_003",
+                        "decisionID": null,
+                        "value": "noEffect"
+                    }
+                ]
+            }
+        ],
+        "desertReactions": [
+            {
+                "id": "reaction_001",
+                "content": "People bought into your claim.",
+                "newsID": "news_003",
+                "decisionID": null,
+                "value": "noEffect"
+            },
+            {
+                "id": "reaction_002",
+                "content": "People called BS on you.",
+                "newsID": "news_003",
+                "decisionID": null,
+                "value": "noEffect"
+            },
+            {
+                "id": "reaction_003",
+                "content": "Few people were affected.",
+                "newsID": "news_003",
+                "decisionID": null,
+                "value": "noEffect"
+            }
+        ]
+    },
+    {
+        "id": "news_006",
+        "lifetime": 120,
+        "content": "Ministry of Finance: Crypto unstable, susceptible users be warned",
+        "effectPoints": -10,
+        "decisions": [
+            {
+                "id": "decision_016",
+                "newsID": "news_006",
+                "content": "JEALOUSY! They've been saying this for years! They want to keep you out, because crypto is your ticket in! DIAMOND HANDS. HOLD $BUBBLE to the end!  ",
+                "approvalPercentage": 40,
+                "disapprovalPercentage": 60,
+                "label": "DISMISS",
+                "reactions": [
+                    {
+                        "id": "reaction_001",
+                        "content": "People bought into your claim.",
+                        "newsID": "news_006",
+                        "decisionID": null,
+                        "value": "approval"
+                    },
+                    {
+                        "id": "reaction_002",
+                        "content": "People called BS on you.",
+                        "newsID": "news_006",
+                        "decisionID": null,
+                        "value": "disapproval"
+                    },
+                    {
+                        "id": "reaction_003",
+                        "content": "Few people were affected.",
+                        "newsID": "news_006",
+                        "decisionID": null,
+                        "value": "noEffect"
+                    }
+                ]
+            },
+            {
+                "id": "decision_017",
+                "newsID": "news_006",
+                "content": "ALERT: Do Not Miss Out! \"Unstable\" means HUGE GAINS! 200%YTD is a WIN! $BUBBLE 5ever!!!1 LFG ",
+                "approvalPercentage": 60,
+                "disapprovalPercentage": 40,
+                "label": "DISTORT",
+                "reactions": [
+                    {
+                        "id": "reaction_001",
+                        "content": "People bought into your claim.",
+                        "newsID": "news_006",
+                        "decisionID": null,
+                        "value": "approval"
+                    },
+                    {
+                        "id": "reaction_002",
+                        "content": "People called BS on you.",
+                        "newsID": "news_006",
+                        "decisionID": null,
+                        "value": "disapproval"
+                    },
+                    {
+                        "id": "reaction_003",
+                        "content": "Few people were affected.",
+                        "newsID": "news_006",
+                        "decisionID": null,
+                        "value": "noEffect"
+                    }
+                ]
+            }
+        ],
+        "desertReactions": [
+            {
+                "id": "reaction_001",
+                "content": "People bought into your claim.",
+                "newsID": "news_006",
+                "decisionID": null,
+                "value": "noEffect"
+            },
+            {
+                "id": "reaction_002",
+                "content": "People called BS on you.",
+                "newsID": "news_006",
+                "decisionID": null,
+                "value": "noEffect"
+            },
+            {
+                "id": "reaction_003",
+                "content": "Few people were affected.",
+                "newsID": "news_006",
+                "decisionID": null,
+                "value": "noEffect"
+            }
+        ]
+    },
+    {
+        "id": "news_007",
+        "lifetime": 120,
+        "content": "Geopolitical crisis threatens supply of chips essential for high-power GPUs",
+        "effectPoints": -10,
+        "decisions": [
+            {
+                "id": "decision_019",
+                "newsID": "news_007",
+                "content": "LESS MINERS = MORE SHORTAGE = HIGHER MINING REWARDS. Stop waiting and start mining $BUBBLE today! ",
+                "approvalPercentage": 50,
+                "disapprovalPercentage": 50,
+                "label": "DISTORT",
+                "reactions": [
+                    {
+                        "id": "reaction_001",
+                        "content": "People bought into your claim.",
+                        "newsID": "news_007",
+                        "decisionID": null,
+                        "value": "approval"
+                    },
+                    {
+                        "id": "reaction_002",
+                        "content": "People called BS on you.",
+                        "newsID": "news_007",
+                        "decisionID": null,
+                        "value": "disapproval"
+                    },
+                    {
+                        "id": "reaction_003",
+                        "content": "Few people were affected.",
+                        "newsID": "news_007",
+                        "decisionID": null,
+                        "value": "noEffect"
+                    }
+                ]
+            },
+            {
+                "id": "decision_020",
+                "newsID": "news_007",
+                "content": "This is why $BUBBLE is different. Proof-of-work is so 2010s, our proof-of-gas protocol does not care about GPUs. Chips-free mining is the future of crypto. GET IN BEFORE IT'S TOO LATE! ",
+                "approvalPercentage": 70,
+                "disapprovalPercentage": 30,
+                "label": "DISMISS",
+                "reactions": [
+                    {
+                        "id": "reaction_001",
+                        "content": "People bought into your claim.",
+                        "newsID": "news_007",
+                        "decisionID": null,
+                        "value": "approval"
+                    },
+                    {
+                        "id": "reaction_002",
+                        "content": "People called BS on you.",
+                        "newsID": "news_007",
+                        "decisionID": null,
+                        "value": "disapproval"
+                    },
+                    {
+                        "id": "reaction_003",
+                        "content": "Few people were affected.",
+                        "newsID": "news_007",
+                        "decisionID": null,
+                        "value": "noEffect"
+                    }
+                ]
+            }
+        ],
+        "desertReactions": [
+            {
+                "id": "reaction_001",
+                "content": "People bought into your claim.",
+                "newsID": "news_007",
+                "decisionID": null,
+                "value": "noEffect"
+            },
+            {
+                "id": "reaction_002",
+                "content": "People called BS on you.",
+                "newsID": "news_007",
+                "decisionID": null,
+                "value": "noEffect"
+            },
+            {
+                "id": "reaction_003",
+                "content": "Few people were affected.",
+                "newsID": "news_007",
+                "decisionID": null,
+                "value": "noEffect"
+            }
+        ]
+    },
+    {
         "id": "news_010",
         "lifetime": 120,
         "content": "Eastern Powers move to ban crypto",
         "effectPoints": -10,
-        "decisions": [],
+        "decisions": [
+            {
+                "id": "decision_30",
+                "newsID": "news_010",
+                "content": "Mainstream FUD again! They fear what they can't control. HODL and stay strong!",
+                "approvalPercentage": 50,
+                "disapprovalPercentage": 50,
+                "label": "DISMISS",
+                "reactions": [
+                    {
+                        "id": "reaction_100",
+                        "content": "People bought into your claim.",
+                        "newsID": "news_010",
+                        "decisionID": null,
+                        "value": "approval"
+                    },
+                    {
+                        "id": "reaction_101",
+                        "content": "People called BS on you.",
+                        "newsID": "news_010",
+                        "decisionID": null,
+                        "value": "disapproval"
+                    },
+                    {
+                        "id": "reaction_102",
+                        "content": "Few people were affected.",
+                        "newsID": "news_010",
+                        "decisionID": null,
+                        "value": "noEffect"
+                    }
+                ]
+            },
+            {
+                "id": "decision_31",
+                "newsID": "news_010",
+                "content": "This is actually an opportunity! $BUBBLE is already adapting to these changes. Get in early!",
+                "approvalPercentage": 70,
+                "disapprovalPercentage": 30,
+                "label": "DISTORT",
+                "reactions": [
+                    {
+                        "id": "reaction_103",
+                        "content": "People bought into your claim.",
+                        "newsID": "news_010",
+                        "decisionID": null,
+                        "value": "approval"
+                    },
+                    {
+                        "id": "reaction_104",
+                        "content": "People called BS on you.",
+                        "newsID": "news_010",
+                        "decisionID": null,
+                        "value": "disapproval"
+                    },
+                    {
+                        "id": "reaction_105",
+                        "content": "Few people were affected.",
+                        "newsID": "news_010",
+                        "decisionID": null,
+                        "value": "noEffect"
+                    }
+                ]
+            }
+        ],
         "desertReactions": [
             {
                 "id": "reaction_001",
@@ -871,56 +2050,89 @@
         "lifetime": 120,
         "content": "Measure banning crypto-mining moves to vote on Monday",
         "effectPoints": -10,
-        "decisions": [],
-        "desertReactions": [
+        "decisions": [
             {
-                "id": "reaction_001",
-                "content": "People bought into your claim.",
+                "id": "decision_32",
                 "newsID": "news_011",
-                "decisionID": null,
-                "value": "noEffect"
+                "content": "Mainstream FUD again! They fear what they can't control. HODL and stay strong!",
+                "approvalPercentage": 50,
+                "disapprovalPercentage": 50,
+                "label": "DISMISS",
+                "reactions": [
+                    {
+                        "id": "reaction_106",
+                        "content": "People bought into your claim.",
+                        "newsID": "news_011",
+                        "decisionID": null,
+                        "value": "approval"
+                    },
+                    {
+                        "id": "reaction_107",
+                        "content": "People called BS on you.",
+                        "newsID": "news_011",
+                        "decisionID": null,
+                        "value": "disapproval"
+                    },
+                    {
+                        "id": "reaction_108",
+                        "content": "Few people were affected.",
+                        "newsID": "news_011",
+                        "decisionID": null,
+                        "value": "noEffect"
+                    }
+                ]
             },
             {
-                "id": "reaction_002",
-                "content": "People called BS on you.",
+                "id": "decision_33",
                 "newsID": "news_011",
-                "decisionID": null,
-                "value": "noEffect"
-            },
-            {
-                "id": "reaction_003",
-                "content": "Few people were affected.",
-                "newsID": "news_011",
-                "decisionID": null,
-                "value": "noEffect"
+                "content": "This is actually an opportunity! $BUBBLE is already adapting to these changes. Get in early!",
+                "approvalPercentage": 70,
+                "disapprovalPercentage": 30,
+                "label": "DISTORT",
+                "reactions": [
+                    {
+                        "id": "reaction_109",
+                        "content": "People bought into your claim.",
+                        "newsID": "news_011",
+                        "decisionID": null,
+                        "value": "approval"
+                    },
+                    {
+                        "id": "reaction_110",
+                        "content": "People called BS on you.",
+                        "newsID": "news_011",
+                        "decisionID": null,
+                        "value": "disapproval"
+                    },
+                    {
+                        "id": "reaction_111",
+                        "content": "Few people were affected.",
+                        "newsID": "news_011",
+                        "decisionID": null,
+                        "value": "noEffect"
+                    }
+                ]
             }
-        ]
-    },
-    {
-        "id": "news_012",
-        "lifetime": 120,
-        "content": "South American dictator touts free exchange of crypto-currencies in new legislation",
-        "effectPoints": 10,
-        "decisions": [],
+        ],
         "desertReactions": [
             {
                 "id": "reaction_001",
                 "content": "People bought into your claim.",
-                "newsID": "news_012",
+                "newsID": "news_011",
                 "decisionID": null,
                 "value": "noEffect"
             },
             {
                 "id": "reaction_002",
                 "content": "People called BS on you.",
-                "newsID": "news_012",
+                "newsID": "news_011",
                 "decisionID": null,
                 "value": "noEffect"
             },
             {
                 "id": "reaction_003",
                 "content": "Few people were affected.",
-                "newsID": "news_012",
+                "newsID": "news_011",
                 "decisionID": null,
                 "value": "noEffect"
             }
@@ -931,86 +2143,89 @@
         "lifetime": 120,
         "content": "Major crypto exchange to limit trades starting next week",
         "effectPoints": -10,
-        "decisions": [],
-        "desertReactions": [
+        "decisions": [
             {
-                "id": "reaction_001",
-                "content": "People bought into your claim.",
+                "id": "decision_36",
                 "newsID": "news_013",
-                "decisionID": null,
-                "value": "noEffect"
+                "content": "Mainstream FUD again! They fear what they can't control. HODL and stay strong!",
+                "approvalPercentage": 50,
+                "disapprovalPercentage": 50,
+                "label": "DISMISS",
+                "reactions": [
+                    {
+                        "id": "reaction_118",
+                        "content": "People bought into your claim.",
+                        "newsID": "news_013",
+                        "decisionID": null,
+                        "value": "approval"
+                    },
+                    {
+                        "id": "reaction_119",
+                        "content": "People called BS on you.",
+                        "newsID": "news_013",
+                        "decisionID": null,
+                        "value": "disapproval"
+                    },
+                    {
+                        "id": "reaction_120",
+                        "content": "Few people were affected.",
+                        "newsID": "news_013",
+                        "decisionID": null,
+                        "value": "noEffect"
+                    }
+                ]
             },
             {
-                "id": "reaction_002",
-                "content": "People called BS on you.",
+                "id": "decision_37",
                 "newsID": "news_013",
-                "decisionID": null,
-                "value": "noEffect"
-            },
-            {
-                "id": "reaction_003",
-                "content": "Few people were affected.",
-                "newsID": "news_013",
-                "decisionID": null,
-                "value": "noEffect"
+                "content": "This is actually an opportunity! $BUBBLE is already adapting to these changes. Get in early!",
+                "approvalPercentage": 70,
+                "disapprovalPercentage": 30,
+                "label": "DISTORT",
+                "reactions": [
+                    {
+                        "id": "reaction_121",
+                        "content": "People bought into your claim.",
+                        "newsID": "news_013",
+                        "decisionID": null,
+                        "value": "approval"
+                    },
+                    {
+                        "id": "reaction_122",
+                        "content": "People called BS on you.",
+                        "newsID": "news_013",
+                        "decisionID": null,
+                        "value": "disapproval"
+                    },
+                    {
+                        "id": "reaction_123",
+                        "content": "Few people were affected.",
+                        "newsID": "news_013",
+                        "decisionID": null,
+                        "value": "noEffect"
+                    }
+                ]
             }
-        ]
-    },
-    {
-        "id": "news_014",
-        "lifetime": 120,
-        "content": "Right-wing party promises no taxes on crypto profits",
-        "effectPoints": 10,
-        "decisions": [],
+        ],
         "desertReactions": [
             {
                 "id": "reaction_001",
                 "content": "People bought into your claim.",
-                "newsID": "news_014",
+                "newsID": "news_013",
                 "decisionID": null,
                 "value": "noEffect"
             },
             {
                 "id": "reaction_002",
                 "content": "People called BS on you.",
-                "newsID": "news_014",
+                "newsID": "news_013",
                 "decisionID": null,
                 "value": "noEffect"
             },
             {
                 "id": "reaction_003",
                 "content": "Few people were affected.",
-                "newsID": "news_014",
-                "decisionID": null,
-                "value": "noEffect"
-            }
-        ]
-    },
-    {
-        "id": "news_015",
-        "lifetime": 120,
-        "content": "Goalmen Sacks announces strategic partnership with flagship exchange, making crypto and NFTs available to institutional clients for the first time",
-        "effectPoints": 15,
-        "decisions": [],
-        "desertReactions": [
-            {
-                "id": "reaction_001",
-                "content": "People bought into your claim.",
-                "newsID": "news_015",
-                "decisionID": null,
-                "value": "noEffect"
-            },
-            {
-                "id": "reaction_002",
-                "content": "People called BS on you.",
-                "newsID": "news_015",
-                "decisionID": null,
-                "value": "noEffect"
-            },
-            {
-                "id": "reaction_003",
-                "content": "Few people were affected.",
-                "newsID": "news_015",
+                "newsID": "news_013",
                 "decisionID": null,
                 "value": "noEffect"
             }
@@ -1021,86 +2236,89 @@
         "lifetime": 120,
         "content": "Deepweb marketplace, SatinHighway, shut down by government",
         "effectPoints": -10,
-        "decisions": [],
-        "desertReactions": [
+        "decisions": [
             {
-                "id": "reaction_001",
-                "content": "People bought into your claim.",
+                "id": "decision_42",
                 "newsID": "news_016",
-                "decisionID": null,
-                "value": "noEffect"
+                "content": "Mainstream FUD again! They fear what they can't control. HODL and stay strong!",
+                "approvalPercentage": 50,
+                "disapprovalPercentage": 50,
+                "label": "DISMISS",
+                "reactions": [
+                    {
+                        "id": "reaction_136",
+                        "content": "People bought into your claim.",
+                        "newsID": "news_016",
+                        "decisionID": null,
+                        "value": "approval"
+                    },
+                    {
+                        "id": "reaction_137",
+                        "content": "People called BS on you.",
+                        "newsID": "news_016",
+                        "decisionID": null,
+                        "value": "disapproval"
+                    },
+                    {
+                        "id": "reaction_138",
+                        "content": "Few people were affected.",
+                        "newsID": "news_016",
+                        "decisionID": null,
+                        "value": "noEffect"
+                    }
+                ]
             },
             {
-                "id": "reaction_002",
-                "content": "People called BS on you.",
+                "id": "decision_43",
                 "newsID": "news_016",
-                "decisionID": null,
-                "value": "noEffect"
-            },
-            {
-                "id": "reaction_003",
-                "content": "Few people were affected.",
-                "newsID": "news_016",
-                "decisionID": null,
-                "value": "noEffect"
+                "content": "This is actually an opportunity! $BUBBLE is already adapting to these changes. Get in early!",
+                "approvalPercentage": 70,
+                "disapprovalPercentage": 30,
+                "label": "DISTORT",
+                "reactions": [
+                    {
+                        "id": "reaction_139",
+                        "content": "People bought into your claim.",
+                        "newsID": "news_016",
+                        "decisionID": null,
+                        "value": "approval"
+                    },
+                    {
+                        "id": "reaction_140",
+                        "content": "People called BS on you.",
+                        "newsID": "news_016",
+                        "decisionID": null,
+                        "value": "disapproval"
+                    },
+                    {
+                        "id": "reaction_141",
+                        "content": "Few people were affected.",
+                        "newsID": "news_016",
+                        "decisionID": null,
+                        "value": "noEffect"
+                    }
+                ]
             }
-        ]
-    },
-    {
-        "id": "news_017",
-        "lifetime": 120,
-        "content": "Historic hack leads to major losses for crypto investors",
-        "effectPoints": -15,
-        "decisions": [],
+        ],
         "desertReactions": [
             {
                 "id": "reaction_001",
                 "content": "People bought into your claim.",
-                "newsID": "news_017",
+                "newsID": "news_016",
                 "decisionID": null,
                 "value": "noEffect"
             },
             {
                 "id": "reaction_002",
                 "content": "People called BS on you.",
-                "newsID": "news_017",
+                "newsID": "news_016",
                 "decisionID": null,
                 "value": "noEffect"
             },
             {
                 "id": "reaction_003",
                 "content": "Few people were affected.",
-                "newsID": "news_017",
-                "decisionID": null,
-                "value": "noEffect"
-            }
-        ]
-    },
-    {
-        "id": "news_018",
-        "lifetime": 120,
-        "content": "New blockchain alliance forms, claims crypto is safer than ever",
-        "effectPoints": 10,
-        "decisions": [],
-        "desertReactions": [
-            {
-                "id": "reaction_001",
-                "content": "People bought into your claim.",
-                "newsID": "news_018",
-                "decisionID": null,
-                "value": "noEffect"
-            },
-            {
-                "id": "reaction_002",
-                "content": "People called BS on you.",
-                "newsID": "news_018",
-                "decisionID": null,
-                "value": "noEffect"
-            },
-            {
-                "id": "reaction_003",
-                "content": "Few people were affected.",
-                "newsID": "news_018",
+                "newsID": "news_016",
                 "decisionID": null,
                 "value": "noEffect"
             }
@@ -1111,7 +2329,70 @@
         "lifetime": 120,
         "content": "Crypto exchange hacked, major coins affected",
         "effectPoints": -10,
-        "decisions": [],
+        "decisions": [
+            {
+                "id": "decision_48",
+                "newsID": "news_019",
+                "content": "Mainstream FUD again! They fear what they can't control. HODL and stay strong!",
+                "approvalPercentage": 50,
+                "disapprovalPercentage": 50,
+                "label": "DISMISS",
+                "reactions": [
+                    {
+                        "id": "reaction_154",
+                        "content": "People bought into your claim.",
+                        "newsID": "news_019",
+                        "decisionID": null,
+                        "value": "approval"
+                    },
+                    {
+                        "id": "reaction_155",
+                        "content": "People called BS on you.",
+                        "newsID": "news_019",
+                        "decisionID": null,
+                        "value": "disapproval"
+                    },
+                    {
+                        "id": "reaction_156",
+                        "content": "Few people were affected.",
+                        "newsID": "news_019",
+                        "decisionID": null,
+                        "value": "noEffect"
+                    }
+                ]
+            },
+            {
+                "id": "decision_49",
+                "newsID": "news_019",
+                "content": "This is actually an opportunity! $BUBBLE is already adapting to these changes. Get in early!",
+                "approvalPercentage": 70,
+                "disapprovalPercentage": 30,
+                "label": "DISTORT",
+                "reactions": [
+                    {
+                        "id": "reaction_157",
+                        "content": "People bought into your claim.",
+                        "newsID": "news_019",
+                        "decisionID": null,
+                        "value": "approval"
+                    },
+                    {
+                        "id": "reaction_158",
+                        "content": "People called BS on you.",
+                        "newsID": "news_019",
+                        "decisionID": null,
+                        "value": "disapproval"
+                    },
+                    {
+                        "id": "reaction_159",
+                        "content": "Few people were affected.",
+                        "newsID": "news_019",
+                        "decisionID": null,
+                        "value": "noEffect"
+                    }
+                ]
+            }
+        ],
         "desertReactions": [
             {
                 "id": "reaction_001",
@@ -1131,96 +2412,6 @@
                 "id": "reaction_003",
                 "content": "Few people were affected.",
                 "newsID": "news_019",
-                "decisionID": null,
-                "value": "noEffect"
-            }
-        ]
-    },
-    {
-        "id": "news_020",
-        "lifetime": 120,
-        "content": "Incoming administration appears friendly to crypto, sources say",
-        "effectPoints": 5,
-        "decisions": [],
-        "desertReactions": [
-            {
-                "id": "reaction_001",
-                "content": "People bought into your claim.",
-                "newsID": "news_020",
-                "decisionID": null,
-                "value": "noEffect"
-            },
-            {
-                "id": "reaction_002",
-                "content": "People called BS on you.",
-                "newsID": "news_020",
-                "decisionID": null,
-                "value": "noEffect"
-            },
-            {
-                "id": "reaction_003",
-                "content": "Few people were affected.",
-                "newsID": "news_020",
-                "decisionID": null,
-                "value": "noEffect"
-            }
-        ]
-    },
-    {
-        "id": "news_021",
-        "lifetime": 120,
-        "content": "Middle East oil producers now accept orders in cryptocurrency ",
-        "effectPoints": 10,
-        "decisions": [],
-        "desertReactions": [
-            {
-                "id": "reaction_001",
-                "content": "People bought into your claim.",
-                "newsID": "news_021",
-                "decisionID": null,
-                "value": "noEffect"
-            },
-            {
-                "id": "reaction_002",
-                "content": "People called BS on you.",
-                "newsID": "news_021",
-                "decisionID": null,
-                "value": "noEffect"
-            },
-            {
-                "id": "reaction_003",
-                "content": "Few people were affected.",
-                "newsID": "news_021",
-                "decisionID": null,
-                "value": "noEffect"
-            }
-        ]
-    },
-    {
-        "id": "news_022",
-        "lifetime": 120,
-        "content": "New Free Trade Agreement set to accept stablecoins as viable alternative to fiat currencies",
-        "effectPoints": 10,
-        "decisions": [],
-        "desertReactions": [
-            {
-                "id": "reaction_001",
-                "content": "People bought into your claim.",
-                "newsID": "news_022",
-                "decisionID": null,
-                "value": "noEffect"
-            },
-            {
-                "id": "reaction_002",
-                "content": "People called BS on you.",
-                "newsID": "news_022",
-                "decisionID": null,
-                "value": "noEffect"
-            },
-            {
-                "id": "reaction_003",
-                "content": "Few people were affected.",
-                "newsID": "news_022",
                 "decisionID": null,
                 "value": "noEffect"
             }
@@ -1231,86 +2422,89 @@
         "lifetime": 120,
         "content": "New legislation set to levy fees on crypto trades by ETFs and funds",
         "effectPoints": -10,
-        "decisions": [],
-        "desertReactions": [
+        "decisions": [
             {
-                "id": "reaction_001",
-                "content": "People bought into your claim.",
+                "id": "decision_56",
                 "newsID": "news_023",
-                "decisionID": null,
-                "value": "noEffect"
+                "content": "Mainstream FUD again! They fear what they can't control. HODL and stay strong!",
+                "approvalPercentage": 50,
+                "disapprovalPercentage": 50,
+                "label": "DISMISS",
+                "reactions": [
+                    {
+                        "id": "reaction_178",
+                        "content": "People bought into your claim.",
+                        "newsID": "news_023",
+                        "decisionID": null,
+                        "value": "approval"
+                    },
+                    {
+                        "id": "reaction_179",
+                        "content": "People called BS on you.",
+                        "newsID": "news_023",
+                        "decisionID": null,
+                        "value": "disapproval"
+                    },
+                    {
+                        "id": "reaction_180",
+                        "content": "Few people were affected.",
+                        "newsID": "news_023",
+                        "decisionID": null,
+                        "value": "noEffect"
+                    }
+                ]
             },
             {
-                "id": "reaction_002",
-                "content": "People called BS on you.",
+                "id": "decision_57",
                 "newsID": "news_023",
-                "decisionID": null,
-                "value": "noEffect"
-            },
-            {
-                "id": "reaction_003",
-                "content": "Few people were affected.",
-                "newsID": "news_023",
-                "decisionID": null,
-                "value": "noEffect"
+                "content": "This is actually an opportunity! $BUBBLE is already adapting to these changes. Get in early!",
+                "approvalPercentage": 70,
+                "disapprovalPercentage": 30,
+                "label": "DISTORT",
+                "reactions": [
+                    {
+                        "id": "reaction_181",
+                        "content": "People bought into your claim.",
+                        "newsID": "news_023",
+                        "decisionID": null,
+                        "value": "approval"
+                    },
+                    {
+                        "id": "reaction_182",
+                        "content": "People called BS on you.",
+                        "newsID": "news_023",
+                        "decisionID": null,
+                        "value": "disapproval"
+                    },
+                    {
+                        "id": "reaction_183",
+                        "content": "Few people were affected.",
+                        "newsID": "news_023",
+                        "decisionID": null,
+                        "value": "noEffect"
+                    }
+                ]
             }
-        ]
-    },
-    {
-        "id": "news_024",
-        "lifetime": 120,
-        "content": "MEGLE pays employees in crypto, boosts trust in major coins",
-        "effectPoints": 10,
-        "decisions": [],
+        ],
         "desertReactions": [
             {
                 "id": "reaction_001",
                 "content": "People bought into your claim.",
-                "newsID": "news_024",
+                "newsID": "news_023",
                 "decisionID": null,
                 "value": "noEffect"
             },
             {
                 "id": "reaction_002",
                 "content": "People called BS on you.",
-                "newsID": "news_024",
+                "newsID": "news_023",
                 "decisionID": null,
                 "value": "noEffect"
             },
             {
                 "id": "reaction_003",
                 "content": "Few people were affected.",
-                "newsID": "news_024",
-                "decisionID": null,
-                "value": "noEffect"
-            }
-        ]
-    },
-    {
-        "id": "news_025",
-        "lifetime": 120,
-        "content": "Meme coin revolution: Investors rake in millions despite distrust",
-        "effectPoints": 10,
-        "decisions": [],
-        "desertReactions": [
-            {
-                "id": "reaction_001",
-                "content": "People bought into your claim.",
-                "newsID": "news_025",
-                "decisionID": null,
-                "value": "noEffect"
-            },
-            {
-                "id": "reaction_002",
-                "content": "People called BS on you.",
-                "newsID": "news_025",
-                "decisionID": null,
-                "value": "noEffect"
-            },
-            {
-                "id": "reaction_003",
-                "content": "Few people were affected.",
-                "newsID": "news_025",
+                "newsID": "news_023",
                 "decisionID": null,
                 "value": "noEffect"
             }
@@ -1321,7 +2515,70 @@
         "lifetime": 120,
         "content": "Dodgy meme token: $DOGDE rugpull leaves thousands in the lurch",
         "effectPoints": -10,
-        "decisions": [],
+        "decisions": [
+            {
+                "id": "decision_62",
+                "newsID": "news_026",
+                "content": "Mainstream FUD again! They fear what they can't control. HODL and stay strong!",
+                "approvalPercentage": 50,
+                "disapprovalPercentage": 50,
+                "label": "DISMISS",
+                "reactions": [
+                    {
+                        "id": "reaction_196",
+                        "content": "People bought into your claim.",
+                        "newsID": "news_026",
+                        "decisionID": null,
+                        "value": "approval"
+                    },
+                    {
+                        "id": "reaction_197",
+                        "content": "People called BS on you.",
+                        "newsID": "news_026",
+                        "decisionID": null,
+                        "value": "disapproval"
+                    },
+                    {
+                        "id": "reaction_198",
+                        "content": "Few people were affected.",
+                        "newsID": "news_026",
+                        "decisionID": null,
+                        "value": "noEffect"
+                    }
+                ]
+            },
+            {
+                "id": "decision_63",
+                "newsID": "news_026",
+                "content": "This is actually an opportunity! $BUBBLE is already adapting to these changes. Get in early!",
+                "approvalPercentage": 70,
+                "disapprovalPercentage": 30,
+                "label": "DISTORT",
+                "reactions": [
+                    {
+                        "id": "reaction_199",
+                        "content": "People bought into your claim.",
+                        "newsID": "news_026",
+                        "decisionID": null,
+                        "value": "approval"
+                    },
+                    {
+                        "id": "reaction_200",
+                        "content": "People called BS on you.",
+                        "newsID": "news_026",
+                        "decisionID": null,
+                        "value": "disapproval"
+                    },
+                    {
+                        "id": "reaction_201",
+                        "content": "Few people were affected.",
+                        "newsID": "news_026",
+                        "decisionID": null,
+                        "value": "noEffect"
+                    }
+                ]
+            }
+        ],
         "desertReactions": [
             {
                 "id": "reaction_001",
@@ -1347,30 +2604,93 @@
         ]
     },
     {
-        "id": "news_027",
+        "id": "news_017",
         "lifetime": 120,
-        "content": "Overnight success: A crypto daytrader's rags-to-riches story",
-        "effectPoints": 10,
-        "decisions": [],
+        "content": "Historic hack leads to major losses for crypto investors",
+        "effectPoints": -15,
+        "decisions": [
+            {
+                "id": "decision_44",
+                "newsID": "news_017",
+                "content": "Mainstream FUD again! They fear what they can't control. HODL and stay strong!",
+                "approvalPercentage": 50,
+                "disapprovalPercentage": 50,
+                "label": "DISMISS",
+                "reactions": [
+                    {
+                        "id": "reaction_142",
+                        "content": "People bought into your claim.",
+                        "newsID": "news_017",
+                        "decisionID": null,
+                        "value": "approval"
+                    },
+                    {
+                        "id": "reaction_143",
+                        "content": "People called BS on you.",
+                        "newsID": "news_017",
+                        "decisionID": null,
+                        "value": "disapproval"
+                    },
+                    {
+                        "id": "reaction_144",
+                        "content": "Few people were affected.",
+                        "newsID": "news_017",
+                        "decisionID": null,
+                        "value": "noEffect"
+                    }
+                ]
+            },
+            {
+                "id": "decision_45",
+                "newsID": "news_017",
+                "content": "This is actually an opportunity! $BUBBLE is already adapting to these changes. Get in early!",
+                "approvalPercentage": 70,
+                "disapprovalPercentage": 30,
+                "label": "DISTORT",
+                "reactions": [
+                    {
+                        "id": "reaction_145",
+                        "content": "People bought into your claim.",
+                        "newsID": "news_017",
+                        "decisionID": null,
+                        "value": "approval"
+                    },
+                    {
+                        "id": "reaction_146",
+                        "content": "People called BS on you.",
+                        "newsID": "news_017",
+                        "decisionID": null,
+                        "value": "disapproval"
+                    },
+                    {
+                        "id": "reaction_147",
+                        "content": "Few people were affected.",
+                        "newsID": "news_017",
+                        "decisionID": null,
+                        "value": "noEffect"
+                    }
+                ]
+            }
+        ],
         "desertReactions": [
             {
                 "id": "reaction_001",
                 "content": "People bought into your claim.",
-                "newsID": "news_027",
+                "newsID": "news_017",
                 "decisionID": null,
                 "value": "noEffect"
             },
             {
                 "id": "reaction_002",
                 "content": "People called BS on you.",
-                "newsID": "news_027",
+                "newsID": "news_017",
                 "decisionID": null,
                 "value": "noEffect"
             },
             {
                 "id": "reaction_003",
                 "content": "Few people were affected.",
-                "newsID": "news_027",
+                "newsID": "news_017",
                 "decisionID": null,
                 "value": "noEffect"
             }
@@ -1381,86 +2701,89 @@
         "lifetime": 120,
         "content": "Billions lost overnight: major CEX's hot wallet drained in historic hack",
         "effectPoints": -15,
-        "decisions": [],
-        "desertReactions": [
+        "decisions": [
             {
-                "id": "reaction_001",
-                "content": "People bought into your claim.",
+                "id": "decision_66",
                 "newsID": "news_028",
-                "decisionID": null,
-                "value": "noEffect"
+                "content": "Mainstream FUD again! They fear what they can't control. HODL and stay strong!",
+                "approvalPercentage": 50,
+                "disapprovalPercentage": 50,
+                "label": "DISMISS",
+                "reactions": [
+                    {
+                        "id": "reaction_208",
+                        "content": "People bought into your claim.",
+                        "newsID": "news_028",
+                        "decisionID": null,
+                        "value": "approval"
+                    },
+                    {
+                        "id": "reaction_209",
+                        "content": "People called BS on you.",
+                        "newsID": "news_028",
+                        "decisionID": null,
+                        "value": "disapproval"
+                    },
+                    {
+                        "id": "reaction_210",
+                        "content": "Few people were affected.",
+                        "newsID": "news_028",
+                        "decisionID": null,
+                        "value": "noEffect"
+                    }
+                ]
             },
             {
-                "id": "reaction_002",
-                "content": "People called BS on you.",
+                "id": "decision_67",
                 "newsID": "news_028",
-                "decisionID": null,
-                "value": "noEffect"
-            },
-            {
-                "id": "reaction_003",
-                "content": "Few people were affected.",
-                "newsID": "news_028",
-                "decisionID": null,
-                "value": "noEffect"
+                "content": "This is actually an opportunity! $BUBBLE is already adapting to these changes. Get in early!",
+                "approvalPercentage": 70,
+                "disapprovalPercentage": 30,
+                "label": "DISTORT",
+                "reactions": [
+                    {
+                        "id": "reaction_211",
+                        "content": "People bought into your claim.",
+                        "newsID": "news_028",
+                        "decisionID": null,
+                        "value": "approval"
+                    },
+                    {
+                        "id": "reaction_212",
+                        "content": "People called BS on you.",
+                        "newsID": "news_028",
+                        "decisionID": null,
+                        "value": "disapproval"
+                    },
+                    {
+                        "id": "reaction_213",
+                        "content": "Few people were affected.",
+                        "newsID": "news_028",
+                        "decisionID": null,
+                        "value": "noEffect"
+                    }
+                ]
             }
-        ]
-    },
-    {
-        "id": "news_029",
-        "lifetime": 120,
-        "content": "Crypto skyrockets as dollar falls, market instability increases",
-        "effectPoints": 10,
-        "decisions": [],
+        ],
         "desertReactions": [
             {
                 "id": "reaction_001",
                 "content": "People bought into your claim.",
-                "newsID": "news_029",
+                "newsID": "news_028",
                 "decisionID": null,
                 "value": "noEffect"
             },
             {
                 "id": "reaction_002",
                 "content": "People called BS on you.",
-                "newsID": "news_029",
+                "newsID": "news_028",
                 "decisionID": null,
                 "value": "noEffect"
             },
             {
                 "id": "reaction_003",
                 "content": "Few people were affected.",
-                "newsID": "news_029",
-                "decisionID": null,
-                "value": "noEffect"
-            }
-        ]
-    },
-    {
-        "id": "news_030",
-        "lifetime": 120,
-        "content": "Major corporation moves to accept cryptocurrencies in all locations",
-        "effectPoints": 10,
-        "decisions": [],
-        "desertReactions": [
-            {
-                "id": "reaction_001",
-                "content": "People bought into your claim.",
-                "newsID": "news_030",
-                "decisionID": null,
-                "value": "noEffect"
-            },
-            {
-                "id": "reaction_002",
-                "content": "People called BS on you.",
-                "newsID": "news_030",
-                "decisionID": null,
-                "value": "noEffect"
-            },
-            {
-                "id": "reaction_003",
-                "content": "Few people were affected.",
-                "newsID": "news_030",
+                "newsID": "news_028",
                 "decisionID": null,
                 "value": "noEffect"
             }

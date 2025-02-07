@@ -228,13 +228,13 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("Addition on the coin value");
 
-            currentCoinValue += effectPoints;
+            currentCoinValue += effectPoints / 10;
         }
         else if (reactionValue == ReactionValue.disapproval)
         {
             Debug.Log("Deletion on the coin value");
 
-            currentCoinValue -= effectPoints;
+            currentCoinValue -= effectPoints / 10;
         }
 
         UpdateCoinDisplay();
