@@ -17,6 +17,8 @@ public class ReactionController : MonoBehaviour
     [SerializeField] private Sprite distortSprite;
     [SerializeField] private Sprite distractSprite;
     [SerializeField] private Sprite truthSprite;
+
+    [SerializeField] private GameObject celebrationEffect;
     void Awake()
     {
         // Set the instance of GameManager to this instance
@@ -48,12 +50,18 @@ public class ReactionController : MonoBehaviour
                 decisionLabel.GetComponent<Image>().sprite = truthSprite;
                 break;
         }
+
+        if (reaction.value == ReactionValue.approval)
+        {
+            celebrationEffect.GetComponent<ParticleSystem>().Play();
+        }
+
         StartCoroutine(HideReaction());
     }
 
     IEnumerator HideReaction()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(3);
         reactionPanel.SetActive(false);
     }
 
