@@ -19,6 +19,10 @@ public class ReactionController : MonoBehaviour
     [SerializeField] private Sprite truthSprite;
 
     [SerializeField] private GameObject celebrationEffect;
+    [SerializeField] private AudioSource celebrationSound;
+    [SerializeField] private GameObject bsEffect;
+
+    [SerializeField] private AudioSource bsSound;
     void Awake()
     {
         // Set the instance of GameManager to this instance
@@ -54,6 +58,13 @@ public class ReactionController : MonoBehaviour
         if (reaction.value == ReactionValue.approval)
         {
             celebrationEffect.GetComponent<ParticleSystem>().Play();
+            celebrationSound.Play();
+        }
+
+        if (reaction.value == ReactionValue.disapproval)
+        {
+            bsEffect.GetComponent<ParticleSystem>().Play();
+            bsSound.Play();
         }
 
         StartCoroutine(HideReaction());
